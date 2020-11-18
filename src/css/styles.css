@@ -1,0 +1,25 @@
+@import "./variables.css";
+@import "./header.css";
+@import "./main.css";
+@import "./footer.css";
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+img {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+img[data-src] {
+    opacity: 0;
+}

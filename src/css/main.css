@@ -1,0 +1,194 @@
+/* main home page */
+.elixir-main-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.elixir-main-part__video-banner {
+    height: 600px;
+    width: 100%;
+    background: url("../img/Zorka-Plato1.png") no-repeat center;
+    background-size: cover;
+}
+
+.video-banner__elixir-main-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .video-banner__elixir-main-info {
+        flex-direction: column;
+    }
+}
+
+.elixir-main-info__about-elixir-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 640px;
+
+}
+
+.about-elixir-container__about-elixir-title {
+    display: flex;
+    align-items: center;
+}
+
+.about-elixir-title__central-line {
+    width: 70px;
+    height: 1px;
+    background: var(--white-bg);
+}
+
+.about-elixir-title__logo {
+    margin-left: -8px;
+    position: relative;
+}
+
+.about-elixir-title__logo:before {
+    position: absolute;
+    content: '\00AE';
+    color: var(--white-bg);
+    left: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-elixir-title__about-text {
+    font-family: var(--main-font);
+    color: var(--white-bg);
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: normal;
+    margin-top: 25px;
+}
+
+.elixir-main-info__elixir-features {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 275px;
+    margin: 50px 35px 35px;
+}
+
+.elixir-features__features-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 25px;
+    padding: 0;
+}
+
+.features-list__features-item {
+    border-bottom: 2px solid var(--white-bg);
+    margin: 15px 0 34px;
+    position: relative;
+    cursor: pointer;
+}
+
+.features-list__features-link {
+    text-decoration: none;
+    color: var(--white-bg);
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 21px;
+    padding: 8px 0;
+    opacity: 0.8;
+    text-transform: uppercase;
+}
+
+.features-list__features-item span {
+    position: absolute;
+    display: inline-block;
+    left: -15px;
+    top: 10px;
+    transform: translate(-50%, -50%);
+    width: 8px;
+    height: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-right: 20px;
+    transition: width 0.6s, height 0.6s;
+
+}
+.features-list__features-item span img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.6;
+}
+
+
+.features-list__features-item:hover span {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    width: 81px;
+    height: 81px;
+    transition: width 0.6s, height 0.6s;
+}
+
+.features-list__features-item:hover span img {
+    opacity: 1;
+}
+
+.features-list__features-item:hover .features-list__features-link {
+    opacity: 1;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+
+@media (max-width: 768px) {
+
+    .elixir-main-part__video-banner {
+        background-size: cover;
+    }
+    .video-banner__elixir-main-info {
+        flex-direction: column;
+    }
+
+    .about-elixir-title__about-text {
+        font-size: 24px;
+        line-height: 38px;
+    }
+
+    .elixir-main-info__elixir-features {
+        width: 300px;
+    }
+}
+
+/* main part interactive block */
+
+.elixir-main-part__interactive-manure {
+    position: relative;
+    min-height: 650px;
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 26%, rgba(234,240,241,1) 60%);
+}
+
+.interactive-manure__interactive-circle {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    background: url("../img/djubrivo21.jpg") no-repeat center;
+    background-size: cover;
+    width: 880px;
+    height: 880px;
+    border-radius: 50%;
+    transform: translate(25%, 50%);
+}
+
+.interactive-circle__control-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 2px solid var(--main-bg-color);
+    width: 935px;
+    height: 935px;
+}

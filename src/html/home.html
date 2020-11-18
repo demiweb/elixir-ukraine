@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elixir Ukraine - Главная</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<header class="elixir-header">
+    <section class="elixir-header__header-top-side">
+        <div class="container">
+            <div class="header-top-side__elixir-logo-contacts">
+                <a href="#" class="elixir-logo-contacts__main-page" title="На главную страницу"><img
+                        data-src="../img/header_logo_2.svg" alt="Логотип"></a>
+                <span class="elixir-logo-contacts__tagline">Удобрения для всей страны</span>
+                <nav class="elixir-logo-contacts__socials">
+                    <a class="social__header-link" href="#" title="Наш Facebook"><img src="../img/fb-icon-header.png"
+                                                                                      alt="Facebook icon"></a>
+                    <a class="social__header-link" href="#" title="Наш YouTube"><img src="../img/yt-icon-header.png"
+                                                                                     alt="Youtube icon"></a>
+                </nav>
+
+                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                        src="../img/download-icon.png" alt=""></button>
+                <div class="elixir-logo-contacts__contact-us-header">
+                    <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
+                    <a class="contact-us-header__left-application" href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-header__header-bottom-side">
+        <div class="container" style="height: 100%">
+            <div class="header-bottom-side__header-navigation">
+                <nav class="header-navigation__list-container">
+                    <ul class="header-navigation__nav-list">
+                        <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Питание культур">питание культур</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Для клиентов">для клиентов</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="header-navigation__language-cart-container">
+                    <nav class="header-navigation__search-cart-block">
+                        <div class="search-cart-block__search-container">
+                            <div class="search-container__search-icon-block">
+                            </div>
+                        </div>
+                        <a href="#" class="search-cart-block__cart" title="Корзина"><img src="../img/shopping-cart.png"
+                                                                                         alt="Корзина"><span
+                                class="number-of-items-cart">4</span></a>
+                    </nav>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="elixir-main-part">
+    <section class="elixir-main-part__video-banner">
+        <div class="container" style="height: 100%; display: flex; align-items: center; justify-content: center">
+            <section class="video-banner__elixir-main-info">
+                <div class="elixir-main-info__about-elixir-container">
+                    <div class="about-elixir-container__about-elixir-title">
+                        <div class="about-elixir-title__central-line"></div>
+                        <div class="about-elixir-title__logo"><img src="../img/header-logo-white.svg" alt=""></div>
+                    </div>
+                    <span class="about-elixir-title__about-text">Минеральные удобрения с высокой концентрацией питательных веществ, микроэлементами
+и растворимостью более 90%</span>
+                </div>
+                <div class="elixir-main-info__elixir-features">
+                    <ul class="elixir-features__features-list">
+                        <li class="features-list__features-item"  style="width: 81px"><a class="features-list__features-link" href="#">подберите удобрение</a><span><img
+                                src="../img/ellipsis_feature.png" alt=""></span></li>
+                        <li class="features-list__features-item" style="width: 124px"><a class="features-list__features-link" href="#">узнайте больше о компании</a><span><img
+                                src="../img/ellipsis_feature.png" alt=""></span></li>
+                    </ul>
+                    <ul class="elixir-features__features-list">
+                        <li class="features-list__features-item" style="width: 72px"><a class="features-list__features-link" href="#">помощь клиентам</a><span><img
+                                src="../img/ellipsis_feature.png" alt=""></span></li>
+                        <li class="features-list__features-item" style="width: 81px"><a class="features-list__features-link" href="#">Свяжитесь с нами</a><span><img
+                                src="../img/ellipsis_feature.png" alt=""></span></li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+    </section>
+    <section class="elixir-main-part__interactive-manure">
+        <div class="interactive-manure__interactive-circle">
+            <div class="interactive-circle__control-circle"></div>
+        </div>
+    </section>
+</main>
+
+<script>
+    [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+        img.setAttribute('src', img.getAttribute('data-src'));
+        img.onload = function () {
+            img.removeAttribute('data-src');
+        };
+    });
+</script>
+</body>
+</html>
