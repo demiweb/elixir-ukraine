@@ -80,15 +80,19 @@
                 </div>
                 <div class="elixir-main-info__elixir-features">
                     <ul class="elixir-features__features-list">
-                        <li class="features-list__features-item"  style="width: 81px"><a class="features-list__features-link" href="#">подберите удобрение</a><span><img
+                        <li class="features-list__features-item" style="width: 81px"><a
+                                class="features-list__features-link" href="#">подберите удобрение</a><span><img
                                 src="../img/ellipsis_feature.png" alt=""></span></li>
-                        <li class="features-list__features-item" style="width: 124px"><a class="features-list__features-link" href="#">узнайте больше о компании</a><span><img
+                        <li class="features-list__features-item" style="width: 124px"><a
+                                class="features-list__features-link" href="#">узнайте больше о компании</a><span><img
                                 src="../img/ellipsis_feature.png" alt=""></span></li>
                     </ul>
                     <ul class="elixir-features__features-list">
-                        <li class="features-list__features-item" style="width: 72px"><a class="features-list__features-link" href="#">помощь клиентам</a><span><img
+                        <li class="features-list__features-item" style="width: 72px"><a
+                                class="features-list__features-link" href="#">помощь клиентам</a><span><img
                                 src="../img/ellipsis_feature.png" alt=""></span></li>
-                        <li class="features-list__features-item" style="width: 81px"><a class="features-list__features-link" href="#">Свяжитесь с нами</a><span><img
+                        <li class="features-list__features-item" style="width: 81px"><a
+                                class="features-list__features-link" href="#">Свяжитесь с нами</a><span><img
                                 src="../img/ellipsis_feature.png" alt=""></span></li>
                     </ul>
                 </div>
@@ -97,7 +101,10 @@
     </section>
     <section class="elixir-main-part__interactive-manure">
         <div class="interactive-manure__interactive-circle">
-            <div class="interactive-circle__control-circle"></div>
+            <div class="interactive-circle__control-circle" id="circle">
+                <div class="control-circle__central-dot" onclick="rotateFnc(this)"></div>
+                <div class="control-circle__central-dot control-circle__central-dot2" onclick="rotateFnc(this)"></div>
+            </div>
         </div>
     </section>
 </main>
@@ -109,6 +116,32 @@
             img.removeAttribute('data-src');
         };
     });
+</script>
+<script>
+    let crcl = document.getElementById('circle');
+
+    function rotateFnc(e) {
+        console.log(e);
+        if (e.classList.contains('control-circle__central-dot2')) {
+            crcl.style.transform = 'translate(-50%, -50%) rotate(-30deg)'
+
+        } else {
+
+
+            crcl.style.transform = 'translate(-50%, -50%) rotate(30deg)'
+        }
+    }
+
+    let rad = 488;
+        let y = 488 * Math.sin(90);
+    let xangle = Math.cos(180);
+    console.log(xangle);
+    let x = 488 * xangle;
+    // https://jsfiddle.net/ouL2gkej/3/
+    // https://qna.habr.com/q/392212
+    [...document.querySelectorAll('.control-circle__central-dot2')][0].style.left = x;
+
+
 </script>
 </body>
 </html>
