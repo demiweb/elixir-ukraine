@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elixir Ukraine - Главная</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -67,8 +68,8 @@
     </section>
 </header>
 <main class="elixir-main-part">
-    <section class="elixir-main-part__video-banner">
-        <div class="container" style="height: 100%; display: flex; align-items: center; justify-content: center">
+    <section class="elixir-main-part__video-banner" style="z-index: 2">
+        <div class="container" style=" height: 100%; display: flex; align-items: center; justify-content: center">
             <section class="video-banner__elixir-main-info">
                 <div class="elixir-main-info__about-elixir-container">
                     <div class="about-elixir-container__about-elixir-title">
@@ -99,16 +100,154 @@
             </section>
         </div>
     </section>
-    <section class="elixir-main-part__interactive-manure">
-        <div class="interactive-manure__interactive-circle">
-            <div class="interactive-circle__control-circle" id="circle">
-                <div class="control-circle__central-dot" onclick="rotateFnc(this)"></div>
-                <div class="control-circle__central-dot control-circle__central-dot2" onclick="rotateFnc(this)"></div>
+    <section class="elixir-main-part__interactive-manure" style="z-index: 1; overflow: hidden">
+        <div class="interactive-manure__background-block" style="z-index: 2">
+            <div class="container">
+                <div class="interactive-manure__production-create">
+                    <div class="production-create__production-numbers">
+                        <span class="production-numbers__top-line"></span>
+                        <h2 class="production-numbers__title">400 000</h2>
+                        <span class="production-numbers__subtitle">Тонн удобрений изготавливается в год (Производственные мощности в линии производства NPK, NP, PK)</span>
+                    </div>
+                    <div class="production-create__production-numbers">
+                        <span class="production-numbers__top-line"></span>
+                        <h2 class="production-numbers__title">400 000</h2>
+                        <span class="production-numbers__subtitle">Тонн удобрений изготавливается в год (Производственные мощности в линии производства NPK, NP, PK)</span>
+                    </div>
+                    <div class="production-create__production-numbers">
+                        <span class="production-numbers__top-line"></span>
+                        <h2 class="production-numbers__title">400 000</h2>
+                        <span class="production-numbers__subtitle">Тонн удобрений изготавливается в год (Производственные мощности в линии производства NPK, NP, PK)</span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="interactive-manure__circle-container">
+            <div class="interactive-manure__interactive-circle">
+                <div class="btn-up" id="click-next"></div>
+                <div class="btn-dwn" id="click-prev"></div>
+                <div class="interactive-circle__manures-container" id="interactive-circle__manures-container">
+                    <div class="single-manure-type" id="some-text">some text</div>
+                    <div class="single-manure-type">some text222</div>
+                    <div class="single-manure-type">some text222</div>
+                    <div class="single-manure-type">some text222</div>
+                    <div class="single-manure-type">some text222</div>
+                    <div class="single-manure-type">some text222</div>
+                    <div class="single-manure-type">some text222</div>
+                </div>
+                <svg width="1000" height="1000" id="circle-svg-interactive" class="interactive-circle__control-circle">
+                </svg>
             </div>
         </div>
     </section>
-</main>
+    <section class="elixir-main-part__choose-culture">
+        <div class="container" style="min-height: inherit">
+            <div class="choose-culture__culture-container">
+                <div class="part-title-block">
+                    <span class="part-title-block__top-line"></span>
+                    <span class="part-title-block__title">Начните с выбора культуры</span>
+                </div>
+                <div class="culture-container__culture-type">
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
+                    <a class="culture-type__single-culture" href="#">
+                        <div class="single-culture__name-block">
+                            <span class="name-block__top-line"></span>
+                            <span class="name-block__title"></span>
+                        </div>
+                    </a>
 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-main-part__our-partners">
+        <div class="container" style="min-height: inherit">
+            <div class="our-partners__partners-container">
+                <div class="part-title-block part-title-block--partners">
+                    <span class="part-title-block__top-line" ></span>
+                    <span class="part-title-block__title">Мы сотрудничаем с крупными компаниями</span>
+                    <span class="part-title-block__subtitle">Продукты фабрик полностью соответствуют требованиям законодательства Республики Сербии (Закон о средствах питания растений и улучшений почвы), а также</span>
+                </div>
+                <div class="partners-container__partners-logos">
+                    <div class="partners-logos__single-partner"></div>
+                    <div class="partners-logos__single-partner"></div>
+                    <div class="partners-logos__single-partner"></div>
+                    <div class="partners-logos__single-partner"></div>
+                    <div class="partners-logos__single-partner"></div>
+                    <div class="partners-logos__single-partner"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<script src="../scripts/circleInteractiveManure.js"></script>
 <script>
     [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));
@@ -118,28 +257,20 @@
     });
 </script>
 <script>
-    let crcl = document.getElementById('circle');
+    let cultures = [...document.querySelectorAll('.culture-type__single-culture')];
+    let culturesTitle = [...document.querySelectorAll('.name-block__title')];
+    let partnersBlock = [...document.querySelectorAll('.partners-logos__single-partner')];
+    let allCulture = ['Пшеница', 'Кукуруза', 'Картофель', 'Подсолнечник', 'Сахарная свекла', 'Соя', 'Ячмень', 'Рапс', 'Лук и чеснок', 'Томаты', 'Перец', 'Капуста']
 
-    function rotateFnc(e) {
-        console.log(e);
-        if (e.classList.contains('control-circle__central-dot2')) {
-            crcl.style.transform = 'translate(-50%, -50%) rotate(-30deg)'
-
-        } else {
-
-
-            crcl.style.transform = 'translate(-50%, -50%) rotate(30deg)'
-        }
-    }
-
-    let rad = 488;
-        let y = 488 * Math.sin(90);
-    let xangle = Math.cos(180);
-    console.log(xangle);
-    let x = 488 * xangle;
-    // https://jsfiddle.net/ouL2gkej/3/
-    // https://qna.habr.com/q/392212
-    [...document.querySelectorAll('.control-circle__central-dot2')][0].style.left = x;
+    cultures.forEach((culture, i) => {
+        culture.style.background = `url('../img/culture-bg-${i + 1}.png') no-repeat center`;
+    })
+    culturesTitle.forEach((title, i) => {
+        title.innerHTML = allCulture[i];
+    })
+    partnersBlock.forEach((partner, i) => {
+        partner.innerHTML = `<img src='../img/partners-logo-${i+1}.png' alt="Partner logo">`;
+    })
 
 
 </script>

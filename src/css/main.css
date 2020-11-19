@@ -17,11 +17,6 @@
     justify-content: space-between;
 }
 
-@media (max-width: 768px) {
-    .video-banner__elixir-main-info {
-        flex-direction: column;
-    }
-}
 
 .elixir-main-info__about-elixir-container {
     display: flex;
@@ -142,7 +137,321 @@
 
 }
 
-@media (max-width: 768px) {
+
+/* main part interactive block */
+
+.elixir-main-part__interactive-manure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    min-height: 650px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 26%, rgba(234, 240, 241, 1) 60%);
+}
+
+.interactive-manure__background-block {
+    background: url("../img/manures-bg.png") no-repeat left top;
+    min-height: inherit;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.interactive-manure__production-create {
+    display: flex;
+    flex-direction: column;
+}
+
+.production-create__production-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 325px;
+    height: 135px;
+    margin: 18px 0;
+}
+
+.production-numbers__top-line {
+    display: inline-block;
+    width: 70px;
+    height: 1px;
+    background: var(--second-font-color);
+}
+
+.production-numbers__title {
+    margin: 0;
+    font-family: var(--main-font);
+    color: var(--main-bg-color);
+    font-size: 32px;
+    line-height: 25px;
+    font-weight: bold;
+
+}
+
+.production-numbers__subtitle {
+    font-family: var(--main-font);
+    color: var(--second-font-color);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.interactive-manure__circle-container {
+    position: relative;
+    min-height: inherit;
+}
+
+.interactive-manure__interactive-circle {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    background: url("../img/djubrivo21.jpg") no-repeat center;
+    background-size: cover;
+    width: 920px;
+    height: 920px;
+    border-radius: 50%;
+    transform: translate(25%, 50%);
+}
+
+.btn-up, .btn-dwn {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: blue;
+    left: 40px;
+    top: 186px;
+    z-index: 2;
+}
+
+.btn-dwn {
+    top: 714px;
+}
+
+.interactive-circle__control-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+}
+
+.interactive-circle__control-circle circle.control-circle__central-dot {
+    r: 3.5;
+    transition: r 0.4s, cy 0.4s, cx 0.4s;
+}
+
+.interactive-circle__control-circle circle.control-circle__central-dot--additional {
+    r: 5.5;
+    transition: r 0.4s, cy 0.4s, cx 0.4s;
+    opacity: 0;
+}
+
+.interactive-circle__manures-container {
+    position: absolute;
+    width: 1366px;
+    height: 1366px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+.single-manure-type {
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+    transition: 0.4s;
+
+}
+
+
+.interactive-circle__control-circle circle.control-circle__central-dot:hover {
+    r: 7.5;
+    stroke-width: 4;
+    stroke: transparent;
+    border: 1px solid #00662a;
+    border-radius: 50%;
+    transition: r 0.4s, cy 0.4s, cx 0.4s;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0) 75%, rgba(0, 102, 42, 1) 75%);
+}
+
+
+/* choose culture */
+.elixir-main-part__choose-culture {
+    min-height: 1368px;
+    width: 100%;
+    background: url("../img/organic-white-baby-potatoes.png") no-repeat right top,
+    url("../img/tomatos-bg.png") no-repeat left bottom;
+    background-color: #eef2f3;
+
+}
+
+.choose-culture__culture-container {
+    min-height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 130px 0;
+    box-sizing: border-box;
+
+}
+
+.part-title-block {
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.part-title-block--partners {
+    max-width: 456px;
+    width: 100%;
+}
+
+.part-title-block__top-line {
+    height: 3px;
+    display: inline-block;
+    width: 100%;
+    max-width: 370px;
+    background: var(--lines-bg);
+}
+
+.part-title-block__title {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    margin: 35px 0;
+}
+
+.culture-container__culture-type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.culture-type__single-culture {
+    width: 370px;
+    height: 209px;
+    min-width: 210px;
+    background: white;
+    margin: 30px 0;
+    background-size: cover !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-decoration: none;
+    transition: 0.3s;
+    -webkit-box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.single-culture__name-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.name-block__top-line {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background: var(--lines-bg);
+    transition: 0.3s;
+
+}
+
+.name-block__title {
+    display: inline-block;
+
+    font-family: var(--main-font);
+    margin: 25px 0 25px 27px;
+    color: var(--second-font-color);
+    font-size: 14px;
+    line-height: 25px;
+
+}
+
+.culture-type__single-culture:hover {
+    transform: scale(1.05, 1.05);
+    transition: 0.3s;
+}
+
+.culture-type__single-culture:hover .name-block__top-line {
+    width: calc(100% - 10px);
+    background: var(--main-bg-color);
+    transition: 0.3s;
+}
+
+.culture-type__single-culture:hover .name-block__title {
+    color: var(--main-bg-color);
+    text-decoration: underline;
+    transition: 0.3s;
+    font-weight: bold;
+
+}
+
+/* our partners */
+
+.elixir-main-part__our-partners {
+    background: var(--white-bg);
+    min-height: 738px;
+
+}
+
+.our-partners__partners-container {
+    min-height: inherit;
+    padding: 130px 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: url("../img/partners-block-bg.png") no-repeat right 130px;
+}
+
+.part-title-block__subtitle {
+    font-family: var(--main-font);
+    font-weight: normal;
+    color: var(--second-font-color);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.partners-container__partners-logos {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 52px;
+
+}
+
+.partners-logos__single-partner {
+    width: 224px;
+    height: 205px;
+    border: 1px solid var(--partners-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .interactive-manure__interactive-circle {
+        transform: scale(0.8, 0.8) translate(60%, 64%);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
 
     .elixir-main-part__video-banner {
         background-size: cover;
@@ -160,66 +469,71 @@
     .elixir-main-info__elixir-features {
         width: 300px;
     }
-}
 
-/* main part interactive block */
+    .video-banner__elixir-main-info {
+        flex-direction: column;
+    }
 
-.elixir-main-part__interactive-manure {
-    position: relative;
-    min-height: 650px;
-    width: 100%;
-    overflow: hidden;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 1) 26%, rgba(234, 240, 241, 1) 60%);
-}
+    .interactive-manure__background-block {
+        background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(234, 240, 241, 1) 20%);
+    }
 
-.interactive-manure__interactive-circle {
-    position: absolute;
-    right: 0;
-    bottom: 50%;
-    background: url("../img/djubrivo21.jpg") no-repeat center;
-    background-size: cover;
-    width: 920px;
-    height: 920px;
-    border-radius: 50%;
-    transform: translate(25%, 50%);
-}
+    .elixir-main-part__interactive-manure {
+        flex-direction: column;
+        background: none;
+    }
 
-.interactive-circle__control-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 2px solid var(--main-bg-color);
-    width: 976px;
-    height: 976px;
-    /*animation: rtt 5s infinite;*/
-    transition: 0.4s;
-}
+    .interactive-manure__production-create {
+        justify-content: center;
+        align-items: center;
+    }
 
-.control-circle__central-dot {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 20px;
-    height: 20px;
-    background: green;
-    border-radius: 50%;
-}
+    .interactive-manure__interactive-circle {
+        transform: scale(0.65, 0.65) translate(70%, 77%) !important;
+    }
 
-.control-circle__central-dot2 {
-    top: 150px;
-    left: 150px;
-    transform: translate(-60%, -50%);
+    .elixir-main-part__choose-culture {
+        background: url("../img/organic-white-baby-potatoes.png") no-repeat right -6%,
+        url("../img/tomatos-bg.png") no-repeat left 120%;
+        background-color: #eef2f3;
+        background-size: 50%;
+    }
+
+    .culture-type__single-culture {
+        width: 235px;
+        height: 175px;
+    }
+
+    .our-partners__partners-container {
+        background: none;
+        align-items: center;
+        padding: 130px 0 0;
+    }
+
 
 }
 
-/*@keyframes rtt {*/
-/*    0% {*/
-/*        transform:translate(-50%, -50%) rotate(0deg);*/
-/*    }*/
-/*    100% {*/
-/*        transform:translate(-50%, -50%) rotate(360deg);*/
-/*    }*/
-/*}*/
+@media screen and (max-width: 531px) {
+    .culture-type__single-culture {
+        width: 48%;
+        height: 160px;
+        min-width: 170px;
+    }
+
+    .interactive-manure__interactive-circle {
+        transform: scale(0.65, 0.65) translate(88%, 77%) !important;
+    }
+
+    .elixir-main-part__choose-culture {
+        background: url("../img/organic-white-baby-potatoes.png") no-repeat right -1%,
+        url("../img/tomatos-bg.png") no-repeat left 105%;
+        background-color: #eef2f3;
+        background-size: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .interactive-manure__interactive-circle {
+        transform: scale(0.55, 0.55) translate(105%, 90%) !important;
+    }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .interactive-circle__control-circle circle.control-circle__central-dot {
+        r: 3.5;
+        transition: r 0.4s;
+    }
+
+    .interactive-circle__control-circle circle.control-circle__central-dot--additional {
+        r: 5.5;
+        transition: r 0.4s;
+        opacity: 0;
+    }
+
+    .interactive-circle__control-circle circle.control-circle__central-dot:hover {
+        r: 7.5;
+        stroke-width: 4;
+        stroke: transparent;
+        border: 1px solid #00662a;
+        border-radius: 50%;
+        transition: r 0.4s;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0) 75%, rgba(0, 102, 42, 1) 75%);
+    }
+
+    /*.interactive-circle__control-circle circle.control-circle__central-dot:hover .interactive-circle__control-circle circle.control-circle__central-dot--additional {*/
+    /*    opacity: 1;*/
+    /*    transition: opacity 0.4s;*/
+    /*}*/
+
+</style>
+<svg width="1000" height="1000" id="circle-svg-interactive" class="interactive-circle__control-circle">
+</svg>
+<script>
+    let mainCircleContainer = document.getElementById('circle-svg-interactive');
+    function toRadians(angle) {
+        return angle * (Math.PI / 180);
+    }
+    let dots;
+    let additionalDot;
+    let mainCircle = '<circle r="488" cx="500" cy="500" fill="transparent" stroke="#00662a" stroke-width="1"/>';
+    let amountDots = 3;
+    for (let i = 0; i < amountDots; i++) {
+        let rWidth = 500;
+        let r = 488;
+        let brl;
+        let deg = 150 + (i * 30);
+        let x;
+        let y;
+        y = 500 - (488 * Math.sin(toRadians(deg)));
+        x = 500 + (488 * Math.cos(toRadians(deg)));
+
+        dots = `<circle  cx=${x} cy=${y}  fill="#00662a" class="control-circle__central-dot degree-${deg}"/>`;
+        additionalDot = `<circle  cx=${x} cy=${y} stroke-width="1" stroke="green" fill="transparent" class="control-circle__central-dot--additional "/>`;
+        additionalDot += dots;
+        mainCircle += additionalDot;
+
+    }
+    mainCircleContainer.innerHTML = mainCircle;
+    let additDots = [...document.querySelectorAll('.control-circle__central-dot--additional')];
+    let dotAnim = [...document.querySelectorAll('.control-circle__central-dot')];
+    dotAnim.forEach((dot, i) => {
+        dot.addEventListener('mouseover', () => {
+            additDots[i].style.r = '11.5';
+            additDots[i].style.opacity = '1';
+            additDots[i].style.transition = 'r 0.4s';
+
+
+        })
+    });
+    dotAnim.forEach((dot, i) => {
+        dot.addEventListener('mouseout', () => {
+            additDots[i].style.r = '3.5';
+            additDots[i].style.opacity = '0';
+            additDots[i].style.transition = 'r 0.4s';
+
+
+        })
+    })
+
+    dotAnim.forEach((dot, i) => {
+        dot.addEventListener('click', () => {
+            if(dot.classList.contains('degree-150')) {
+                mainCircleContainer.style.transform = 'rotate(-30deg)'
+            } else if (dot.classList.contains('degree-180')) {
+                mainCircleContainer.style.transform = 'rotate(0deg)'
+
+            } else if (dot.classList.contains('degree-210')) {
+                mainCircleContainer.style.transform = 'rotate(30deg)'
+
+            }
+        })
+    })
+</script>
+</body>
+</html>
