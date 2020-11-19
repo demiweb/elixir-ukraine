@@ -336,11 +336,11 @@
 }
 
 .culture-type__single-culture {
-    width: 370px;
+    width: 365px;
     height: 209px;
     min-width: 210px;
     background: white;
-    margin: 30px 0;
+    margin: 15px 0;
     background-size: cover !important;
     display: flex;
     justify-content: flex-start;
@@ -434,8 +434,8 @@
 }
 
 .partners-logos__single-partner {
-    width: 224px;
-    height: 205px;
+    width: 195px;
+    height: 195px;
     border: 1px solid var(--partners-border);
     display: flex;
     align-items: center;
@@ -450,7 +450,7 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
 
 
     .elixir-main-part__video-banner {
@@ -514,10 +514,14 @@
 }
 
 @media screen and (max-width: 531px) {
+    .culture-container__culture-type {
+        justify-content: center !important;
+    }
     .culture-type__single-culture {
-        width: 48%;
+        width: 46%;
         height: 160px;
         min-width: 170px;
+        margin: 15px;
     }
 
     .interactive-manure__interactive-circle {
@@ -530,10 +534,17 @@
         background-color: #eef2f3;
         background-size: 50%;
     }
+
+    .partners-logos__single-partner {
+        width: 50%;
+        height: 200px;
+    }
 }
 
 @media screen and (max-width: 425px) {
     .interactive-manure__interactive-circle {
         transform: scale(0.55, 0.55) translate(105%, 90%) !important;
     }
+
 }
+
