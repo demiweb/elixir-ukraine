@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
     <title>Elixir Ukraine - Главная</title>
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -100,8 +100,8 @@
             </section>
         </div>
     </section>
-    <section class="elixir-main-part__interactive-manure" style="z-index: 1; overflow: hidden">
-        <div class="interactive-manure__background-block" style="z-index: 2">
+    <section class="elixir-main-part__interactive-manure" style="overflow: hidden">
+        <div class="interactive-manure__background-block">
             <div class="container">
                 <div class="interactive-manure__production-create">
                     <div class="production-create__production-numbers">
@@ -128,13 +128,56 @@
                 <div class="btn-up" id="click-next"></div>
                 <div class="btn-dwn" id="click-prev"></div>
                 <div class="interactive-circle__manures-container" id="interactive-circle__manures-container">
-                    <div class="single-manure-type" id="some-text">some text</div>
-                    <div class="single-manure-type">some text222</div>
-                    <div class="single-manure-type">some text222</div>
-                    <div class="single-manure-type">some text222</div>
-                    <div class="single-manure-type">some text222</div>
-                    <div class="single-manure-type">some text222</div>
-                    <div class="single-manure-type">some text222</div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+                    <div class="single-manure-type">
+                        <div class="single-manure__text-block">
+                            <span class="single-manure__title"></span>
+                            <span class="single-manure__underline"></span>
+                        </div>
+                        <img class="single-manure__picture" src="" alt="Фото удобрения">
+                    </div>
+
                 </div>
                 <svg width="1000" height="1000" id="circle-svg-interactive" class="interactive-circle__control-circle">
                 </svg>
@@ -230,7 +273,7 @@
         <div class="container" style="min-height: inherit">
             <div class="our-partners__partners-container">
                 <div class="part-title-block part-title-block--partners">
-                    <span class="part-title-block__top-line" ></span>
+                    <span class="part-title-block__top-line"></span>
                     <span class="part-title-block__title">Мы сотрудничаем с крупными компаниями</span>
                     <span class="part-title-block__subtitle">Продукты фабрик полностью соответствуют требованиям законодательства Республики Сербии (Закон о средствах питания растений и улучшений почвы), а также</span>
                 </div>
@@ -246,8 +289,27 @@
 
         </div>
     </section>
+    <section class="elixir-main-part__quality-control">
+        <div class="container" style=" max-width: 1495px;">
+            <div class="quality-control__container" style=" box-sizing: border-box">
+                <div class="quality-control__picture-container">
+                </div>
+                <div class="quality-control__quality-text-part">
+                    <div class="quality-text-part__container">
+                        <span class="quality-text-part__topline"></span>
+                        <span class="quality-text-part__control-title">Контроль качества</span>
+                        <span class="quality-text-part__control-text"><div class="quality-text-part__image"></div>Продукты фабрик полностью соответствуют требованиям законодательства Республики Сербии (Закон о средствах питания растений и улучшений почвы), а также положением европейского законодательства (ЕС 2003/2003) о торговом обороте минеральных удобрений на территории ЕС.</span>
+                        <span class="quality-text-part__control-text">Свободное обращение минеральных удобрений в ЕС обеспечен на основании применения «EC FERTILISER» по производству и регистрации веществ, входящих в состав продукта, а согласно положениям (ЕС) №1907 / 2006 - «REACH» о регистрации, оценке, авторизации и ограничении оборота химических веществ. «Эликсир Зорка» провела регистрацию согласно положениям ЕС №</span>
+                        <span class="quality-text-part__quot">Мы заботимся о безопасности
+и здоровье наших клиентов</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
-<script src="../scripts/circleInteractiveManure.js"></script>
+<script src="../scripts/circleSlider.js"></script>
 <script>
     [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));
@@ -269,7 +331,7 @@
         title.innerHTML = allCulture[i];
     })
     partnersBlock.forEach((partner, i) => {
-        partner.innerHTML = `<img src='../img/partners-logo-${i+1}.png' alt="Partner logo">`;
+        partner.innerHTML = `<img src='../img/partners-logo-${i + 1}.png' alt="Partner logo">`;
     })
 
 

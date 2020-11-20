@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pages</title>
+</head>
+<body>
+<style>
+    .span {
+        font-weight: bold;
+        font-family: Arial, sans-serif;
+        font-size: 36px;
+        color: black;
+    }
+    .style-list-pages {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .link {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Comic Sans MS", sans-serif;
+        font-weight: bold;
+        color: blueviolet;
+        padding: 15px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        display: inline-block;
+    }
+
+    .list-item {
+        background: white;
+        border: 1px solid black;
+        width: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+    .list-item:hover {
+        background: rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+    
+    .iframe {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        visibility: hidden;
+        transform: scale(0.3);
+        box-shadow: 0 0 20px rgba(0, 0, 0, .6);
+    }
+
+    .list-item:hover .iframe {
+        transform-origin: 0 0;
+        position: absolute;
+        visibility: visible;
+
+        z-index: 1;
+    }
+
+</style>
+<span class="span">Page</span>
+<ul class="style-list-pages">
+    <li class="list-item">
+        <a class="link" href="./src/html/home.html">home<iframe class="iframe" width="1600" height="1000" src="./src/html/home.html" frameborder="0"></iframe></a></li>
+</ul>
+
+</body>
+</html>
