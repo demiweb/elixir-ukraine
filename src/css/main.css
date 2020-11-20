@@ -425,7 +425,7 @@
 
 .name-block__title {
     display: inline-block;
-
+    font-weight: 500;
     font-family: var(--main-font);
     margin: 25px 0 25px 27px;
     color: var(--second-font-color);

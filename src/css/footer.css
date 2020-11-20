@@ -1,0 +1,162 @@
+.elixir-footer {
+    background: var(--footer-bg);
+    min-height: 458px;
+    width: 100%;
+}
+
+.elixir-footer .container {
+    min-height: inherit;
+}
+
+.elixir-footer__footer-container {
+    min-height: inherit;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 90px 0;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+
+.footer-container__elixir-logo-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.elixir-logo-date__date-ukraine {
+    width: 281px;
+    color: var(--white-bg);
+    font-family: var(--main-font);
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: normal;
+    margin: 31px 0;
+}
+
+.elixir-logo-date__date-copyright {
+    font-family: var(--main-font);
+    font-weight: normal;
+    color: #686868;
+    font-size: 13px;
+    line-height: 23px;
+    display: inline;
+
+}
+
+.footer-container__footer-links-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-links-block__single-links-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 170px;
+    margin: 0 44px;
+
+}
+
+.single-links-block__title {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--white-bg);
+}
+
+.single-links-block__underline {
+    display: inline-block;
+    height: 3px;
+    width: 100%;
+    background: #26854d;
+    margin: 24px 0;
+}
+
+
+.single-links-block__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.single-links-block__list-item {
+    margin-bottom: 14px;
+}
+
+.single-links-block__link {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--white-bg);
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.single-links-block__link:hover {
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+.footer-links-block__copyright-block {
+    display: none;
+}
+
+@media screen and (max-width: 1280px){
+    .footer-links-block__single-links-block {
+        margin: 0 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .elixir-footer__footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-container__elixir-logo-date {
+        align-items: center;
+    }
+
+    .elixir-logo-date__date-ukraine {
+        text-align: center;
+    }
+
+    .footer-container__footer-links-block {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .elixir-footer__footer-container {
+        flex-wrap: wrap;
+    }
+
+    .footer-links-block__single-links-block {
+        margin: 25px 8px;
+    }
+    .elixir-logo-date__date-copyright {
+        display: none;
+    }
+
+    .footer-links-block__copyright-block  {
+        display: flex;
+        width: 170px;
+        margin: 25px 8px;
+    }
+
+    .footer-links-block__copyright-block .elixir-logo-date__date-copyright {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .footer-container__footer-links-block {
+        justify-content: flex-start;
+    }
+
+}
