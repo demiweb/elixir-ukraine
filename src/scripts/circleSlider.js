@@ -62,8 +62,8 @@ let rWidth = 500;
 let otherCircleR = rWidth + 80;
 let r = rWidth - 12;
 let mainCircle = `<circle r=${r} cx=${rWidth} cy=${rWidth} fill="transparent" stroke="#00662a" stroke-width="1"/>`;
-mainCircleContainer.style.width = `${r * 2 + 24} `
-mainCircleContainer.style.height = `${r * 2 + 24} `
+mainCircleContainer.style.width = `${r * 2 + 24} `;
+mainCircleContainer.style.height = `${r * 2 + 24} `;
 blockText.style.width = (otherCircleR * 2) + 'px';
 blockText.style.height = (otherCircleR * 2) + 'px';
 // Angle and amount of el on circle
@@ -72,7 +72,7 @@ let dotsDistance = 30;
 let startPoint = 90;
 
 for (let i = 0; i < amountDots; i++) {
-    console.log(objManures[i].title);
+    // console.log(objManures[i].title);
     manureTitle[i].innerHTML = objManures[i].title;
     manureTitle[i].style.color = objManures[i].textColor;
     // underlinesManure[i].style.background = objManures[i].textColor;
@@ -94,8 +94,23 @@ for (let i = 0; i < amountDots; i++) {
     dots = `<circle  cx=${x} cy=${y}  data-deg=${deg} fill="#00662a" class="control-circle__central-dot degree-${deg}"/>`;
     additionalDot = `<circle  cx=${x} cy=${y}  stroke-width="1" stroke="green" fill="transparent" class="control-circle__central-dot--additional "/>`;
     underlinesManure[i].setAttribute('data-angle', `${deg}`)
+    someText[i].dataset.pos = `${deg}`;
 
     if (deg === 180) {
+        someText.forEach((txt, i) => {
+
+            txt.style.top = `${((1160 / 7) * i) + 70}px`;
+            txt.style.left = '-10px';
+            txt.style.opacity = '0';
+        });
+        let activeTxtBlck = [...document.querySelectorAll(`div[data-pos='180']`)][0];
+        activeTxtBlck.style.opacity = '1';
+        activeTxtBlck.nextElementSibling.style.opacity = '1';
+        activeTxtBlck.nextElementSibling.style.left = '30px';
+        activeTxtBlck.previousElementSibling.style.opacity = '1';
+        activeTxtBlck.previousElementSibling.style.left = '30px';
+
+
         underlinesManure[i].classList.add('single-manure__activet');
         mainCircleContainer.setAttribute('data-turn', `${deg}`);
     }
@@ -105,11 +120,7 @@ for (let i = 0; i < amountDots; i++) {
     mainCircle += additionalDot;
 
 }
-someText.forEach((txt, i) => {
 
-    txt.style.top = yCoords[i] + 'px';
-    txt.style.left = xCoords[i] + 'px';
-})
 
 mainCircleContainer.innerHTML = mainCircle;
 let additDots = [...document.querySelectorAll('.control-circle__central-dot--additional')];
@@ -131,10 +142,45 @@ dotAnim.forEach((dot, i) => {
 
 
     })
-})
+});
 let cxAttr = [];
 let cyAttr = [];
 let nxtCl = 0;
+
+function changeSiblings(activeTxtBlck) {
+    someText.forEach((txt) => {
+        txt.style.opacity = '0';
+        txt.style.left = '-10px';
+    });
+    activeTxtBlck.style.opacity = '1';
+    if (activeTxtBlck.previousElementSibling === null) {
+        activeTxtBlck.nextElementSibling.style.opacity = '1';
+        activeTxtBlck.nextElementSibling.style.left = '30px';
+    } else if (activeTxtBlck.nextElementSibling === null) {
+        activeTxtBlck.previousElementSibling.style.opacity = '1';
+        activeTxtBlck.previousElementSibling.style.left = '30px';
+    } else {
+        activeTxtBlck.nextElementSibling.style.opacity = '1';
+        activeTxtBlck.nextElementSibling.style.left = '30px';
+        activeTxtBlck.previousElementSibling.style.opacity = '1';
+        activeTxtBlck.previousElementSibling.style.left = '30px';
+    }
+}
+
+function turnBlock(moveTo) {
+    if (moveTo > 0) {
+        let step = moveTo / dotsDistance;
+        blockText.style.transform = `translate(-50%, ${-50 - (step * 14)}%)`
+    } else if (moveTo < 0) {
+        let step = -moveTo / dotsDistance;
+        blockText.style.paddingBottom = 'none';
+
+        blockText.style.transform = `translate(-50%, ${-50 + (step * 14)}%)`
+    } else {
+        blockText.style.transform = `translate(-50%, -50%)`
+
+    }
+}
 dotAnim.forEach((dot, i) => {
 
     let cxNum = dot.attributes.cx.nodeValue;
@@ -145,31 +191,45 @@ dotAnim.forEach((dot, i) => {
         let dotDeg = dot.dataset.deg;
         let turnDeg = dotDeg - 180;
         nxtCl = turnDeg;
-        console.log(dotDeg);
-        mainCircleContainer.style.transform = `translate(-50%, -50%) rotate(${turnDeg}deg)`
-        blockText.style.transform = `translate(-50%, -50%) rotate(${turnDeg}deg)`
-        someText.forEach((txt) => {
-            txt.style.transform = `translate(-50%, -50%) rotate(${-turnDeg}deg)`
-        })
+        // console.log(dotDeg);
+        mainCircleContainer.style.transform = `translate(-50%, -50%) rotate(${turnDeg}deg)`;
+        someText.forEach((txt, i) => {
+
+            txt.style.top = `${((1160 / 7) * i) + 70}px`;
+            txt.style.left = '-10px';
+            txt.style.opacity = '0';
+        });
+        let activeTxtBlck = [...document.querySelectorAll(`div[data-pos='${dotDeg}']`)][0];
+        activeTxtBlck.style.opacity = '1';
+        let moveTo = turnDeg;
+        // console.log(moveTo + 'MOVE-TO');
+
+        turnBlock(moveTo);
+
+
+
+
+        changeSiblings(activeTxtBlck);
+
         mainCircleContainer.setAttribute('data-turn', `${turnDeg}`);
 
-        checkActiveAngle(dotDeg)
+        checkActiveAngle(dotDeg);
         return nxtCl
     })
-})
+});
 
 function checkActiveAngle(deg) {
-    console.log(deg + 'MOI DEG');
+    // console.log(deg + 'MOI DEG');
     let colorBlock = [...document.querySelectorAll(`span[data-angle]`)];
     colorBlock.forEach((block) => {
-        console.log(block.dataset.angle + ' current deg' + deg);
+        // console.log(block.dataset.angle + ' current deg' + deg);
         if (block.dataset.angle === deg) {
-            block.classList.add(`single-manure__activet`)
-            console.log('SRABOTALO')
+            block.classList.add(`single-manure__activet`);
+            // console.log('work')
 
         } else {
-            block.classList.remove(`single-manure__activet`)
-            console.log('NE RABOTAET')
+            block.classList.remove(`single-manure__activet`);
+            // console.log('dont work')
         }
     })
 };
@@ -178,28 +238,31 @@ let clickPrev = document.getElementById('click-prev');
 
 function changeAngles(d) {
     // dont remove class from item FIX IT
-    [...document.querySelectorAll('.single-manure__activet')].forEach((itm) => {
-        itm.classList.remove('.single-manure--activet');
-
-    });
+    // [...document.querySelectorAll('.single-manure__underline')].forEach((itm) => {
+    //     console.log(itm + " nash itm");
+    //     itm.classList.remove('.single-manure--activet');
+    //
+    // });
     let clickAngle = nxtCl + d;
     if (clickAngle > startPoint) {
         clickAngle = -startPoint;
     } else if (clickAngle < -startPoint) {
         clickAngle = startPoint;
     } else {
-        console.log('Good deg')
+        // console.log('Good deg')
     }
     nxtCl = clickAngle;
     mainCircleContainer.style.transform = `translate(-50%, -50%) rotate(${clickAngle}deg)`;
-    blockText.style.transform = `translate(-50%, -50%) rotate(${clickAngle}deg)`
-    someText.forEach((txt) => {
-        txt.style.transform = `translate(-50%, -50%) rotate(${-clickAngle}deg)`
-    })
-    let forFnc = clickAngle + 180;
 
-    console.log([...document.querySelectorAll(`.single-manure__active-${forFnc}`)]);
-    [...document.querySelectorAll(`.single-manure__active-${forFnc}`)][0].classList.add('single-manure__activet');
+    let forFnc = clickAngle + 180;
+    checkActiveAngle(forFnc);
+    // console.log([...document.querySelectorAll(`.single-manure__active-${forFnc}`)]);
+    let activeBlc = [...document.querySelectorAll(`.single-manure__active-${forFnc}`)][0];
+    activeBlc.classList.add('single-manure__activet');
+    let blckFather = [...document.querySelectorAll(`div[data-pos='${forFnc}']`)][0];
+    turnBlock(clickAngle);
+    // check why dont work with it
+    changeSiblings(blckFather);
 
     return nxtCl
 }
