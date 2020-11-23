@@ -1,6 +1,9 @@
 .elixir-header {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: -76px;
+    z-index: 5;
 }
 
 .elixir-header__header-top-side {
@@ -17,6 +20,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+
 }
 
 /* header top side */
