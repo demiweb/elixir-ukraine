@@ -2,13 +2,21 @@
 @import "./header.css";
 @import "./main.css";
 @import "./footer.css";
+ html {
+     height: 100%;
+ }
 
 body {
     margin: 0;
     min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
-
+main {
+    flex-grow: 1;
+}
 .container {
     margin: 0 auto;
     max-width: 1200px;

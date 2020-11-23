@@ -5,6 +5,14 @@ let manureTitle = [...document.querySelectorAll('.single-manure__title')];
 let underlinesManure = [...document.querySelectorAll('.single-manure__underline')];
 let manurePicture = [...document.querySelectorAll('.single-manure__picture')];
 //Obcject with info for manures
+
+function changeSize(e) {
+    e.style.transform = 'scale(1.2)';
+    setTimeout(() => {
+        e.style.transform = 'scale(1)'
+    }, 400)
+}
+
 let objManures = [{
     pict: '../img/manure-1.png',
     title: 'elixir premium',

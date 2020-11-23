@@ -97,7 +97,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: flex-end;
 }
 
 .contact-us-header__phone-number {
@@ -233,5 +233,16 @@
 
 .language-buttons__item--active .language-buttons__item {
     color: var(--white-bg);
+
+}
+
+@media screen and  (max-width: 768px){
+    .elixir-header__header-top-side {
+        display: none;
+    }
+
+    .header-navigation__nav-list {
+        display: none;
+    }
 
 }

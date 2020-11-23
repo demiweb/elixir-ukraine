@@ -2,11 +2,13 @@ html {
     --main-font: 'Montserrat', sans-serif;
     --main-font-color: #363636;
     --second-font-color: #6f6f6f;
+    --color-breadcrumb: #a4a4a4;
     --white-bg: #ffffff;
     --non-active-nav-item: #6db481;
     --main-bg-color: #00662a;
     --gradiend-color: #eaf0f1;
     --lines-bg: #e8e8e8;
+    --cultures-bg-color: #f8f8f8;
     --partners-border: #dddddd;
     --lines-manure-bg: #e2e2e2;
     --quality-control-bg: #eef2f3;
@@ -23,6 +25,29 @@ html {
     url('../fonts/Montserrat/Montserrat-Bold.woff') format('woff'),
     url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
     font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-BoldItalic.eot');
+    src: local('Montserrat Bold Italic'), local('Montserrat-BoldItalic'),
+    url('../fonts/Montserrat/Montserrat-BoldItalic.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat/Montserrat-BoldItalic.woff') format('woff'),
+    url('../fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat/Montserrat-Light.eot');
+    src: local('Montserrat Light'), local('Montserrat-Light'),
+    url('../fonts/Montserrat/Montserrat-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Montserrat/Montserrat-Light.woff') format('woff'),
+    url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+    font-weight: 300;
     font-style: normal;
 }
 

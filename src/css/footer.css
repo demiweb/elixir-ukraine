@@ -1,7 +1,7 @@
 .elixir-footer {
     background: var(--footer-bg);
-    min-height: 458px;
     width: 100%;
+    flex: 0 1 auto;
 }
 
 .elixir-footer .container {
@@ -107,7 +107,7 @@
     display: none;
 }
 
-@media screen and (max-width: 1280px){
+@media screen and (max-width: 1280px) {
     .footer-links-block__single-links-block {
         margin: 0 14px;
     }
@@ -139,11 +139,12 @@
     .footer-links-block__single-links-block {
         margin: 25px 8px;
     }
+
     .elixir-logo-date__date-copyright {
         display: none;
     }
 
-    .footer-links-block__copyright-block  {
+    .footer-links-block__copyright-block {
         display: flex;
         width: 170px;
         margin: 25px 8px;
