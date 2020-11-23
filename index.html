@@ -12,6 +12,7 @@
         font-size: 36px;
         color: black;
     }
+
     .style-list-pages {
         list-style: none;
         display: flex;
@@ -40,11 +41,12 @@
         align-items: center;
         transition: 0.3s;
     }
+
     .list-item:hover {
         background: rgba(0, 0, 0, 0.1);
         transition: 0.3s;
     }
-    
+
     .iframe {
         position: absolute;
         top: 100%;
@@ -66,7 +68,14 @@
 <span class="span">Page</span>
 <ul class="style-list-pages">
     <li class="list-item">
-        <a class="link" href="./src/html/home.html">home<iframe class="iframe" width="1600" height="1000" src="./src/html/home.html" frameborder="0"></iframe></a></li>
+        <a class="link" href="./src/html/home.html">home
+            <iframe class="iframe" width="1600" height="1000" src="./src/html/home.html" frameborder="0"></iframe>
+        </a>
+    </li><li class="list-item">
+        <a class="link" href="./src/html/catalog/item-page/item-page.html">Product page
+            <iframe class="iframe" width="1600" height="1000" src="./src/html/catalog/item-page/item-page.html" frameborder="0"></iframe>
+        </a>
+    </li>
 </ul>
 
 </body>

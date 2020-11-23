@@ -4,13 +4,23 @@ let someText = [...document.querySelectorAll('.single-manure-type')];
 let manureTitle = [...document.querySelectorAll('.single-manure__title')];
 let underlinesManure = [...document.querySelectorAll('.single-manure__underline')];
 let manurePicture = [...document.querySelectorAll('.single-manure__picture')];
+
 //Obcject with info for manures
 
 function changeSize(e) {
-    e.style.transform = 'scale(1.2)';
-    setTimeout(() => {
-        e.style.transform = 'scale(1)'
-    }, 400)
+    if (e.classList.contains('btn-dwn')) {
+        e.style.transform = 'scale(1.2) rotate(105deg)';
+        setTimeout(() => {
+            e.style.transform = 'scale(1) rotate(105deg)'
+        }, 400)
+    } else {
+
+
+        e.style.transform = 'scale(1.2)';
+        setTimeout(() => {
+            e.style.transform = 'scale(1)'
+        }, 400)
+    }
 }
 
 let objManures = [{
@@ -189,6 +199,7 @@ function turnBlock(moveTo) {
 
     }
 }
+
 dotAnim.forEach((dot, i) => {
 
     let cxNum = dot.attributes.cx.nodeValue;
@@ -213,8 +224,6 @@ dotAnim.forEach((dot, i) => {
         // console.log(moveTo + 'MOVE-TO');
 
         turnBlock(moveTo);
-
-
 
 
         changeSiblings(activeTxtBlck);
