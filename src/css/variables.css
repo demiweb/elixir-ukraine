@@ -26,6 +26,7 @@ html {
     url('../fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -38,6 +39,7 @@ html {
     url('../fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
+    font-display: swap;
 }
 
 @font-face {
@@ -49,6 +51,7 @@ html {
     url('../fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
+    font-display: swap;
 }
 
 
@@ -61,6 +64,7 @@ html {
     url('../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
@@ -72,4 +76,5 @@ html {
     url('../fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
+    font-display: swap;
 }

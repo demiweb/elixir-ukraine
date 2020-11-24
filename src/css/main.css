@@ -15,6 +15,29 @@
     width: 100%;
     background: url("../img/Zorka-Plato1.png") no-repeat center;
     background-size: cover;
+    position: relative;
+
+}
+
+.video-banner__video-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.video-banner__video-container:before {
+    content: '';
+    z-index: 1;
+    background-color: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
 }
 
 .video-banner__elixir-main-info {
