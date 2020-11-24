@@ -30,7 +30,7 @@
 .video-banner__video-container:before {
     content: '';
     z-index: 1;
-    background-color: rgba(0,0,0,.7);
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     top: 0;
     left: 0;
@@ -1021,7 +1021,6 @@
     list-style: none;
     margin: 0;
     padding: 0;
-
 }
 
 .breadcrumbs__list-link {
@@ -1664,6 +1663,11 @@
     width: 100%;
     display: flex;
     justify-content: center;
+    height: 235px;
+}
+
+.recommended-product-single__img-container img {
+    object-fit: contain;
 }
 
 .recommended-title__title {
@@ -1699,6 +1703,25 @@
     font-size: 14px;
     line-height: 14px;
 
+}
+
+.recommendation-block__img-container {
+    width: 114px;
+    height: 114px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.recommendation-block__img-container img {
+    object-fit: fill;
+}
+
+.recommended-products-list__recommended-product-single:hover .recommended-product-single__topline{
+    background-color: var(--main-bg-color);
+    transition: background-color 0.3s;
 }
 
 @media screen  and (max-width: 768px) {
