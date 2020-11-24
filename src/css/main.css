@@ -1027,6 +1027,9 @@
 .breadcrumbs__list-link {
     color: var(--second-font-color);
     text-decoration: none;
+    font-family: var(--main-font);
+    font-size: 13px;
+    line-height: 14px;
 }
 
 .breadcrumbs__list-link:hover {
