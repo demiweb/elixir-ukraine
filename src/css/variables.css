@@ -1,5 +1,6 @@
 html {
     --main-font: 'Montserrat', sans-serif;
+    --helvetica: 'HelveticaNeueCyr', sans-serif;
     --main-font-color: #363636;
     --second-font-color: #6f6f6f;
     --color-breadcrumb: #a4a4a4;
@@ -14,6 +15,16 @@ html {
     --quality-control-bg: #eef2f3;
     --footer-bg: #1b1b1b;
 
+}
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/Helvetica/HelveticaNeueCyr-Medium.eot');
+    src: local('HelveticaNeueCyr-Medium'),
+    url('../fonts/Helvetica/HelveticaNeueCyr-Medium.woff') format('woff');
+
+    font-weight: 500;
+    font-style: normal;
 }
 
 
