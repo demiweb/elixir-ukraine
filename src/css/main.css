@@ -1719,7 +1719,7 @@
     object-fit: fill;
 }
 
-.recommended-products-list__recommended-product-single:hover .recommended-product-single__topline{
+.recommended-products-list__recommended-product-single:hover .recommended-product-single__topline {
     background-color: var(--main-bg-color);
     transition: background-color 0.3s;
 }
