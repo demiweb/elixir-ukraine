@@ -26,11 +26,11 @@ main {
     box-sizing: border-box;
 }
 
-img {
-    opacity: 1;
-    transition: opacity 0.3s;
-}
+/*img {*/
+/*    opacity: 1;*/
+/*    transition: opacity 0.3s;*/
+/*}*/
 
-img[data-src] {
-    opacity: 0;
-}
+/*img[data-src] {*/
+/*    opacity: 0;*/
+/*}*/
