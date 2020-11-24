@@ -35,7 +35,18 @@
     <section class="elixir-header__header-bottom-side">
         <div class="container" style="height: 100%">
             <div class="header-bottom-side__header-navigation">
+                <div class="mob-burger-button">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-input">
+                    <label for="burger-checkbox" class="burger-checkbox-label" onclick="toggleVisible()">
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                    </label>
+
+
+                </div>
                 <nav class="header-navigation__list-container">
+
                     <ul class="header-navigation__nav-list">
                         <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
                         <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
@@ -44,7 +55,19 @@
                         <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
                         <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
                     </ul>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </nav>
+                <a href="#" class="elixir-logo-contacts__main-page elixir-logo-contacts__main-page--mob"
+                   title="На главную страницу"><img
+                        data-src="../img/header_logo_2-white.png" alt="Логотип"></a>
                 <div class="header-navigation__language-cart-container">
                     <nav class="header-navigation__search-cart-block">
                         <div class="search-cart-block__search-container">
@@ -505,7 +528,7 @@
         </div>
     </div>
 </footer>
-
+<script src="../../../scripts/headerScript.js"></script>
 <script>
     [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));

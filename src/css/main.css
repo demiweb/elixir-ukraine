@@ -227,8 +227,8 @@
     width: 32px;
     height: 32px;
     background: url("../img/arrow-click-bg.png") no-repeat center, white;
-    left: 38px;
-    top: 174px;
+    left: 50px;
+    top: 155px;
     border-radius: 50%;
     z-index: 2;
     -webkit-box-shadow: 1px -1px 1px 0 var(--main-bg-color);
@@ -239,7 +239,7 @@
 }
 
 .btn-dwn {
-    top: 714px;
+    top: 730px;
     transform: rotate(105deg);
 }
 
@@ -675,6 +675,7 @@
 
     .elixir-main-info__elixir-features {
         width: 300px;
+        margin: 15px 0;
     }
 
     .video-banner__elixir-main-info {
@@ -698,6 +699,7 @@
     .interactive-manure__circle-container {
 
         overflow: hidden;
+        height: 600px !important;
     }
 
     .interactive-manure__interactive-circle {
@@ -707,17 +709,19 @@
 
     .single-manure-type {
         transform-origin: 0 0;
-        transform: scale(1.2);
-        margin-left: -100px;
-        margin-top: -50px;
+        transform: scale(1.4);
+        /*margin-left: -130px;*/
+        /*margin-top: -50px;*/
+        margin: -50px 0 30px -130px;
+        padding: 20px 0;
     }
 
     .btn-dwn, .btn-up {
-        transform: scale(1.2);
+        transform: scale(1.4);
     }
 
     .btn-dwn {
-        transform: scale(1.2) rotate(105deg);
+        transform: scale(1.4) rotate(105deg);
     }
 
     .elixir-main-part__choose-culture {
@@ -725,10 +729,11 @@
         url("../img/tomatos-bg.png") no-repeat left 120%;
         background-color: #eef2f3;
         background-size: 50%;
+        min-height: 0;
     }
 
     .culture-type__single-culture {
-        width: 235px;
+        width: 47%;
         height: 175px;
     }
 
@@ -822,22 +827,36 @@
         top: 95%;
         left: 375px;
     }
+
+    .choose-culture__culture-container {
+        padding: 50px 0;
+    }
 }
 
 @media screen and (max-width: 531px) {
     .culture-container__culture-type {
-        justify-content: center !important;
+        justify-content: space-between !important;
     }
 
     .culture-type__single-culture {
-        width: 35%;
-        height: 100px;
+        width: 47%;
+        height: 120px;
         min-width: 110px;
-        margin: 15px;
     }
 
     .interactive-manure__interactive-circle {
         transform: scale(0.65, 0.65) translate(88%, 77%) !important;
+    }
+
+    .single-manure-type {
+        transform-origin: 0 0;
+        transform: scale(1.5);
+        margin-left: -145px;
+        margin-top: -50px;
+    }
+
+    .part-title-block__title {
+        font-size: 28px;
     }
 
     .elixir-main-part__choose-culture {
@@ -854,7 +873,7 @@
 
     .partners-logos__single-partner {
         width: 50%;
-        height: 200px;
+        height: 150px;
     }
 
     .partners-logos__single-partner img {
@@ -878,7 +897,14 @@
 
 @media screen and (max-width: 425px) {
     .interactive-manure__interactive-circle {
-        transform: scale(0.55, 0.55) translate(105%, 90%) !important;
+        transform: scale(0.55, 0.55) translate(100%, 90%) !important;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .interactive-manure__interactive-circle {
+        transform: scale(0.55, 0.55) translate(110%, 90%) !important;
     }
 
 }
@@ -1785,6 +1811,7 @@
     .product-all-info__cultures-info {
         align-items: center;
     }
+
     .recommended-products__recommended-products-list {
         justify-content: space-between;
     }
