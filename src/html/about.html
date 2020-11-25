@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Elixir Ukraine - Главная</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../scripts/lazysizes.min.js" async></script>
+</head>
+<body>
+<header class="elixir-header">
+    <section class="elixir-header__header-top-side">
+        <div class="container">
+            <div class="header-top-side__elixir-logo-contacts">
+                <a href="./home.html" class="elixir-logo-contacts__main-page" title="На главную страницу"><img
+                        data-src="../img/header_logo_2.svg" class="lazyload" alt="Логотип"></a>
+                <span class="elixir-logo-contacts__tagline">Удобрения для всей страны</span>
+                <nav class="elixir-logo-contacts__socials">
+                    <a class="social__header-link" href="#" title="Наш Facebook"><img class="lazyload"
+                                                                                      data-src="../img/fb-icon-header.png"
+                                                                                      alt="Facebook icon"></a>
+                    <a class="social__header-link" href="#" title="Наш YouTube"><img class="lazyload"
+                                                                                     data-src="../img/yt-icon-header.png"
+                                                                                     alt="Youtube icon"></a>
+                </nav>
+
+                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                        class="lazyload" data-src="../img/download-icon.png" alt=""></button>
+                <div class="elixir-logo-contacts__contact-us-header">
+                    <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
+                    <a class="contact-us-header__left-application" href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-header__header-bottom-side">
+        <div class="container" style="height: 100%">
+            <div class="header-bottom-side__header-navigation">
+                <div class="mob-burger-button">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-input">
+                    <label for="burger-checkbox" class="burger-checkbox-label" onclick="toggleVisible()">
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                    </label>
+
+
+                </div>
+                <nav class="header-navigation__list-container">
+
+                    <ul class="header-navigation__nav-list">
+                        <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Питание культур">питание культур</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Для клиентов">для клиентов</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
+                    </ul>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <a href="./home.html" class="elixir-logo-contacts__main-page elixir-logo-contacts__main-page--mob"
+                   title="На главную страницу"><img
+                        class="lazyload" data-src="../img/header_logo_2-white.png" alt="Логотип"></a>
+                <div class="header-navigation__language-cart-container">
+                    <nav class="header-navigation__search-cart-block">
+                        <div class="search-cart-block__search-container">
+                            <div class="search-container__search-icon-block">
+                            </div>
+                        </div>
+                        <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
+                                                                                         data-src="../img/shopping-cart.png"
+                                                                                         alt="Корзина"><span
+                                class="number-of-items-cart">4</span></a>
+                    </nav>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="elixir-about-page">
+    <section class="elixir-about-page__banner-about">
+        <div class="banner-about__banner-point">
+            <div class="banner-point__container-modify banner-point__container-modify--left">
+                <div class="banner-point__banner-content">
+                    <nav class="item-page__breadcrumbs">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="./home.html">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">О компании</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="banner-content__item-point">
+                        <span class="banner-content__topline"></span>
+                        <span class="banner-content__title">Elixir Ukraine</span>
+                        <span class="banner-content__text">Начиная с 2016 года компания «Эликсир Украина» является официальным представителем Elixir Zorka и занимается реализацией комплексных минеральных удобрений в Украине. Наша компания имеет собственную развитую логистическую систему со своим автотранспортом и складами</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-about__banner-point">
+            <div class="video-banner__video-container">
+                <video style="width: 100%; height: 100%; object-fit: cover; z-index: 0" src="../video/videoplayback.mp4"
+                       autoplay="" muted="" loop="" playsinline="" data-loaded="true"></video>
+            </div>
+            <div class="banner-point__top-half">
+                <div class="banner-point__container-modify banner-point__container-modify--right">
+                    <div class="banner-point__banner-content">
+
+                        <div class="banner-content__item-point">
+                            <span class="banner-content__topline"></span>
+                            <span class="banner-content__title">Строительство</span>
+                            <span class="banner-content__text">Современная фабрика по производству комплексных минеральных удобрений «Эликсир Зорка» в Шабаце, построенная в результате инвестиций в размере свыше 40 млн евро</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-point__bottom-half">
+                <div class="banner-point__container-modify banner-point__container-modify--right">
+                    <div class="banner-point__banner-content">
+
+                        <div class="banner-content__item-point">
+                            <span class="banner-content__topline"></span>
+                            <span class="banner-content__title">Стандарты</span>
+                            <span class="banner-content__text">Все имеющиеся ресурсы направлены на выполнение самых жестких действующих стандартов, с целью снижения опасности для здоровья людей и полного исключения вредного воздействия на окружающую среду</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="elixir-about-page__about-elixir">
+        <div class="container">
+            <div class="about-elixir__container">
+                <section class="about-elixir__elixir-building">
+                    <div class="elixir-building__build-date">
+                        <span class="build-date__topline"></span>
+                        <span class="build-date__text"><span>Строительство</span><br> фабрики «Эликсир Зорка» в Шабаце, началось в 2011 году, а первое <span>производство</span> минеральных удобрений в 2013</span>
+                    </div>
+                    <div class="elixir-building__build-about">
+                        <span class="about-page-paragraph">Возрождения бывшей югославской фабрики «ХI Зорка-минеральные удобрения» и строительство технологически современного и экологически безопасного нового комплекса проведено
+в сотрудничестве с известными лицензированными компаниями, специализированными по проектированию и строительству химических комплексов и установок.</span>
+                    </div>
+
+                </section>
+                <section class="about-elixir__elixir-manufacturing">
+                    <div class="paragraph-container__left">
+                        <span class="about-page-paragraph">Установленное оборудование и применены технологии соответствуют BAT стандартам по производству NPK удобрений. Производственные процессы согласованы с HAZOR системой анализов. Все имеющиеся ресурсы направлены на выполнение самых жестких действующих стандартов, с целью снижения опасности для здоровья людей и полного исключения вредного воздействия на окружающую среду.</span>
+                        <div class="paragraph-container__img-container">
+                            <img class="lazyload" data-src="../img/zorka-bg-about-1.jpg" alt="Строения">
+                        </div>
+                    </div>
+                    <div class="paragraph-container__right">
+                            <span class="about-page-paragraph">Компания находится в восточной промышленной зоне города Шабац, на 98-ом километре судоходном течения реки Савы.
+У компании есть пристань для разгрузки и загрузки грузовых судов. Наряду с восточной промышленной зоны проходит современная четырехполосная автодорога, которая соединяется с магистральной автотрассой М-19 и М-21. Через весь промышленный комплекс проходит железная дорога, которая соединяется с железнодорожной сетью Сербии</span>
+                        <div class="paragraph-container__img-container">
+                            <img class="lazyload" data-src="../img/zorka-bg-about-2.jpg" alt="Строения">
+                        </div>
+                    </div>
+                </section>
+                <section class="about-elixir__production-statistic">
+                    <div class="production-statistic__left-container">
+                        <div class="production-statistic__mini-img-container">
+                            <img class="lazyload" src="../img/zorka-bg-about-4.jpg" alt="">
+                        </div>
+                        <div class="production-statistic__statistic-numbers">
+                            <span class="statistic-numbers__subtitle">Производственные мощности  в линии производства NPK, NP, PK</span>
+                            <span class="statistic-numbers__title">400 000</span>
+                            <span class="statistic-numbers__subtitle">тонн изготавливается в год</span>
+                        </div>
+                    </div>
+                    <div class="production-statistic__right-container">
+                        <div class="production-statistic__img-container">
+                            <img class="lazyload" data-src="../img/zorka-bg-about-3.jpg" alt="Удобрения">
+                        </div>
+                    </div>
+
+
+                </section>
+                <section class="about-elixir__production-statistic about-elixir__production-statistic--reverse">
+                    <div class="production-statistic__left-container">
+                        <div class="production-statistic__mini-img-container">
+                            <img class="lazyload" src="../img/zorka-bg-about-6.jpg" alt="">
+                        </div>
+                        <div class="production-statistic__statistic-numbers">
+                            <span class="statistic-numbers__subtitle" style="width: 90%; padding-bottom: 25px">Производственные мощности <br>в линии производства порошковых <br>простых фосфорных удобрений SSS и TSP</span>
+                            <span class="statistic-numbers__title">300 000</span>
+                            <span class="statistic-numbers__subtitle">тонн изготавливается в год</span>
+                        </div>
+                    </div>
+                    <div class="production-statistic__right-container">
+                        <div class="production-statistic__img-container">
+                            <img class="lazyload" data-src="../img/zorka-bg-about-5.jpg" alt="Удобрения">
+                        </div>
+                    </div>
+
+
+                </section>
+
+            </div>
+        </div>
+    </section>
+    <section class="elixir-about-page__quote-elixir">
+        <div class="container" style="min-height: inherit">
+            <div class="quote-elixir__quote-container">
+                <div class="quote-elixir__part-container">
+                    <div class="part-container__img-container">
+                        <img class="lazyload" src="../img/quote-bg-about.png" alt="">
+                    </div>
+                </div>
+                <div class="quote-elixir__part-container">
+                    <div class="quote-elixir__founder-quote">
+                    <span class="founder-quote__quote">Наши продукты фабрик полностью соответствуют требованиям законодательства Республики Сербии (Закон
+о средствах питания растений и улучшений почвы)</span>
+                        <span class="founder-quote__name">Имя Фамилия</span>
+                        <span class="founder-quote__post">Основатель «Elixir Ukraine»</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="about-elixir__quality-elixir">
+        <div class="container" style="min-height: inherit">
+            <div class="quality-elixir__container">
+                <div class="quality-elixir__quality-left-part">
+                    <div class="banner-content__item-point">
+                        <span class="banner-content__title">Контроль качества</span>
+                        <span class="banner-content__text">Продукты фабрик полностью соответствуют требованиям законодательства Республики Сербии (Закон о средствах питания растений и улучшений почвы), а также положением европейского законодательства (ЕС 2003/2003) о торговом обороте минеральных удобрений на территории ЕС.</span>
+                        <span class="banner-content__text">Свободное обращение минеральных удобрений в ЕС обеспечен на основании применения «EC FERTILISER» по производству и регистрации веществ, входящих в состав продукта, а согласно положениям (ЕС) №1907 / 2006 - «REACH» о регистрации, оценке, авторизации и ограничении оборота химических веществ. «Эликсир Зорка» провела регистрацию согласно положениям ЕС №</span>
+                    </div>
+                </div>
+                <div class="quality-elixir__quality-right-part">
+                    <div class="quality-right-part__img-bg">
+                        <div class="quality-right-part__img-bg-lab">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-elixir__quality-stats">
+        <div class="container" style="min-height: inherit">
+            <div class="quality-stats__container">
+                <div class="quality-stats__single-quality-stat">
+                    <span class="single-quality-stat__check-img">
+                        <img src="../img/tick.svg" alt="Check">
+                    </span>
+                    <span class="single-quality-stat__title">ISO 9001:2008</span>
+                    <span class="single-quality-stat__text">система управления качеством</span>
+                </div>
+                <div class="quality-stats__single-quality-stat">
+                    <span class="single-quality-stat__check-img">
+                        <img src="../img/tick.svg" alt="Check">
+                    </span>
+                    <span class="single-quality-stat__title">OHSAS 18001:2007</span>
+                    <span class="single-quality-stat__text">система управления охраной  здоровья и безопасности труда</span>
+                </div>
+                <div class="quality-stats__single-quality-stat">
+                    <span class="single-quality-stat__check-img">
+                        <img src="../img/tick.svg" alt="Check">
+                    </span>
+                    <span class="single-quality-stat__title">ISO/IEC 17025:2005</span>
+                    <span class="single-quality-stat__text">общие требования компетентности лабораторий по исследованиям и калибровки</span>
+                </div>
+                <div class="quality-stats__single-quality-stat">
+                    <span class="single-quality-stat__check-img">
+                        <img src="../img/tick.svg" alt="Check">
+                    </span>
+                    <span class="single-quality-stat__title">ISO 14001:2007</span>
+                    <span class="single-quality-stat__text">система управления охраной окружающей среды</span>
+                </div>
+                <div class="quality-stats__single-quality-stat">
+                    <span class="single-quality-stat__check-img">
+                        <img src="../img/tick.svg" alt="Check">
+                    </span>
+                    <span class="single-quality-stat__title">SA 8000:2008</span>
+                    <span class="single-quality-stat__text">оценка свойств</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="about-elixir__catalog-download">
+        <div class="container" style="min-height: inherit">
+            <div class="catalog-download__container">
+                <div class="catalog-download__part">
+                    <div class="catalog-download__img-bg">
+                        <img class="lazyload" src="../img/book-bg-about.png" alt="Книга">
+                    </div>
+                </div>
+                <div class="catalog-download__part">
+                    <div class="part-title-block part-title-block--partners">
+                        <span class="part-title-block__top-line"></span>
+                        <span class="part-title-block__title">Скачивайте наш каталог</span>
+                        <span class="part-title-block__subtitle">По вопросам приобретения продукции компании Elixir Zorka, пожалуйста, свяжитесь с нашим офисом или региональными представителями</span>
+                        <button class="buy-buttons__button">Скачать каталог<img
+                                class="lazyload" data-src="../img/dwnl-link.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="elixir-footer">
+    <div class="container">
+        <div class="elixir-footer__footer-container">
+            <section class="footer-container__elixir-logo-date">
+                <a href="#" title="Главная страница"><img class="lazyload" data-src="../img/header_logo_2-white.png"
+                                                          alt="Логотип Еликсир"></a>
+                <span class="elixir-logo-date__date-ukraine">С 2016 года компания «Эликсир Украина» является официальным представителем Elixir Zork</span>
+                <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+            </section>
+            <section class="footer-container__footer-links-block">
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Полезное</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">О
+                            компании</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Каталог</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Питание
+                            культур</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Для
+                            клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Блог</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Продукция</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Basic</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Premium</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Micro Gran</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Для клиентов</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сервисы
+                            поддержки</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Кредитование
+                            для клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Агрономическая
+                            поддержка</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сертификаты</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Оплата и
+                            доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__copyright-block">
+                    <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script src="../scripts/headerScript.js"></script>
+
+<script>
+
+
+    let cultures = [...document.querySelectorAll('.culture-type__single-culture')];
+    let culturesTitle = [...document.querySelectorAll('.name-block__title')];
+    let partnersBlock = [...document.querySelectorAll('.partners-logos__single-partner')];
+    let allCulture = ['Пшеница', 'Кукуруза', 'Картофель', 'Подсолнечник', 'Сахарная свекла', 'Соя', 'Ячмень', 'Рапс', 'Лук и чеснок', 'Томаты', 'Перец', 'Капуста']
+
+    cultures.forEach((culture, i) => {
+        culture.style.background = `url('../img/culture-bg-${i + 1}.png') no-repeat center`;
+    })
+    culturesTitle.forEach((title, i) => {
+        title.innerHTML = allCulture[i];
+    })
+    partnersBlock.forEach((partner, i) => {
+        partner.innerHTML = `<img src='../img/partners-logo-${i + 1}.png' alt="Partner logo">`;
+    })
+
+
+</script>
+</body>
+</html>

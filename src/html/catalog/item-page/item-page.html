@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
     <title>Elixir Ukraine - Страница продукта</title>
     <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="../../../scripts/lazysizes.min.js" async></script>
 
 </head>
@@ -101,16 +102,56 @@
             <div class="item-page-container__item-page">
                 <nav class="item-page__categories-block">
                     <ul class="categories-block__categories-list">
-                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">Elixir <br>
-                            Basic</a></li>
-                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">Elixir <br>
-                            Premium</a></li>
-                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">Elixir <br>
-                            Micro Gran</a></li>
-                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">Elixir <br>
-                            Supreme</a></li>
-                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">Elixir <br>
-                            Super Garden</a></li>
+                        <li class="categories-list__list-item" style="width: calc(100%/5 - 60px)"><a
+                                class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-1.png" alt="Мешок">
+                            </div>
+                            <span style="margin-left: 5px;">Elixir <br>
+                            Basic</span></a></li>
+                        <li class="categories-list__list-item categories-list__list-item--active"
+                            style="width: calc(100%/5 - 40px)"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-2.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Premium</span></a></li>
+                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-3.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Micro Gran</span></a></li>
+                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-4.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Supreme</span></a></li>
+                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                        <li class="categories-list__list-item"><a class="categories__list-link" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../../../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
                     </ul>
                 </nav>
                 <nav class="item-page__breadcrumbs">
@@ -571,14 +612,10 @@
     </div>
 </footer>
 <script src="../../../scripts/headerScript.js"></script>
-<script>
-    [].forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
-        img.setAttribute('src', img.getAttribute('data-src'));
-        img.onload = function () {
-            img.removeAttribute('data-src');
-        };
-    });
-</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="../../../scripts/categoriesSlide.js"></script>
 <script>
     let productInfoNavs = [...document.querySelectorAll('.product-navs__product-info-nav')];
     let productAllNavs = [...document.querySelectorAll('.product-nav-content__nav-content-product')];

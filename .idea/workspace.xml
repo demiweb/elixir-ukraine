@@ -10,10 +10,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="fix cultures">
+    <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="about page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/catalog/item-page/item-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/catalog/item-page/item-page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/home.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +29,8 @@
       <list>
         <option value="CSS File" />
         <option value="Sass File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -44,7 +47,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/html" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -52,8 +55,12 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projectsWebStorm\elixir-web\src\html" />
       <recent name="D:\projectsWebStorm\elixir-web\src\scripts" />
       <recent name="D:\projectsWebStorm\elixir-web\src\img" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projectsWebStorm\elixir-web\src\html\catalog\item-page" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,7 +73,10 @@
       <updated>1605684072210</updated>
       <workItem from="1605684073285" duration="27086000" />
       <workItem from="1605770222567" duration="29658000" />
-      <workItem from="1605856597426" duration="23150000" />
+      <workItem from="1605856597426" duration="27583000" />
+      <workItem from="1606115207876" duration="28627000" />
+      <workItem from="1606202343832" duration="27774000" />
+      <workItem from="1606288756081" duration="22163000" />
     </task>
     <task id="LOCAL-00001" summary="dots coordinates">
       <created>1605715794826</created>
@@ -89,7 +99,98 @@
       <option name="project" value="LOCAL" />
       <updated>1605802518418</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="footer">
+      <created>1605888605128</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605888605128</updated>
+    </task>
+    <task id="LOCAL-00005" summary="product page">
+      <created>1606144694676</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606144694676</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added product page to index.html">
+      <created>1606145004645</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606145004645</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" header mob">
+      <created>1606146758154</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606146758154</updated>
+    </task>
+    <task id="LOCAL-00008" summary="header sticky">
+      <created>1606147683315</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606147683315</updated>
+    </task>
+    <task id="LOCAL-00009" summary="header burger menu">
+      <created>1606208550571</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606208550571</updated>
+    </task>
+    <task id="LOCAL-00010" summary="optimization test">
+      <created>1606214110080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606214110080</updated>
+    </task>
+    <task id="LOCAL-00011" summary="styles">
+      <created>1606214186444</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606214186444</updated>
+    </task>
+    <task id="LOCAL-00012" summary="lazyload">
+      <created>1606214992377</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1606214992377</updated>
+    </task>
+    <task id="LOCAL-00013" summary="body fix">
+      <created>1606215957899</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1606215957899</updated>
+    </task>
+    <task id="LOCAL-00014" summary="recommendation fix">
+      <created>1606221397431</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1606221397431</updated>
+    </task>
+    <task id="LOCAL-00015" summary="recommendation fix">
+      <created>1606221823491</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1606221823491</updated>
+    </task>
+    <task id="LOCAL-00016" summary="about page">
+      <created>1606234552882</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1606234552882</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,7 +212,19 @@
     <MESSAGE value="dots coordinates" />
     <MESSAGE value="script for dots and some parts added" />
     <MESSAGE value="fix cultures" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix cultures" />
+    <MESSAGE value="footer" />
+    <MESSAGE value="product page" />
+    <MESSAGE value="added product page to index.html" />
+    <MESSAGE value=" header mob" />
+    <MESSAGE value="header sticky" />
+    <MESSAGE value="header burger menu" />
+    <MESSAGE value="optimization test" />
+    <MESSAGE value="styles" />
+    <MESSAGE value="lazyload" />
+    <MESSAGE value="body fix" />
+    <MESSAGE value="recommendation fix" />
+    <MESSAGE value="about page" />
+    <option name="LAST_COMMIT_MESSAGE" value="about page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="751" y="409" key="#Chrome_Settings" timestamp="1605686692337">
@@ -126,9 +239,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="572" y="215" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605710803328" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605802526942">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606234559770">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605802526942" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606234559770" />
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606115682179">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606115682179" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1606301741827">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606301741827" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1606295365254">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1606295365254" />
   </component>
 </project>
