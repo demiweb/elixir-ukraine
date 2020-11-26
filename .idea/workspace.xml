@@ -12,12 +12,12 @@
   <component name="ChangeListManager">
     <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="about page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/catalog/item-page/item-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/catalog/item-page/item-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/headerScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/headerScript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,8 @@
       <workItem from="1605856597426" duration="27583000" />
       <workItem from="1606115207876" duration="28627000" />
       <workItem from="1606202343832" duration="27774000" />
-      <workItem from="1606288756081" duration="22163000" />
+      <workItem from="1606288756081" duration="29941000" />
+      <workItem from="1606374591926" duration="19640000" />
     </task>
     <task id="LOCAL-00001" summary="dots coordinates">
       <created>1605715794826</created>
@@ -190,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606234552882</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="about page">
+      <created>1606312866513</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1606312866513</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

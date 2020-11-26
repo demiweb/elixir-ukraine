@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Elixir Ukraine - Главная</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="../scripts/lazysizes.min.js" async></script>
+</head>
+<body>
+<header class="elixir-header">
+    <section class="elixir-header__header-top-side">
+        <div class="container">
+            <div class="header-top-side__elixir-logo-contacts">
+                <a href="./home.html" class="elixir-logo-contacts__main-page" title="На главную страницу"><img
+                        data-src="../img/header_logo_2.svg" class="lazyload" alt="Логотип"></a>
+                <span class="elixir-logo-contacts__tagline">Удобрения для всей страны</span>
+                <nav class="elixir-logo-contacts__socials">
+                    <a class="social__header-link" href="#" title="Наш Facebook"><img class="lazyload"
+                                                                                      data-src="../img/fb-icon-header.png"
+                                                                                      alt="Facebook icon"></a>
+                    <a class="social__header-link" href="#" title="Наш YouTube"><img class="lazyload"
+                                                                                     data-src="../img/yt-icon-header.png"
+                                                                                     alt="Youtube icon"></a>
+                </nav>
+
+                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                        class="lazyload" data-src="../img/download-icon.png" alt=""></button>
+                <div class="elixir-logo-contacts__contact-us-header">
+                    <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
+                    <a class="contact-us-header__left-application" href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-header__header-bottom-side">
+        <div class="container" style="height: 100%">
+            <div class="header-bottom-side__header-navigation">
+                <div class="mob-burger-button">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-input">
+                    <label for="burger-checkbox" class="burger-checkbox-label" onclick="toggleVisible()">
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                    </label>
+
+
+                </div>
+                <nav class="header-navigation__list-container">
+
+                    <ul class="header-navigation__nav-list">
+                        <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Питание культур">питание культур</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Для клиентов">для клиентов</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
+                    </ul>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <a href="./home.html" class="elixir-logo-contacts__main-page elixir-logo-contacts__main-page--mob"
+                   title="На главную страницу"><img
+                        class="lazyload" data-src="../img/header_logo_2-white.png" alt="Логотип"></a>
+                <div class="header-navigation__language-cart-container">
+                    <nav class="header-navigation__search-cart-block">
+                        <div class="search-cart-block__search-container">
+                            <div class="search-container__search-icon-block">
+                            </div>
+                        </div>
+                        <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
+                                                                                         data-src="../img/shopping-cart.png"
+                                                                                         alt="Корзина"><span
+                                class="number-of-items-cart">4</span></a>
+                    </nav>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="elixir-catalog">
+    <section class="elixir-catalog__navigation-panel">
+        <div class="container">
+            <div class="item-page-container__item-page">
+                <nav class="item-page__categories-block">
+                    <ul class="categories-block__categories-list">
+                        <li class="categories-list__list-item" style="width: calc(100%/5 - 60px)"><a
+                                class="categories__list-link categories__list-link--green" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-1.png" alt="Мешок">
+                            </div>
+                            <span style="margin-left: 5px;">Elixir <br>
+                            Basic</span></a></li>
+                        <li class="categories-list__list-item "
+                            style="width: calc(100%/5 - 40px)"><a
+                                class="categories__list-link categories__list-link--red" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-2.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Premium</span></a></li>
+                        <li class="categories-list__list-item"><a
+                                class="categories__list-link categories__list-link--dark-blue" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-3.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Micro Gran</span></a></li>
+                        <li class="categories-list__list-item"><a
+                                class="categories__list-link categories__list-link--blue" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-4.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Supreme</span></a></li>
+                        <li class="categories-list__list-item"><a
+                                class="categories__list-link categories__list-link--black" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                        <li class="categories-list__list-item"><a
+                                class="categories__list-link categories__list-link--black" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                        <li class="categories-list__list-item"><a
+                                class="categories__list-link categories__list-link--black" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                        <li class="categories-list__list-item"><a
+                                class="categories__list-link categories__list-link--black" href="#">
+                            <div class="categories__img-container">
+                                <img class="lazyload" data-src="../img/cultures-icons/cat-img-5.png" alt="Мешок">
+                            </div>
+                            <span>Elixir <br>
+                            Super Garden</span></a></li>
+                    </ul>
+                </nav>
+                <nav class="item-page__breadcrumbs">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link"
+                                                              href="./home.html">Главная</a>
+                        </li>
+
+                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">Каталог</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-catalog__catalog-info-block">
+        <div class="container">
+            <div class="catalog-info-block__banner">
+                <div class="catalog-info-block__container" style="z-index: 1">
+                    <div class="catalog-info-block__info">
+                        <span class="catalog-info-block__title">Каталог</span>
+                        <span class="catalog-info-block__subtitle">Если вы хотите повысить качество и урожайность с / х культур, или просто ищете совет по питанию растений,  узнайте как агрономы Elixir Ukraine могут вам помочь</span>
+                        <div class="product-all-info__buy-buttons">
+                            <button class="buy-buttons__button" type="button">Консультация менеджера</button>
+                            <button class="buy-buttons__button" type="button">Информация для клиента</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-info-block__container">
+                    <div class="catalog-info-block__img-container">
+                        <img class="lazyload" data-src="../img/book-catalog.png" alt="Книга">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-catalog__products-catalog">
+        <div class="container">
+            <div class="products-catalog__container">
+                <div class="products-catalog__single-catalog-product">
+                    <div class="single-catalog-product__product-picture">
+                        <div class="product-picture__img-container">
+                            <img class="lazyload" data-src="../img/catalog-prod-1.png" alt="Продукт">
+                        </div>
+                    </div>
+                    <div class="single-catalog-product__product-info">
+                        <div class="single-catalog-product__text-part single-catalog-product__text-part--green">
+                            <span class="single-catalog-product__topline"></span>
+                            <span class="single-catalog-product__title">Elixir Basic</span>
+                            <div class="single-catalog-product__text-container">
+                            <span class="single-catalog-product__text">Комплексные минеральные удобрения из линии BASIC отличаются высокой концентрацией питательных веществ, характеризующейся наличием всех макроэлементов и равномерной грануляцией. Каждая гранула имеет одинаковый химический состав,
+и из-за формы активного вещества она характеризуется хорошей растворимостью в воде. </span>
+                                <span class="single-catalog-product__text">Эти минеральные удобрения полностью удовлетворяют все потребности растений
+в элементах, независимо от специфики культур, производства растений или различий
+в качестве почвы. Применяя составы линии Basic, мы обеспечиваем быстрый, равномерный рост сельскохозяйственных культур и большую физическую стабильность. Такие растения гораздо более устойчивы к неблагоприятным климатическим воздействиям и обеспечивают безопасность при производстве.</span>
+                                <span class="single-catalog-product__read-more">Читать полностью</span>
+                            </div>
+                        </div>
+                        <div class="single-catalog-product__single-product-variants">
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--green">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--green"></div>
+                                        <img class="lazyload" data-src="../img/6_24_12_IS2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="products-catalog__single-catalog-product">
+                    <div class="single-catalog-product__product-picture">
+                        <div class="product-picture__img-container">
+                            <img class="lazyload" data-src="../img/catalog-prod-2.png" alt="Продукт">
+                        </div>
+                    </div>
+                    <div class="single-catalog-product__product-info">
+                        <div class="single-catalog-product__text-part single-catalog-product__text-part--red">
+                            <span class="single-catalog-product__topline"></span>
+                            <span class="single-catalog-product__title">Elixir Premium</span>
+                            <div class="single-catalog-product__text-container">
+                                <span class="single-catalog-product__text">Линия Elixir Premium включает формулы, состав которых особенно обогащен вторичными микроэлементами, чтобы обеспечить растения всеми питательными веществами, необходимыми для более быстрого роста и лучшего урожая.</span>
+                                <span class="single-catalog-product__read-more">Читать полностью</span>
+                            </div>
+                        </div>
+                        <div class="single-catalog-product__single-product-variants">
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--red">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--red"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--red">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--red"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--red">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--red"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-2.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="products-catalog__single-catalog-product">
+                    <div class="single-catalog-product__product-picture">
+                        <div class="product-picture__img-container">
+                            <img class="lazyload" data-src="../img/catalog-prod-3.png" alt="Продукт">
+                        </div>
+                    </div>
+                    <div class="single-catalog-product__product-info">
+                        <div class="single-catalog-product__text-part single-catalog-product__text-part--dark-blue">
+                            <span class="single-catalog-product__topline"></span>
+                            <span class="single-catalog-product__title">Elixir Micro Gran</span>
+                            <div class="single-catalog-product__text-container">
+                                <span class="single-catalog-product__text">Микрогранулированные стартовые удобрения Elixir Zorka имеют сбалансированное соотношение питательных веществ, первичных, вторичных и основных микроэлементов, которые стимулируют рост растений на начальных стадиях развития и способствуют лучшему укоренению растения.</span>
+                                <span class="single-catalog-product__text">Целью использования микрогранулированных удобрений является более точное дозирование и распределение минеральных удобрений для лучшего использования питательных веществ растениями. Меньшие по размеру гранулы (0.5-1.2 мм) обеспечивают больший поверхностный контакт с почвой, более быструю диффузию и, следовательно, более эффективное усвоение растениями.</span>
+                                <span class="single-catalog-product__read-more">Читать полностью</span>
+                            </div>
+                        </div>
+                        <div class="single-catalog-product__single-product-variants">
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--dark-blue">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--dark-blue"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-3.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">SuperStart NP 10:35</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="products-catalog__single-catalog-product">
+                    <div class="single-catalog-product__product-picture">
+                        <div class="product-picture__img-container">
+                            <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                        </div>
+                    </div>
+                    <div class="single-catalog-product__product-info">
+                        <div class="single-catalog-product__text-part single-catalog-product__text-part--blue">
+                            <span class="single-catalog-product__topline"></span>
+                            <span class="single-catalog-product__title">Elixir Supreme</span>
+                            <div class="single-catalog-product__text-container">
+                                <span class="single-catalog-product__text">Линейка продуктов Elixir Supreme включает комплексные минеральные удобрения обогащенные микроэлементами и изготовлены из лучшего сырья, с калием в сульфатной форме. Производственная линия разрабатывается таким образом, чтобы обогатить химическую формулу полезными бактериями, тщательно подобранными микроэлементами и эффектами замедленного высвобождения</span>
+                                <span class="single-catalog-product__read-more">Читать полностью</span>
+                            </div>
+                        </div>
+                        <div class="single-catalog-product__single-product-variants">
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--blue">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--blue"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--blue">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--blue"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name">Npk 6:12:24</span>
+                                <span class="product-variant__properties">+S | +Ca | +Zn</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="products-catalog__single-catalog-product">
+                    <div class="single-catalog-product__product-picture">
+                        <div class="product-picture__img-container">
+                            <img class="lazyload" data-src="../img/catalog-prod-5.png" alt="Продукт">
+                        </div>
+                    </div>
+                    <div class="single-catalog-product__product-info">
+                        <div class="single-catalog-product__text-part single-catalog-product__text-part--black">
+                            <span class="single-catalog-product__topline"></span>
+                            <span class="single-catalog-product__title">Elixir Super Garden</span>
+                            <div class="single-catalog-product__text-container">
+                                <span class="single-catalog-product__text">Линия Super Garden - это линия премиум-класса, состоящая из пяти тщательно отобранных составов для газона, цветов, овощей и фруктов. Состав продукта был определен и сбалансирован благодаря самоотверженной работе команды разработчиков Elixir Zorka в сотрудничестве с ведущими экспертами. Мы выбрали наилучшее соотношение между основными, макро- и микроэлементами для каждой целевой группы растений</span>
+                                <span class="single-catalog-product__read-more">Читать полностью</span>
+                            </div>
+                        </div>
+                        <div class="single-catalog-product__single-product-variants">
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--black"
+                                 style="height: 75px">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--black"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name"
+                                      style="height: 43px">Стартовое удобрение  для газона</span>
+                                <div class="product-variant__properties-container">
+                                    <span class="product-variant__properties">+S | +Ca | +Zn </span>
+                                    <span class="product-variant__properties">+B | +MgO</span>
+                                </div>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--black"
+                                 style="height: 75px">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--black"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name"
+                                      style="height: 43px">Стартовое удобрение  для газона</span>
+                                <div class="product-variant__properties-container">
+                                    <span class="product-variant__properties">+S | +Ca | +Zn </span>
+                                    <span class="product-variant__properties">+B | +MgO</span>
+                                </div>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--black"
+                                 style="height: 75px">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--black"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name"
+                                      style="height: 43px">Стартовое удобрение  для газона</span>
+                                <div class="product-variant__properties-container">
+                                    <span class="product-variant__properties">+S | +Ca | +Zn </span>
+                                    <span class="product-variant__properties">+B | +MgO</span>
+                                </div>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--black"
+                                 style="height: 75px">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--black"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name"
+                                      style="height: 43px">Стартовое удобрение  для газона</span>
+                                <div class="product-variant__properties-container">
+                                    <span class="product-variant__properties">+S | +Ca | +Zn </span>
+                                    <span class="product-variant__properties">+B | +MgO</span>
+                                </div>
+                            </div>
+                            <div class="single-product-variants__product-variant single-catalog-product__text-part--black"
+                                 style="height: 75px">
+                                <a class="product-variant__variant-hover-block" href="#">
+                                    <div class="variant-hover-block__product-img-container">
+                                        <div class="product-img-container__bg product-img-container__bg--black"></div>
+                                        <img class="lazyload" data-src="../img/catalog-prod-4.png" alt="Продукт">
+                                    </div>
+                                    <span class="variant-hover-block__title">Npk 6:24:12</span>
+                                    <span class="variant-hover-block__subtitle">(2-4 кг/га)</span>
+                                    <span class="variant-hover-block__text">Новаторское микрогранулированная удобрение, которое быстро обеспечивает растения доступными питательными вещствами</span>
+
+                                </a>
+                                <span class="product-variant__name"
+                                      style="height: 43px">Стартовое удобрение  для газона</span>
+                                <div class="product-variant__properties-container">
+                                    <span class="product-variant__properties">+S | +Ca | +Zn </span>
+                                    <span class="product-variant__properties">+B | +MgO</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="elixir-catalog__need-help-block">
+        <div class="container">
+            <div class="need-help-block__container">
+                <div class="need-help-block__help-social">
+                    <div class="help-social__info">
+                        <span class="help-social__topline"></span>
+                        <span class="help-social__title">Появились вопросы?</span>
+                        <span class="help-social__subtitle">По вопросам приобретения продукции компании Elixir Zorka, пожалуйста, свяжитесь с нашим офисом или региональными представителями</span>
+                        <div class="product-all-info__buy-buttons">
+                            <button class="buy-buttons__button" type="button">Заказать констультацию</button>
+                        </div>
+                        <div class="help-social__social-links">
+                            <a class="help-social__link" href="#" title="Viber"><img src="../img/viber.svg"
+                                                                                     alt="Viber icon"></a>
+                            <a class="help-social__link" href="#" title="WhatsApp"><img src="../img/whatsapp.svg"
+                                                                                        alt="WhatsApp icon"></a>
+                            <a class="help-social__link" href="#" title="telegram"><img src="../img/telegram.svg"
+                                                                                        alt="Telegram icon"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="need-help-block__assist-quote">
+                    <div class="assist-quote__quote-speaker">
+                        <div class="quote-speaker__img-container">
+                            <img class="lazyload" data-src="../img/maria-photo.jpg" alt="Мария Стояновская">
+                        </div>
+                        <span class="quote-speaker__topline"></span>
+                        <span class="quote-speaker__name">Мария Стояновская</span>
+                        <span class="quote-speaker__post">Менеджер по продажам в Elixir Ukraine</span>
+                    </div>
+                    <div class="assist-quote__quote">
+                        <span class="assist-quote__text">Мы знаем как качество продукции влияет на ваш бизнес, поэтому главным приоритетом для нас всегда остается именно качество. </span>
+                        <span class="assist-quote__text">Продукты фабрик полностью соответствуют требованиям законодательства Республики Сербии, а также положением европейского законодательства
+о торговом оборотеминеральных удобрений на территории ЕС.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="elixir-footer">
+    <div class="container">
+        <div class="elixir-footer__footer-container">
+            <section class="footer-container__elixir-logo-date">
+                <a href="#" title="Главная страница"><img class="lazyload" data-src="../img/header_logo_2-white.png"
+                                                          alt="Логотип Еликсир"></a>
+                <span class="elixir-logo-date__date-ukraine">С 2016 года компания «Эликсир Украина» является официальным представителем Elixir Zork</span>
+                <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+            </section>
+            <section class="footer-container__footer-links-block">
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Полезное</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">О
+                            компании</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Каталог</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Питание
+                            культур</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Для
+                            клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Блог</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Продукция</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Basic</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Premium</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Micro Gran</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Для клиентов</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сервисы
+                            поддержки</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Кредитование
+                            для клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Агрономическая
+                            поддержка</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сертификаты</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Оплата и
+                            доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__copyright-block">
+                    <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script src="../scripts/headerScript.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="../scripts/categoriesSlide.js"></script>
+<script>
+
+
+    let readMore = [...document.querySelectorAll('.single-catalog-product__read-more')];
+
+    readMore.forEach((btn) => {
+        btn.addEventListener('click', () => {
+            let fthr = btn.closest('.single-catalog-product__text-container');
+            if (fthr.classList.contains('text-container--opened')) {
+                fthr.classList.remove('text-container--opened');
+                fthr.style.maxHeight = '157px'
+                btn.innerHTML = 'Читать полностью'
+
+            } else {
+                fthr.classList.add('text-container--opened');
+                fthr.style.maxHeight = 'none'
+
+                btn.innerHTML = 'Скрыть'
+
+            }
+        })
+    })
+
+</script>
+</body>
+</html>
