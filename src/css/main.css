@@ -3591,6 +3591,7 @@
 
 .need-help-block__help-social {
     width: 34%;
+    padding-right: 40px;
     align-self: flex-start;
 }
 
@@ -3649,7 +3650,7 @@
 
 .need-help-block__assist-quote {
     align-self: flex-end;
-    width: 66%;
+    width: calc(66% - 40px);
     min-height: inherit;
     box-sizing: border-box;
     background: linear-gradient(to bottom, transparent 30%, var(--cultures-bg-color) 30%);;
@@ -3742,7 +3743,7 @@
     z-index: 1;
 }
 
-@media screen  and (max-width: 768px){
+@media screen  and (max-width: 768px) {
     .need-help-block__container {
         flex-direction: column;
     }
@@ -3750,6 +3751,7 @@
     .need-help-block__help-social,
     .need-help-block__assist-quote {
         width: 100%;
+        padding-right: 0;
     }
 
     .help-social__info {
@@ -3772,15 +3774,20 @@
     }
 }
 
-@media screen and (max-width: 531px){
+@media screen and (max-width: 531px) {
     .need-help-block__assist-quote {
         flex-direction: column;
-        background: linear-gradient(to bottom, transparent 20%, var(--cultures-bg-color) 20%, var(--cultures-bg-color) 52%, transparent 52%);
+        background: linear-gradient(to bottom, transparent 20%, var(--cultures-bg-color) 20%, var(--cultures-bg-color) 60%, transparent 60%);
 
     }
 
     .assist-quote__text:first-child {
         margin-top: 40px;
+    }
+
+    .assist-quote__quote-speaker {
+        max-width: 100%;
+        align-self: auto;
     }
 
     .quote-speaker__img-container {
@@ -3790,7 +3797,242 @@
 
     .assist-quote__quote {
         padding: 5px;
+        min-height: 360px;
     }
+}
+
+/* for clients page */
+
+.elixir-clients {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.elixir-clients__clients-title-banner {
+    display: flex;
+    flex-direction: row;
+}
+
+.clients-title-banner__bg-banner,
+.clients-title-banner__title-side {
+    width: 50%;
+    height: 400px;
+}
+
+.clients-title-banner__bg-banner {
+    background: url("../img/clients-page-bg.jpg") no-repeat -50px -40px;
+    background-size: auto;
+}
+
+.elixir-clients--support .clients-title-banner__bg-banner {
+    background: url('../img/support-clients-bg.jpg') no-repeat -100px -60px;
+    background-size: auto;
+}
+
+.elixir-catalog__navigation-panel {
+    width: 100%;
+    min-height: 140px;
+}
+
+.title-side__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title-side__container .catalog-info-block__info {
+    margin-top: 40px;
+}
+
+.elixir-clients__clients-services {
+    width: 100%;
+    margin: 130px 0 100px;
+}
+
+.clients-services__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.clients-services__client-service {
+    width: 100%;
+    height: 209px;
+    text-decoration: none;
+    padding: 48px 64px;
+    box-sizing: border-box;
+
+    transition: background-color 0.3s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+}
+
+.clients-services__client-service--support {
+    background: url("../img/technical-support.svg") no-repeat, var(--cultures-bg-color);
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--credit {
+    background: url("../img/credit-card.svg") no-repeat, var(--cultures-bg-color);
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--agro {
+    background: url("../img/agronomy.svg") no-repeat, var(--cultures-bg-color);
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--certificates {
+    background: url("../img/certificate.svg") no-repeat, var(--cultures-bg-color);
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--buying {
+    background: url("../img/box.svg") no-repeat, var(--cultures-bg-color);
+    background-position: 60% bottom;
+}
+
+.clients-service__text-part {
+    display: flex;
+    flex-direction: column;
+    max-width: 440px;
+}
+
+.clients-service__arrow {
+    width: 97px;
+    height: 11px;
+    background: url("../img/clients-arrow-right.svg") no-repeat center;
+    transition: background-color 0.3s, margin-right 0.3s;
+}
+
+.clients-services__client-service--support:hover {
+    background: url("../img/technical-support.svg") no-repeat, var(--main-bg-color);
+    transition: background-color 0.3s;
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--credit:hover {
+    background: url("../img/credit-card.svg") no-repeat, var(--main-bg-color);
+    transition: background-color 0.3s;
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--agro:hover {
+    background: url("../img/agronomy.svg") no-repeat, var(--main-bg-color);
+    transition: background-color 0.3s;
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--certificates:hover {
+    background: url("../img/certificate.svg") no-repeat, var(--main-bg-color);
+    transition: background-color 0.3s;
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service--buying:hover {
+    background: url("../img/box.svg") no-repeat, var(--main-bg-color);
+    transition: background-color 0.3s;
+    background-position: 60% bottom;
+}
+
+.clients-services__client-service:hover .clients-service__arrow {
+    background: url("../img/clients-arrow-right-white.svg") no-repeat center;
+    margin-right: -20px;
+    transition: background-color 0.3s, margin-right 0.3s;
+}
+
+.clients-services__client-service:hover .clients-service__title,
+.clients-services__client-service:hover .clients-service__text {
+    color: var(--white-bg);
+    transition: color 0.3s;
+}
+
+
+.clients-service__title {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 46px;
+    color: var(--main-font-color);
+    transition: color 0.3s;
+}
+
+.clients-service__text {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    transition: color 0.3s;
+}
+
+@media screen  and (max-width: 768px) {
+
+    .elixir-clients__clients-services {
+        margin: 0;
+    }
+
+    .elixir-clients__clients-services .container {
+        padding: 0;
+    }
+
+    .elixir-clients__clients-title-banner {
+        flex-direction: column;
+    }
+
+    .clients-title-banner__bg-banner {
+        background: url("../img/clients-page-bg.jpg") no-repeat top;
+        background-size: cover;
+    }
+
+
+    .elixir-clients--support .clients-title-banner__bg-banner {
+        background: url('../img/support-clients-bg.jpg') no-repeat top;
+        background-size: cover;
+    }
+
+    .elixir-clients--support .clients-title-banner__title-side {
+        min-height: 320px;
+        height: 100%;
+    }
+
+
+    .clients-title-banner__bg-banner,
+    .clients-title-banner__title-side {
+        width: 100%;
+        height: 300px;
+    }
+
+    .title-side__container .catalog-info-block__info {
+        align-items: flex-start;
+        margin-top: 10px;
+    }
+
+    .title-side__container .catalog-info-block__info .catalog-info-block__title {
+        font-size: 38px;
+    }
+
+    .title-side__container .catalog-info-block__info .catalog-info-block__subtitle {
+        text-align: start;
+    }
+
+    .clients-services__client-service {
+        flex-direction: column;
+        padding: 20px 20px;
+        align-items: flex-start;
+        background-position: 90% bottom;
+        height: 320px;
+    }
+
+    .clients-services__client-service:hover {
+        background-position: 90% bottom;
+    }
+
 }
 
 
