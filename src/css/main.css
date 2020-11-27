@@ -3842,6 +3842,11 @@
     background-size: auto;
 }
 
+.elixir-clients--delivery .clients-title-banner__bg-banner {
+    background: url('../img/writing-address-on-box.jpg') no-repeat left -100px;
+    background-size: auto;
+}
+
 .elixir-clients--certificates .clients-title-banner__bg-banner {
     background: url('../img/breakup-marriage-couple-with-divorce-certification.jpg') no-repeat left -100px;
     background-size: auto;
@@ -4162,7 +4167,7 @@
     .clients-title-banner__bg-banner,
     .clients-title-banner__title-side {
         width: 100%;
-        height: 300px;
+        height: 320px;
     }
 
     .title-side__container .catalog-info-block__info {
@@ -4220,12 +4225,14 @@
 /* credit service page */
 
 .elixir-clients__clients-credit-service,
+.elixir-clients__clients-delivery-service,
 .elixir-clients__clients-agronomy-service {
     width: 100%;
     margin: 130px 0 100px;
 }
 
 .clients-credit-service__container,
+.clients-delivery-service__container,
 .client-agronomy-service__container {
     width: 100%;
     display: flex;
@@ -4233,13 +4240,15 @@
 }
 
 .clients-credit-service__about-credit,
-.clients-agronomy-service__about-agronomy {
+.clients-credit-service__about-credit,
+.clients-delivery-service__about-delivery {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
 .clients-credit-service__container-modify,
+.clients-delivery-service__container-modify,
 .clients-agronomy-service__container-modify {
     max-width: 780px;
     margin: 0 auto;
@@ -4247,6 +4256,7 @@
 }
 
 .about-credit__container,
+.about-delivery__container,
 .about-agronomy__container {
     width: 100%;
     display: flex;
@@ -4302,6 +4312,7 @@
 }
 
 .about-credit__text,
+.about-delivery__text,
 .about-agronomy__text {
     font-family: var(--main-font);
     font-weight: normal;
@@ -4313,6 +4324,7 @@
 }
 
 .about-credit__img-container,
+.about-delivery__img-container,
 .about-agronomy__img-container {
     width: 100%;
     height: 440px;
@@ -4333,6 +4345,7 @@
 }
 
 .clients-credit-service__credit-principles,
+.clients-delivery-service__delivery-principles,
 .clients-agronomy-service__agronomy-principles {
     width: 100%;
     display: flex;
@@ -4343,6 +4356,7 @@
 }
 
 .credit-principles__title,
+.delivery-principles__title,
 .agronomy-principles__title {
     font-weight: bold;
     font-size: 21px;
@@ -4350,7 +4364,9 @@
 }
 
 .credit-principles__principles-list,
+.delivery-principles__principles-list,
 .credit-principles__principles-item,
+.delivery-principles__principles-item,
 .agronomy-principles__principles-list,
 .agronomy-principles__principles-item {
     display: flex;
@@ -4358,6 +4374,7 @@
 }
 
 .credit-principles__principles-item,
+.delivery-principles__principles-item,
 .agronomy-principles__principles-item {
     margin: 15px 0;
 }
@@ -4376,16 +4393,24 @@
 }
 
 @media screen and (max-width: 768px) {
-    .elixir-clients--agronomy .about-credit__img-container img {
+    .elixir-clients--agronomy .about-credit__img-container img,
+    .elixir-clients--delivery .about-delivery__img-container img {
+        width: 100%;
         height: 320px;
         object-fit: cover;
     }
 
     .clients-title-banner--right .clients-title-banner__bg-banner,
-    .elixir-clients--agronomy .clients-title-banner--right .clients-title-banner__bg-banner {
+    .elixir-clients--agronomy .clients-title-banner--right .clients-title-banner__bg-banner,
+    .elixir-clients--delivery .clients-title-banner--right .clients-title-banner__bg-banner {
         height: 320px;
         background-size: cover !important;
         margin: 40px 0;
+    }
+
+    .elixir-clients--agronomy .clients-title-banner__title-side,
+    .elixir-clients--delivery .clients-title-banner__title-side {
+        height: auto;
     }
 
     .clients-title-banner--right {
@@ -4401,28 +4426,33 @@
     }
 
     .elixir-clients__clients-credit-service,
+    .elixir-clients__clients-delivery-service,
     .elixir-clients__clients-agronomy-service {
         margin: 30px 0;
     }
 
     .elixir-clients__clients-credit-service .container,
+    .elixir-clients__clients-delivery-service .container,
     .elixir-clients__clients-agronomy-service .container {
         padding: 0;
     }
 
     .clients-credit-service__container-modify,
+    .clients-delivery-service__container-modify,
     .clients-agronomy-service__container-modify {
         padding: 0 15px;
         box-sizing: border-box;
     }
 
     .about-credit__img-container,
+    .about-delivery__img-container,
     .about-agronomy__img-container {
         height: 320px;
         margin: 0;
     }
 
     .clients-credit-service__credit-principles,
+    .clients-delivery-service__credit-principles,
     .clients-agronomy-service__agronomy-principles {
         margin: 30px 0;
     }
