@@ -3823,22 +3823,27 @@
 }
 
 .clients-title-banner__bg-banner {
-    background: url("../img/clients-page-bg.jpg") no-repeat -50px -40px;
+    background: url("../img/clients-page-bg.jpg") no-repeat left -40px;
     background-size: auto;
 }
 
 .elixir-clients--support .clients-title-banner__bg-banner {
-    background: url('../img/support-clients-bg.jpg') no-repeat -100px -60px;
+    background: url('../img/support-clients-bg.jpg') no-repeat left -60px;
     background-size: auto;
 }
 
 .elixir-clients--credit .clients-title-banner__bg-banner {
-    background: url('../img/businesspeople-negotiation-signing-contract.jpg') no-repeat -100px -100px;
+    background: url('../img/businesspeople-negotiation-signing-contract.jpg') no-repeat left -100px;
     background-size: auto;
 }
 
 .elixir-clients--agronomy .clients-title-banner__bg-banner {
     background: url('../img/agronomy-service.jpg') no-repeat left -100px;
+    background-size: auto;
+}
+
+.elixir-clients--certificates .clients-title-banner__bg-banner {
+    background: url('../img/breakup-marriage-couple-with-divorce-certification.jpg') no-repeat left -100px;
     background-size: auto;
 }
 
@@ -4420,6 +4425,99 @@
     .clients-credit-service__credit-principles,
     .clients-agronomy-service__agronomy-principles {
         margin: 30px 0;
+    }
+}
+
+/* elixir certificates page */
+
+.elixir-clients__certificates-elixir {
+    width: 100%;
+}
+
+.certificates-elixir__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.certificates-elixir__single-certificate {
+    width: calc(100% / 3);
+    max-height: 516px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 15px 0;
+}
+
+.certificates-elixir__single-certificate img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.certificate-open-full {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.zoom-certificate-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid var(--main-bg-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.zoom-certificate-icon {
+
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: url("../img/certificates/zoom-icon.png") no-repeat center, var(--main-bg-color);
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: content-box;
+}
+
+.certificates-elixir__single-certificate:hover .certificate-open-full,
+.certificates-elixir__single-certificate:hover .zoom-certificate-icon {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+    .certificates-elixir__single-certificate {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .certificates-elixir__single-certificate {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .certificates-elixir__single-certificate img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }
 
