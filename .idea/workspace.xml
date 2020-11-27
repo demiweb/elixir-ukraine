@@ -10,14 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="about page">
+    <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="Clients page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/variables.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/catalog/item-page/item-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/catalog/item-page/item-page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scripts/headerScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/headerScript.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,13 +49,13 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projectsWebStorm\elixir-web\src\html\catalog\item-page" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\projectsWebStorm\elixir-web\src\html" />
       <recent name="D:\projectsWebStorm\elixir-web\src\scripts" />
       <recent name="D:\projectsWebStorm\elixir-web\src\img" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\projectsWebStorm\elixir-web\src\html\catalog\item-page" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -77,7 +72,8 @@
       <workItem from="1606115207876" duration="28627000" />
       <workItem from="1606202343832" duration="27774000" />
       <workItem from="1606288756081" duration="29941000" />
-      <workItem from="1606374591926" duration="19640000" />
+      <workItem from="1606374591926" duration="29329000" />
+      <workItem from="1606461090330" duration="5034000" />
     </task>
     <task id="LOCAL-00001" summary="dots coordinates">
       <created>1605715794826</created>
@@ -198,7 +194,28 @@
       <option name="project" value="LOCAL" />
       <updated>1606312866513</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="catalog page, header sticky scroll down">
+      <created>1606396804473</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1606396804473</updated>
+    </task>
+    <task id="LOCAL-00019" summary="font, img">
+      <created>1606396824610</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1606396824610</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Clients page">
+      <created>1606406365510</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1606406365510</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,7 +249,10 @@
     <MESSAGE value="body fix" />
     <MESSAGE value="recommendation fix" />
     <MESSAGE value="about page" />
-    <option name="LAST_COMMIT_MESSAGE" value="about page" />
+    <MESSAGE value="catalog page, header sticky scroll down" />
+    <MESSAGE value="font, img" />
+    <MESSAGE value="Clients page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clients page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="751" y="409" key="#Chrome_Settings" timestamp="1605686692337">
@@ -247,10 +267,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="572" y="215" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605710803328" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606234559770">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606406373973">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606234559770" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606406373973" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606115682179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
