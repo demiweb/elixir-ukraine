@@ -2919,7 +2919,8 @@
 
 /* cart page */
 
-.elixir-cart {
+.elixir-cart,
+.elixir-thanks {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -3837,6 +3838,7 @@
     background-size: auto;
 }
 
+
 .elixir-clients--agronomy .clients-title-banner__bg-banner {
     background: url('../img/agronomy-service.jpg') no-repeat left -100px;
     background-size: auto;
@@ -4548,6 +4550,122 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+/* thanks page */
+
+.elixir-thanks .navigation-panel__container {
+    margin: 15px 0;
+}
+
+.elixir-thanks .clients-title-banner__title-side,
+.elixir-thanks .clients-title-banner__bg-banner {
+    height: 511px;
+}
+
+.elixir-thanks .clients-title-banner__bg-banner {
+    background: url('../img/young-man-order-online-with-credit-card-using-mobile-phone.jpg') no-repeat left -100px;
+    background-size: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.elixir-thanks .clients-title-banner__title-side {
+    background: #eef2f3;
+}
+
+.elixir-thanks__delivery-info-email {
+    width: 470px;
+    height: 190px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    background: var(--white-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.delivery-info-email__text,
+.delivery-info-email__link {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+}
+
+.delivery-info-email__link {
+    color: var(--main-bg-color);
+    text-decoration: none;
+    transition: 0.3s;
+
+}
+
+.delivery-info-email__link:hover {
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.elixir-thanks__about-order {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+}
+
+.about-order__single-line {
+    width: 100%;
+    height: 39px;
+    border-bottom: 1px solid var(--lines-manure-bg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-order__left-part,
+.about-order__right-part {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--second-font-color);
+}
+
+.about-order__right-part {
+    font-weight: bold;
+}
+
+@media screen  and (max-width: 768px) {
+    .elixir-thanks__delivery-info-email {
+        width: 100%;
+        margin: 0 15px;
+    }
+
+    .elixir-thanks .clients-title-banner__title-side {
+        height: 430px;
+    }
+
+    .elixir-thanks .clients-title-banner__bg-banner {
+        background: url('../img/young-man-order-online-with-credit-card-using-mobile-phone.jpg') no-repeat center;
+
+        background-size: cover;
+    }
+
+    .elixir-thanks .catalog-info-block__info {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .elixir-thanks .catalog-info-block__title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .elixir-thanks__about-order {
+        width: 100%;
     }
 }
 
