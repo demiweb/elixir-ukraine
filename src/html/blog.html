@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Elixir Ukraine - Блог</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="../scripts/lazysizes.min.js" async></script>
+</head>
+<body>
+<header class="elixir-header">
+    <section class="elixir-header__header-top-side">
+        <div class="container">
+            <div class="header-top-side__elixir-logo-contacts">
+                <a href="./home.html" class="elixir-logo-contacts__main-page" title="На главную страницу"><img
+                        data-src="../img/header_logo_2.svg" class="lazyload" alt="Логотип"></a>
+                <span class="elixir-logo-contacts__tagline">Удобрения для всей страны</span>
+                <nav class="elixir-logo-contacts__socials">
+                    <a class="social__header-link" href="#" title="Наш Facebook"><img class="lazyload"
+                                                                                      data-src="../img/fb-icon-header.png"
+                                                                                      alt="Facebook icon"></a>
+                    <a class="social__header-link" href="#" title="Наш YouTube"><img class="lazyload"
+                                                                                     data-src="../img/yt-icon-header.png"
+                                                                                     alt="Youtube icon"></a>
+                </nav>
+
+                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                        class="lazyload" data-src="../img/download-icon.png" alt=""></button>
+                <div class="elixir-logo-contacts__contact-us-header">
+                    <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
+                    <a class="contact-us-header__left-application" href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-header__header-bottom-side">
+        <div class="container" style="height: 100%">
+            <div class="header-bottom-side__header-navigation">
+                <div class="mob-burger-button">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-input">
+                    <label for="burger-checkbox" class="burger-checkbox-label" onclick="toggleVisible()">
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                    </label>
+
+
+                </div>
+                <nav class="header-navigation__list-container">
+
+                    <ul class="header-navigation__nav-list">
+                        <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Питание культур">питание культур</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Для клиентов">для клиентов</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
+                    </ul>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <a href="./home.html" class="elixir-logo-contacts__main-page elixir-logo-contacts__main-page--mob"
+                   title="На главную страницу"><img
+                        class="lazyload" data-src="../img/header_logo_2-white.png" alt="Логотип"></a>
+                <div class="header-navigation__language-cart-container">
+                    <nav class="header-navigation__search-cart-block">
+                        <div class="search-cart-block__search-container">
+                            <div class="search-container__search-icon-block">
+                            </div>
+                        </div>
+                        <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
+                                                                                         data-src="../img/shopping-cart.png"
+                                                                                         alt="Корзина"><span
+                                class="number-of-items-cart">4</span></a>
+                    </nav>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="elixir-blog">
+    <section class="elixir-clients__clients-title-banner">
+        <div class="clients-title-banner__title-side">
+            <div class="banner-point__container-modify banner-point__container-modify--left">
+                <div class="title-side__container">
+                    <nav class="item-page__breadcrumbs">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link"
+                                                                  href="./home.html">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">Блог
+                            </a></li>
+                        </ul>
+                    </nav>
+                    <div class="catalog-info-block__info">
+                        <span class="catalog-info-block__title">Блог</span>
+                        <span class="catalog-info-block__subtitle">Если вы хотите повысить качество и урожайность с / х культур, или просто ищете совет по питанию растений,  узнайте как агрономы Elixir Ukraine могут вам помочь</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-title-banner__bg-banner"></div>
+    </section>
+    <section class="elixir-blog__content-block">
+        <div class="container">
+            <div class="elixir-blog__blog-content">
+                <div class="blog-content__blog-navigation">
+                    <nav class="blog-navigation__categories">
+                        <span class="blog-navigation__title">Категории</span>
+                        <div class="blog-navigation__categories-container">
+                            <button class="blog-navigation__category">Новости</button>
+                            <button class="blog-navigation__category blog-navigation__category--active">Статьи</button>
+                            <button class="blog-navigation__category">События</button>
+                        </div>
+                    </nav>
+                    <nav class="blog-navigation__tags">
+                        <span class="blog-navigation__title">Теги</span>
+                        <div class="blog-navigation__tags-container">
+                            <button class="blog-navigation__tag">Свекла</button>
+                            <button class="blog-navigation__tag">Удобрения</button>
+                            <button class="blog-navigation__tag blog-navigation__tag--active">Кукуруза</button>
+                            <button class="blog-navigation__tag">Соя</button>
+                            <button class="blog-navigation__tag">Овощи</button>
+                            <button class="blog-navigation__tag blog-navigation__tag--active">Зерновые</button>
+                            <button class="blog-navigation__tag">Подсолнечник</button>
+                            <button class="blog-navigation__tag">Рапс</button>
+                            <button class="blog-navigation__tag">Культуры</button>
+                            <button class="blog-navigation__tag">Почва</button>
+                            <button class="blog-navigation__tag">Технологии</button>
+                            <button class="blog-navigation__tag">Садоводство</button>
+                            <button class="blog-navigation__tag blog-navigation__tag--active">Зерновые</button>
+                            <button class="blog-navigation__tag">Подсолнечник</button>
+                            <button class="blog-navigation__tag">Рапс</button>
+                            <button class="blog-navigation__tag">Культуры</button>
+                            <button class="blog-navigation__tag">Почва</button>
+                            <button class="blog-navigation__tag">Технологии</button>
+                            <button class="blog-navigation__tag">Садоводство</button>
+
+                        </div>
+                    </nav>
+                </div>
+                <div class="blog-content__blog-cards">
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-1.jpg" alt="Подсолнух">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для подсолнечника</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-2.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Все о кукурузе</span>
+                            <span class="card-content__text">Кукуруза – популярная зерновая, кормовая и техническая культура, которая характеризуется универсальностью использования и высокой урожайностью </span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-3.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для кукурузы</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-2.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Все о кукурузе</span>
+                            <span class="card-content__text">Кукуруза – популярная зерновая, кормовая и техническая культура, которая характеризуется универсальностью использования и высокой урожайностью </span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-3.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для кукурузы</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-1.jpg" alt="Подсолнух">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для подсолнечника</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-2.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Все о кукурузе</span>
+                            <span class="card-content__text">Кукуруза – популярная зерновая, кормовая и техническая культура, которая характеризуется универсальностью использования и высокой урожайностью </span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-3.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для кукурузы</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-2.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Все о кукурузе</span>
+                            <span class="card-content__text">Кукуруза – популярная зерновая, кормовая и техническая культура, которая характеризуется универсальностью использования и высокой урожайностью </span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-3.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для кукурузы</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-2.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Все о кукурузе</span>
+                            <span class="card-content__text">Кукуруза – популярная зерновая, кормовая и техническая культура, которая характеризуется универсальностью использования и высокой урожайностью </span>
+                        </div>
+                    </a>
+                    <a class="blog-cards__card-blog" href="#">
+                        <div class="card-blog__img-container">
+                            <img class="lazyload" data-src="../img/blog/blog-pict-3.jpg" alt="Кукуруза">
+                        </div>
+                        <div class="card-blog__card-content">
+                            <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                            <span class="card-content__title">Правильная система питания  для кукурузы</span>
+                            <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="elixir-pagination-block">
+                <div class="elixir-pagination-block__container">
+                    <ul class="elixir-pagination-block__list">
+                        <li class="elixir-pagination-block__item"><a
+                                class="elixir-pagination-block__number elixir-pagination-block__number--previous"
+                                href="#"><img
+                                src="../img/chevron-right.png" alt=""></a></li>
+                        <li class="elixir-pagination-block__item"><a class="elixir-pagination-block__number "
+                                                                     href="#">1</a></li>
+                        <li class="elixir-pagination-block__item"><span
+                                class="elixir-pagination-block__number elixir-pagination-block__number--current">2</span>
+                        </li>
+                        <li class="elixir-pagination-block__item"><a class="elixir-pagination-block__number"
+                                                                     href="#">3</a></li>
+                        <li class="elixir-pagination-block__item"><span
+                                class="elixir-pagination-block__number elixir-pagination-block__number--dots">...</span>
+                        </li>
+                        <li class="elixir-pagination-block__item"><a class="elixir-pagination-block__number"
+                                                                     href="#">12</a></li>
+                        <li class="elixir-pagination-block__item"><a class="elixir-pagination-block__number"
+                                                                     href="#">13</a></li>
+                        <li class="elixir-pagination-block__item"><a
+                                class="elixir-pagination-block__number elixir-pagination-block__number--next"
+                                href="#"><img
+                                src="../img/chevron-right.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+<footer class="elixir-footer">
+    <div class="container">
+        <div class="elixir-footer__footer-container">
+            <section class="footer-container__elixir-logo-date">
+                <a href="#" title="Главная страница"><img class="lazyload" data-src="../img/header_logo_2-white.png"
+                                                          alt="Логотип Еликсир"></a>
+                <span class="elixir-logo-date__date-ukraine">С 2016 года компания «Эликсир Украина» является официальным представителем Elixir Zork</span>
+                <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+            </section>
+            <section class="footer-container__footer-links-block">
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Полезное</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">О
+                            компании</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Каталог</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Питание
+                            культур</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Для
+                            клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Блог</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Продукция</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Basic</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Premium</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Micro Gran</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Для клиентов</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сервисы
+                            поддержки</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Кредитование
+                            для клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Агрономическая
+                            поддержка</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сертификаты</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Оплата и
+                            доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__copyright-block">
+                    <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../scripts/headerScript.js"></script>
+
+<script>
+    let allTags = [...document.querySelectorAll('.blog-navigation__tag')];
+    let allCategories = [...document.querySelectorAll('.blog-navigation__category')];
+    allCategories.forEach((cat) => {
+        cat.addEventListener('click', () => {
+            cat.classList.toggle('blog-navigation__category--active')
+        })
+    });
+    allTags.forEach((tag) => {
+        tag.addEventListener('click', () => {
+            tag.classList.toggle('blog-navigation__tag--active')
+        })
+    })
+</script>
+</body>
+</html>
