@@ -51,9 +51,9 @@
     .iframe {
         position: absolute;
         top: 100%;
-        left: 50%;
+        left: 100%;
         visibility: hidden;
-        transform: scale(0.3);
+        transform: scale(0.3) translate(0%, -50px);
         box-shadow: 0 0 20px rgba(0, 0, 0, .6);
     }
 
@@ -141,6 +141,12 @@
     <li class="list-item">
         <a class="link" href="./src/html/blog.html">Blog
             <iframe class="iframe" width="1600" height="1000" src="./src/html/blog.html"
+                    frameborder="0"></iframe>
+        </a>
+    </li>
+    <li class="list-item">
+        <a class="link" href="./src/html/blog-page.html">Blog (Single page)
+            <iframe class="iframe" width="1600" height="1000" src="./src/html/blog-page.html"
                     frameborder="0"></iframe>
         </a>
     </li>

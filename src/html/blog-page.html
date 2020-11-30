@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Elixir Ukraine - Блог - Правильная система питания для подсолнечника</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+    <script src="../scripts/lazysizes.min.js" async></script>
+</head>
+<body>
+<header class="elixir-header">
+    <section class="elixir-header__header-top-side">
+        <div class="container">
+            <div class="header-top-side__elixir-logo-contacts">
+                <a href="./home.html" class="elixir-logo-contacts__main-page" title="На главную страницу"><img
+                        data-src="../img/header_logo_2.svg" class="lazyload" alt="Логотип"></a>
+                <span class="elixir-logo-contacts__tagline">Удобрения для всей страны</span>
+                <nav class="elixir-logo-contacts__socials">
+                    <a class="social__header-link" href="#" title="Наш Facebook"><img class="lazyload"
+                                                                                      data-src="../img/fb-icon-header.png"
+                                                                                      alt="Facebook icon"></a>
+                    <a class="social__header-link" href="#" title="Наш YouTube"><img class="lazyload"
+                                                                                     data-src="../img/yt-icon-header.png"
+                                                                                     alt="Youtube icon"></a>
+                </nav>
+
+                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                        class="lazyload" data-src="../img/download-icon.png" alt=""></button>
+                <div class="elixir-logo-contacts__contact-us-header">
+                    <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
+                    <a class="contact-us-header__left-application" href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-header__header-bottom-side">
+        <div class="container" style="height: 100%">
+            <div class="header-bottom-side__header-navigation">
+                <div class="mob-burger-button">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-input">
+                    <label for="burger-checkbox" class="burger-checkbox-label" onclick="toggleVisible()">
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                    </label>
+
+
+                </div>
+                <nav class="header-navigation__list-container">
+
+                    <ul class="header-navigation__nav-list">
+                        <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Питание культур">питание культур</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Для клиентов">для клиентов</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
+                    </ul>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <a href="./home.html" class="elixir-logo-contacts__main-page elixir-logo-contacts__main-page--mob"
+                   title="На главную страницу"><img
+                        class="lazyload" data-src="../img/header_logo_2-white.png" alt="Логотип"></a>
+                <div class="header-navigation__language-cart-container">
+                    <nav class="header-navigation__search-cart-block">
+                        <div class="search-cart-block__search-container">
+                            <div class="search-container__search-icon-block">
+                            </div>
+                        </div>
+                        <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
+                                                                                         data-src="../img/shopping-cart.png"
+                                                                                         alt="Корзина"><span
+                                class="number-of-items-cart">4</span></a>
+                    </nav>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="elixir-blog elixir-blog__blog-page">
+    <section class="elixir-clients__clients-title-banner">
+        <div class="clients-title-banner__title-side">
+            <div class="banner-point__container-modify banner-point__container-modify--left">
+                <div class="title-side__container">
+                    <nav class="item-page__breadcrumbs">
+                        <ul class="breadcrumbs">
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link"
+                                                                  href="./home.html">Главная</a>
+                            </li>
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">Блог
+                            </a></li>
+                            <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">Правильная
+                                система питания для подсолнечника
+                            </a></li>
+                        </ul>
+                    </nav>
+                    <div class="catalog-info-block__info">
+                        <span class="catalog-info-block__title">Правильная система  питания для  подсолнечника</span>
+                        <div class="elixir-blog__page-tags">
+                            <span class="page-tags__date">18/01/2020</span>
+                            <span class="page-tags__type">Статьи</span>
+                            <span class="page-tags__main-tag">#Удобрения</span>
+                            <span class="page-tags__tag">#Подсолнечник</span>
+                            <span class="page-tags__tag">#Технологии</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="clients-title-banner__bg-banner"></div>
+    </section>
+    <section class="blog-page__about-blog">
+        <div class="container">
+            <div class="about-blog__container-modify">
+                <div class="about-blog__news-block">
+                    <span class="news-block__text-part">Финансовые затраты на разработку правильной системы удобрения подсолнечника окупаются многократно, поскольку семена культуры пользуются высоким спросом и в Украине, и на мировых рынках. На правильное и грамотное применение удобрений подсолнечник реагирует увеличением урожайности. Для него очень важны: азот, фосфат и калий. В данной статье нашими специалистами приведены основные важные рекомендации по внесению удобрений для подсолнечника и др.</span>
+                    <div class="news-block__img-container">
+                        <img class="lazyload" data-src="../img/djubrivo21.jpg" alt="Картинка">
+                    </div>
+                    <div class="news-block__news-single-part">
+                        <div class="help-social__info">
+                            <span class="help-social__topline"></span>
+                            <span class="help-social__title">Основные правила внесения удобрений</span>
+                        </div>
+                        <span class="news-block__text-part">Выращиваемый в условиях плодородных черноземных почв в Украине <strong>подсолнечник</strong> имеет достаточно скромные потребности в удобрениях, но отлично реагирует на азот. Существуют базовые рекомендации по внесению азота (кг д.в./га): когда подсолнечник высевают в севообороте вслед за соей, то нормой является 56–78 кг/га азота на гектар. Все показания являются приблизительными.</span>
+                        <span class="news-block__text-part">При высевании не после бобовых культур необходимо вносить примерно 90–112 кг/га д.в. азота на гектар. Внесение жидкого навоза с заделкой в почву или покровные бобовые культуры (при системах выращивания подсолнечника по No-till или Strip-till) могут уменьшить или вообще элиминировать необходимость в азотных удобрениях. Также необходимо исследовть культура перед внесением.</span>
+                        <span class="news-block__text-part">Многое здесь зависит от того, насколько эффективные штаммы азотфиксирующих бактерий применялись и насколько эффективно проходил процесс азотфиксации на предшествующих бобовых культурах. Серьезное влияние оказывает также уровень рН почвы. Но это не все факторы.</span>
+                    </div>
+                    <div class="news-block__news-single-part news-block__news-single-part--quote">
+                        <div class="news-single-part__quote">
+                            <span class="news-block__text-part">В Украине на черноземах со средним и повышенным содержанием гумуса обычно не хватает азота, но в некоторых случаях, особенно в зоне Лесостепи и Полесья, часто ощущается недостаток и других основных элементов питания.</span>
+                        </div>
+                    </div>
+                    <div class="news-block__news-single-part">
+                        <div class="help-social__info">
+                            <span class="help-social__topline"></span>
+                            <span class="help-social__title">Внешние факторы</span>
+                        </div>
+                        <span class="news-block__text-part">Также следует понимать, что при повышенном уровне осадков в этих областях и применении высоких норм <a
+                                href="#">удобрений</a> на подсолнечнике могут развиваться многие болезни (рис. 3): склеротиниоз, альтернариоз, ржавчина, фомоз, фомопсис, ложная мучнистая роса. Поэтому в данных регионах особое внимание следует уделять системе защиты высокопродуктивных посевов:</span>
+                        <div class="news-block__text-part">
+                            <span>1) Кукурузы</span>
+                            <span>2) Томатов</span>
+                            <span>3) Пшеницы</span>
+                        </div>
+                        <span class="news-block__text-part">Что касается других элементов питания, то необходимые нормы их внесения под планируемый урожай подсолнечника всегда точно рассчитываются на основе детального почвенного анализа.</span>
+                        <span class="news-block__text-part">Из всех микроэлементов подсолнечник наиболее восприимчив к дефициту бора (B). Тем не менее, некоторые эксперименты с уровнями бора в почве показали, что при содержании бора 0,2 ppm экономически значимый отклик не наблюдался. Поэтому рекомендуется закладывать полевые опыты с целью определения окупаемости борных удобрений на подсолнечнике в конкретных почвенно-климатических условиях являются важными аспектам всей сельхоз деятельности.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-blog__modify-img-container">
+                <div class="about-blog__container-modify">
+                    <div class="news-block__img-container">
+                        <img class="lazyload" src="../img/jordan-cormack-79RuacUiXUI-unsplash.jpg" alt="Картинка">
+                    </div>
+                </div>
+            </div>
+            <div class="about-blog__container-modify">
+                <div class="about-blog__news-block">
+                    <div class="news-block__news-single-part">
+                        <div class="help-social__info">
+                            <span class="help-social__topline"></span>
+                            <span class="help-social__title">Нормы внесения</span>
+                        </div>
+                        <span class="news-block__text-part">Что касается других элементов питания, то необходимые нормы их внесения под планируемый урожай подсолнечника всегда рассчитываются на основе детального почвенного анализа:</span>
+                        <ul class="news-block__list">
+                            <li class="news-block__list-item">анализ 1 (Проводится в лабораториях нашей компании)</li>
+                            <li class="news-block__list-item">аназиз 2 (Проводится в местных университетах и
+                                образовательных установах)
+                            </li>
+                            <li class="news-block__list-item">анализ 3 (Проводится исключительно зарубежом, в таких
+                                странах, как: Германия, Польша, Австрия
+                            </li>
+                        </ul>
+                        <span class="news-block__text-part">Из всех микроэлементов подсолнечник наиболее восприимчив к дефициту бора (B). Тем не менее, некоторые эксперименты с уровнями бора в почве показали, что при содержании бора 0,2 ppm экономически значимый отклик не наблюдался. Поэтому рекомендуется закладывать полевые опыты с целью определения окупаемости борных удобрений на подсолнечнике в конкретных Поэтому рекомендуется закладывать полевые опыты с целью определения окупаемости борных удобрений на подсолнечнике в конкретных почвенно-климатических условиях являются важными.</span>
+                        <span class="news-block__text-part">Для нормального развития и формирования высокого урожая подсолнечника очень важны также другие макро- и микроэлементы. Рекомендации по внесению фосфора (P2O5) для удобрения подсолнечника приведены в табл. 3, а рекомендации по внесению калия (K2O) – в табл. 4. Категорически не рекомендуется внесение более 11,2 кг N/га + K2O, если эти удобрения будут</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="blog-content__blog-cards">
+                <a class="blog-cards__card-blog" href="#">
+                    <div class="card-blog__img-container">
+                        <img class="lazyload" data-src="../img/blog/blog-pict-1.jpg" alt="Подсолнух">
+                    </div>
+                    <div class="card-blog__card-content">
+                        <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                        <span class="card-content__title">Правильная система питания  для подсолнечника</span>
+                        <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                    </div>
+                </a>
+                <a class="blog-cards__card-blog" href="#">
+                    <div class="card-blog__img-container">
+                        <img class="lazyload" data-src="../img/blog/blog-pict-2.jpg" alt="Кукуруза">
+                    </div>
+                    <div class="card-blog__card-content">
+                        <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                        <span class="card-content__title">Все о кукурузе</span>
+                        <span class="card-content__text">Кукуруза – популярная зерновая, кормовая и техническая культура, которая характеризуется универсальностью использования и высокой урожайностью </span>
+                    </div>
+                </a>
+                <a class="blog-cards__card-blog" href="#">
+                    <div class="card-blog__img-container">
+                        <img class="lazyload" data-src="../img/blog/blog-pict-3.jpg" alt="Кукуруза">
+                    </div>
+                    <div class="card-blog__card-content">
+                        <span class="card-content__date"><div class="card-content__date--img"></div>01.03.20</span>
+                        <span class="card-content__title">Правильная система питания  для кукурузы</span>
+                        <span class="card-content__text">Хотите улучшить качество и увеличить урожайность культур, или просто ищете советы по любому аспекту питания растений?</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="elixir-footer">
+    <div class="container">
+        <div class="elixir-footer__footer-container">
+            <section class="footer-container__elixir-logo-date">
+                <a href="#" title="Главная страница"><img class="lazyload" data-src="../img/header_logo_2-white.png"
+                                                          alt="Логотип Еликсир"></a>
+                <span class="elixir-logo-date__date-ukraine">С 2016 года компания «Эликсир Украина» является официальным представителем Elixir Zork</span>
+                <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+            </section>
+            <section class="footer-container__footer-links-block">
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Полезное</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">О
+                            компании</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Каталог</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Питание
+                            культур</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Для
+                            клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Блог</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Продукция</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Basic</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Premium</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Micro Gran</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Для клиентов</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сервисы
+                            поддержки</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Кредитование
+                            для клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Агрономическая
+                            поддержка</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сертификаты</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Оплата и
+                            доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__copyright-block">
+                    <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="../scripts/headerScript.js"></script>
+
+<script>
+    let allTags = [...document.querySelectorAll('.blog-navigation__tag')];
+    let allCategories = [...document.querySelectorAll('.blog-navigation__category')];
+    allCategories.forEach((cat) => {
+        cat.addEventListener('click', () => {
+            cat.classList.toggle('blog-navigation__category--active')
+        })
+    });
+    allTags.forEach((tag) => {
+        tag.addEventListener('click', () => {
+            tag.classList.toggle('blog-navigation__tag--active')
+        })
+    })
+</script>
+</body>
+</html>

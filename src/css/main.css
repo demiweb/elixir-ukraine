@@ -5271,8 +5271,209 @@
     .blog-navigation__category {
         width: 100%;
     }
-
-
 }
 
+/* blog one item page */
+
+.elixir-blog.elixir-blog__blog-page .clients-title-banner__bg-banner {
+    background: url("../img/two-fresh-sunflowers-wooden-plank-backdrop.jpg") no-repeat left -100px;
+    background-size: auto;
+}
+
+.elixir-blog__page-tags {
+    width: 100%;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    margin: 15px 0;
+}
+
+
+.elixir-blog__page-tags span {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.page-tags__date::before {
+    content: url("../img/clock.svg");
+    padding-right: 6px;
+    padding-top: 6px;
+}
+
+.page-tags__type::before {
+    content: url("../img/folder.svg");
+    padding-right: 6px;
+    padding-top: 6px;
+}
+
+.page-tags__main-tag::before {
+    content: url("../img/tag-svg.svg");
+    padding-left: 6px;
+    padding-top: 6px;
+    transform: scale(-1, 1);
+}
+
+.blog-page__about-blog {
+    width: 100%;
+    margin: 60px 0;
+}
+
+.about-blog__container-modify {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.about-blog__news-block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-block__text-part {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    text-align: justify;
+}
+
+.news-block__img-container {
+    width: 100%;
+    height: 440px;
+    margin: 60px 0;
+}
+
+.news-block__img-container img {
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+}
+
+.news-block__news-single-part {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0;
+}
+
+.news-block__news-single-part .news-block__text-part {
+    margin: 15px 0;
+}
+
+.news-block__news-single-part .help-social__info {
+    width: 100%;
+    max-width: 400px;
+}
+
+.news-single-part__quote {
+    width: 100%;
+    min-height: 145px;
+    padding: 46px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 2;
+}
+
+.news-block__text-part a {
+    color: #1b8ff1;
+}
+
+div.news-block__text-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.news-single-part__quote .news-block__text-part {
+    z-index: 2;
+}
+
+.news-block__news-single-part--quote {
+    position: relative;
+    overflow: hidden;
+    background: var(--cultures-bg-color);
+}
+
+.news-block__news-single-part--quote::before {
+    position: absolute;
+    content: url("../img/left-quote.png");
+    bottom: -30px;
+    right: 30px;
+    z-index: 1;
+}
+
+.news-block__list {
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.news-block__list-item::before {
+    content: url("../img/circle-green.svg");
+    margin-right: 6px;
+}
+
+.news-block__list-item {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+
+    .blog-page__about-blog .blog-content__blog-cards {
+        justify-content: center;
+    }
+
+    .news-block__news-single-part .help-social__info {
+        max-width: none;
+        align-items: flex-start;
+    }
+
+    .blog-page__about-blog .container {
+        padding: 0;
+    }
+
+    .news-block__img-container {
+        display: none;
+    }
+
+    .elixir-blog__blog-page .clients-title-banner__title-side {
+        min-height: 320px;
+        height: auto;
+    }
+
+    .elixir-blog__page-tags {
+        padding-right: 0;
+    }
+
+    .about-blog__container-modify {
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+
+    .about-blog__modify-img-container .about-blog__container-modify {
+        padding: 0;
+    }
+
+    .about-blog__modify-img-container .news-block__img-container {
+        display: block;
+        margin: 0;
+    }
+
+    .news-single-part__quote {
+        padding: 46px 32px;
+    }
+}
 
