@@ -4669,4 +4669,237 @@
     }
 }
 
+/* ordering page */
+
+.elixir-ordering {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #eef2f3;
+}
+
+.elixir-ordering__navigation-panel {
+    width: 100%;
+    min-height: 140px;
+}
+
+.navigation-panel__container {
+    width: 100%;
+    min-height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+.elixir-ordering__ordering-form {
+    width: 100%;
+}
+
+.ordering-form__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.ordering-form__title {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 48px;
+    color: var(--main-font-color);
+}
+
+.ordering-form__form-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0;
+}
+
+.ordering-form__personal-info-form {
+    flex-grow: 1;
+    min-height: 996px;
+    background: var(--white-bg);
+    margin-right: 30px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.ordering-form__ordering-details-block {
+    width: 370px;
+    height: 345px;
+    flex-shrink: 0;
+    background: var(--white-bg);
+    padding: 40px 32px;
+    box-sizing: border-box;
+}
+
+.personal-info-form__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container,
+.personal-info-form__container.payment-type .personal-info-form__form-container {
+    flex-direction: column;
+}
+
+
+.personal-info-form__container.order-comments .personal-info-form__form-container {
+    border: none;
+    padding-bottom: 0;
+}
+
+.personal-info-form__container.order-comments .personal-info-form__form-container textarea {
+    outline: none;
+    border: 1px solid var(--lines-manure-bg);
+    border-radius: 22px;
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    padding: 12px 24px;
+    resize: none;
+    width: 100%;
+    min-height: 158px;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container label,
+.personal-info-form__container.payment-type .personal-info-form__form-container label {
+    margin: 12px 0;
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    display: flex;
+    align-items: center;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container label::before,
+.personal-info-form__container.payment-type .personal-info-form__form-container label::before {
+    content: url("../img/circle.svg");
+    width: 17px;
+    height: 17px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 6px;
+    transition: 0.3s;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container input[type='radio']:checked + label,
+.personal-info-form__container.payment-type .personal-info-form__form-container input[type='radio']:checked + label {
+    color: var(--main-bg-color);
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container input[type='radio']:checked + label::before,
+.personal-info-form__container.payment-type .personal-info-form__form-container input[type='radio']:checked + label::before {
+    content: url("../img/circle-green.svg");
+    border: 1px solid var(--main-bg-color);
+    transition: 0.3s;
+}
+
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container input[type='radio'],
+.personal-info-form__container.payment-type .personal-info-form__form-container input[type='radio'] {
+    display: none;
+}
+
+.personal-info-form__form-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 17px 0 45px;
+    border-bottom: 1px solid var(--lines-manure-bg);
+    width: 100%;
+}
+
+.personal-info-form__title {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--main-font-color);
+}
+
+.personal-info-form__input-info {
+    width: calc(50% - 5px);
+    box-sizing: border-box;
+    margin: 5px 0;
+    height: 44px;
+    outline: none;
+    border: 1px solid var(--lines-manure-bg);
+    border-radius: 22px;
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    padding: 0 24px;
+}
+
+.personal-info-form__input-info::-webkit-outer-spin-button,
+.personal-info-form__input-info::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.ordering-form__ordering-details-block .product-all-info__buy-buttons {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.ordering-form__ordering-details-block .product-all-info__buy-buttons .buy-buttons__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+@media screen  and (max-width: 768px) {
+    .ordering-form__form-container {
+        flex-direction: column;
+    }
+
+    .ordering-form__personal-info-form {
+        margin: 0;
+        padding: 15px;
+    }
+
+    .ordering-form__ordering-details-block {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .ordering-form__title {
+        font-size: 38px;
+    }
+
+    .ordering-form__ordering-details-block {
+        padding: 15px;
+    }
+}
+
+@media screen  and (max-width: 531px) {
+    .personal-info-form__input-info {
+        width: 100%;
+    }
+
+    .ordering-form__ordering-details-block .about-order__right-part {
+        font-size: 12px;
+    }
+}
+
+
 

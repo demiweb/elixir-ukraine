@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"/>
+    <title>Elixir Ukraine - Оформление заказа</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../scripts/lazysizes.min.js" async></script>
+</head>
+<body>
+<header class="elixir-header">
+    <section class="elixir-header__header-top-side">
+        <div class="container">
+            <div class="header-top-side__elixir-logo-contacts">
+                <a href="./home.html" class="elixir-logo-contacts__main-page" title="На главную страницу"><img
+                        data-src="../img/header_logo_2.svg" class="lazyload" alt="Логотип"></a>
+                <span class="elixir-logo-contacts__tagline">Удобрения для всей страны</span>
+                <nav class="elixir-logo-contacts__socials">
+                    <a class="social__header-link" href="#" title="Наш Facebook"><img class="lazyload"
+                                                                                      data-src="../img/fb-icon-header.png"
+                                                                                      alt="Facebook icon"></a>
+                    <a class="social__header-link" href="#" title="Наш YouTube"><img class="lazyload"
+                                                                                     data-src="../img/yt-icon-header.png"
+                                                                                     alt="Youtube icon"></a>
+                </nav>
+
+                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                        class="lazyload" data-src="../img/download-icon.png" alt=""></button>
+                <div class="elixir-logo-contacts__contact-us-header">
+                    <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
+                    <a class="contact-us-header__left-application" href="#">Оставить заявку</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="elixir-header__header-bottom-side">
+        <div class="container" style="height: 100%">
+            <div class="header-bottom-side__header-navigation">
+                <div class="mob-burger-button">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-input">
+                    <label for="burger-checkbox" class="burger-checkbox-label" onclick="toggleVisible()">
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                        <span class="burger-checkbox-span"></span>
+                    </label>
+
+
+                </div>
+                <nav class="header-navigation__list-container">
+
+                    <ul class="header-navigation__nav-list">
+                        <li><a class="nav-list__item-link" href="#" title="О компании">о компании</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Каталог">Каталог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Питание культур">питание культур</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Для клиентов">для клиентов</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Блог">блог</a></li>
+                        <li><a class="nav-list__item-link" href="#" title="Контакты">контакты</a></li>
+                    </ul>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </nav>
+                <a href="./home.html" class="elixir-logo-contacts__main-page elixir-logo-contacts__main-page--mob"
+                   title="На главную страницу"><img
+                        class="lazyload" data-src="../img/header_logo_2-white.png" alt="Логотип"></a>
+                <div class="header-navigation__language-cart-container">
+                    <nav class="header-navigation__search-cart-block">
+                        <div class="search-cart-block__search-container">
+                            <div class="search-container__search-icon-block">
+                            </div>
+                        </div>
+                        <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
+                                                                                         data-src="../img/shopping-cart.png"
+                                                                                         alt="Корзина"><span
+                                class="number-of-items-cart">4</span></a>
+                    </nav>
+                    <nav class="header-navigation__language-buttons">
+                        <ul class="header-navigation__nav-list">
+                            <li class="language-buttons__item--active"><a
+                                    class="nav-list__item-link language-buttons__item " href="">ru</a>
+                            </li>
+                            <li><a class="nav-list__item-link language-buttons__item" href="">ua</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+</header>
+<main class="elixir-ordering">
+    <section class="elixir-ordering__navigation-panel">
+        <div class="container" style="min-height: inherit">
+            <div class="navigation-panel__container">
+                <nav class="item-page__breadcrumbs">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link"
+                                                              href="./home.html">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="">Корзина</a>
+                        </li>
+                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">Оформление
+                            заказа</a></li>
+                    </ul>
+
+                </nav>
+                <div class="navigation-panel__continue-purchases">
+                    <a class="continue-purchases__link" href="#"><img src="../img/back-arrow.svg" alt="">Вернуться в
+                        корзину</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="elixir-ordering__ordering-form">
+        <div class="container">
+            <div class="ordering-form__container">
+                <span class="ordering-form__title">Оформление заказа</span>
+            </div>
+            <div class="ordering-form__form-container">
+                <div class="ordering-form__personal-info-form">
+                    <div class="personal-info-form__container">
+                        <span class="personal-info-form__title">Личные данные</span>
+                        <form class="personal-info-form__form-container">
+                            <input class="personal-info-form__input-info" type="text" placeholder="Имя">
+                            <input class="personal-info-form__input-info" type="text" placeholder="Фамилия">
+                            <input class="personal-info-form__input-info" type="email" placeholder="Email">
+                            <input class="personal-info-form__input-info" type="number"
+                                   placeholder="+38 (_ _ _) _ _ _-_ _-_ _">
+                        </form>
+                    </div>
+                    <div class="personal-info-form__container delivery-type">
+                        <span class="personal-info-form__title">Способ доставки</span>
+                        <form class="personal-info-form__form-container">
+                            <div class="delivery-type__input-container">
+                                <input type="radio" id="delivery-type__courier" name="delivery-type">
+                                <label for="delivery-type__courier">Курьером</label>
+                            </div>
+                            <div class="delivery-type__input-container">
+                                <input checked type="radio" id="delivery-type__post" name="delivery-type">
+                                <label for="delivery-type__post">Новой почтой</label>
+                            </div>
+                            <select>
+                                <option>Пункт 1</option>
+                                <option>Пункт 2</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="personal-info-form__container payment-type">
+                        <span class="personal-info-form__title">Способ оплаты</span>
+                        <form class="personal-info-form__form-container">
+                            <div class="delivery-type__input-container">
+                                <input type="radio" id="payment-type__cash" name="payment-type">
+                                <label for="payment-type__cash">Оплата наличными</label>
+                            </div>
+                            <div class="delivery-type__input-container">
+                                <input checked type="radio" id="payment-type__cod" name="payment-type">
+                                <label for="payment-type__cod">Наложенным платежом</label>
+                            </div>
+                            <div class="delivery-type__input-container">
+                                <input type="radio" id="payment-type__card" name="payment-type">
+                                <label for="payment-type__card">Безналичный расчет</label>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="personal-info-form__container order-comments">
+                        <span class="personal-info-form__title">Комментарии к заказу</span>
+                        <form class="personal-info-form__form-container">
+                            <textarea name="order-comments" id="order-comments"
+                                      placeholder="Опишите ваши пожелания к заказу"></textarea>
+
+                        </form>
+                    </div>
+                </div>
+                <div class="ordering-form__ordering-details-block">
+                    <div class="about-order__single-line" style="border: none">
+                        <span class="about-order__left-part">Сумма:</span>
+                        <span class="about-order__right-part">18 400 грн</span>
+                    </div>
+                    <div class="about-order__single-line" style="padding-bottom: 14px">
+                        <span class="about-order__left-part">Доставка:</span>
+                        <span class="about-order__right-part">По тарифам перевозчика</span>
+                    </div>
+
+                    <div class="about-order__single-line" style="border: none; padding-top: 14px">
+                        <span class="about-order__left-part">К оплате:</span>
+                        <span class="about-order__right-part">18 400 грн</span>
+                    </div>
+                    <div class="product-all-info__buy-buttons">
+                        <a class="buy-buttons__button" href="#">Оформить заказ</a>
+                        <a class="buy-buttons__button" href="#">Вернуться в корзину</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</main>
+<footer class="elixir-footer">
+    <div class="container">
+        <div class="elixir-footer__footer-container">
+            <section class="footer-container__elixir-logo-date">
+                <a href="#" title="Главная страница"><img class="lazyload" data-src="../img/header_logo_2-white.png"
+                                                          alt="Логотип Еликсир"></a>
+                <span class="elixir-logo-date__date-ukraine">С 2016 года компания «Эликсир Украина» является официальным представителем Elixir Zork</span>
+                <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+            </section>
+            <section class="footer-container__footer-links-block">
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Полезное</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">О
+                            компании</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Каталог</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Питание
+                            культур</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Для
+                            клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Блог</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link"
+                                                                     href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Продукция</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Basic</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Premium</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Micro Gran</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Elixir
+                            Supreme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__single-links-block">
+                    <span class="single-links-block__title">Для клиентов</span>
+                    <span class="single-links-block__underline"></span>
+                    <ul class="single-links-block__list">
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сервисы
+                            поддержки</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Кредитование
+                            для клиентов</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Агрономическая
+                            поддержка</a></li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Сертификаты</a>
+                        </li>
+                        <li class="single-links-block__list-item"><a class="single-links-block__link" href="">Оплата и
+                            доставка</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-block__copyright-block">
+                    <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
+                </div>
+
+            </section>
+        </div>
+    </div>
+</footer>
+
+<script src="../scripts/headerScript.js"></script>
+
+<script>
+
+
+    let cultures = [...document.querySelectorAll('.culture-type__single-culture')];
+    let culturesTitle = [...document.querySelectorAll('.name-block__title')];
+    let partnersBlock = [...document.querySelectorAll('.partners-logos__single-partner')];
+    let allCulture = ['Пшеница', 'Кукуруза', 'Картофель', 'Подсолнечник', 'Сахарная свекла', 'Соя', 'Ячмень', 'Рапс', 'Лук и чеснок', 'Томаты', 'Перец', 'Капуста']
+
+    cultures.forEach((culture, i) => {
+        culture.style.background = `url('../img/culture-bg-${i + 1}.png') no-repeat center`;
+    })
+    culturesTitle.forEach((title, i) => {
+        title.innerHTML = allCulture[i];
+    })
+    partnersBlock.forEach((partner, i) => {
+        partner.innerHTML = `<img src='../img/partners-logo-${i + 1}.png' alt="Partner logo">`;
+    })
+
+
+</script>
+</body>
+</html>
