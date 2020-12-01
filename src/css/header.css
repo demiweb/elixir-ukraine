@@ -7,6 +7,21 @@
     transition: top 0.4s;
 }
 
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+        transform: translateX(0);
+    }
+}
+
 .elixir-header__header-top-side {
     background: var(--white-bg);
     height: 76px;
