@@ -3613,7 +3613,7 @@ h1, h2, h3, h4, h5, h6, p {
     background: var(--lines-bg);
 }
 
-.news-block__news-single-part h2 {
+.about-blog__container-modify h2 {
     border-top: 3px solid var(--lines-bg);
     font-family: var(--main-font);
     font-weight: bold;
@@ -3623,9 +3623,9 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 30px 0;
 }
 
-.news-block__news-single-part p,
-.news-block__news-single-part ol li,
-.news-block__news-single-part ul li {
+.about-blog__container-modify p,
+.about-blog__container-modify ol li,
+.about-blog__container-modify ul li {
     font-family: var(--main-font);
     font-weight: normal;
     font-size: 14px;
@@ -3634,14 +3634,14 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: justify;
 }
 
-.news-block__news-single-part ol {
+.about-blog__container-modify ol {
     list-style: none;
     counter-reset: item;
     margin: 15px 0;
     padding: 0;
 }
 
-.news-block__news-single-part ol li::before {
+.about-blog__container-modify ol li::before {
     content: counter(item) ') ';
     counter-increment: item;
 }
@@ -5331,6 +5331,7 @@ h1, h2, h3, h4, h5, h6, p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin-right: 6px;
 }
 
 .page-tags__date::before {
@@ -5362,13 +5363,13 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0 auto;
 }
 
-.about-blog__news-block {
+.about-blog__container-modify {
     width: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.about-blog__news-block p,
+.about-blog__container-modify p,
 .news-single-part__quote p {
     font-family: var(--main-font);
     font-weight: normal;
@@ -5386,51 +5387,52 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 60px 0;
 }
 
-.news-block__news-single-part {
+.about-blog__container-modify {
     display: flex;
     flex-direction: column;
     margin: 30px 0;
 }
 
-.news-block__news-single-part p {
+.about-blog__container-modify p {
     margin: 15px 0;
 }
 
-.news-block__news-single-part .help-social__info {
+.about-blog__container-modify h2 {
     width: 100%;
     max-width: 400px;
+    margin-top: 60px;
 }
 
-.news-block__news-single-part--quote blockquote {
-    min-height: 145px;
-    box-sizing: border-box;
-    position: relative;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-}
 
-.news-block__news-single-part p a {
+.about-blog__container-modify p a {
     color: #1b8ff1;
 }
 
-.news-block__news-single-part ol,
-.news-block__news-single-part ul {
+.about-blog__container-modify ol,
+.about-blog__container-modify ul {
     display: flex;
     flex-direction: column;
 }
 
-.news-block__news-single-part blockquote p {
+.about-blog__container-modify blockquote p {
     z-index: 2;
 }
 
-.news-block__news-single-part--quote {
+.blog-page__about-blog blockquote{
     position: relative;
     overflow: hidden;
     background: var(--cultures-bg-color);
+    min-height: 145px;
+    padding: 33px;
+    box-sizing: border-box;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    margin: 0;
+
 }
 
-.news-block__news-single-part--quote::before {
+.blog-page__about-blog blockquote::before {
     position: absolute;
     content: url("../img/left-quote.png");
     bottom: -30px;
@@ -5438,13 +5440,13 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 1;
 }
 
-.news-block__news-single-part ul {
+.about-blog__container-modify ul {
     margin: 15px 0;
     padding: 0;
     list-style: none;
 }
 
-.news-block__news-single-part ul li:before {
+.about-blog__container-modify ul li:before {
     content: url("../img/circle-green.svg");
     margin-right: 6px;
 }
@@ -5471,7 +5473,7 @@ h1, h2, h3, h4, h5, h6, p {
         justify-content: center;
     }
 
-    .news-block__news-single-part .help-social__info {
+    .about-blog__container-modify h2 {
         max-width: none;
         align-items: flex-start;
     }
@@ -5491,16 +5493,25 @@ h1, h2, h3, h4, h5, h6, p {
         padding-right: 0;
     }
 
-    .about-blog__container-modify {
+    .about-blog__container-modify p,
+    .about-blog__container-modify h2,
+    .about-blog__container-modify ul,
+    .about-blog__container-modify ol
+    {
         padding: 0 15px;
         box-sizing: border-box;
     }
 
-    .about-blog__modify-img-container .about-blog__container-modify {
-        padding: 0;
+    .about-blog__container-modify h2 {
+        padding: 30px 15px 0;
     }
 
-    .about-blog__modify-img-container img {
+    .about-blog__container-modify img{
+        padding: 0;
+        height: 320px;
+    }
+
+    .about-blog__container-modify img {
         display: block;
         margin: 0;
     }
