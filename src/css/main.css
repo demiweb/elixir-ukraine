@@ -1013,6 +1013,10 @@ h1, h2, h3, h4, h5, h6, p {
     border-bottom: 2px solid rgba(0, 102, 42, 0.3);
 }
 
+.elixir-item-page__recommended-products h2 {
+    text-align: center;
+}
+
 .categories__list-link--green {
     color: var(--main-bg-color);
 }
@@ -1074,14 +1078,14 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 28px 0;
 }
 
-.breadcrumbs {
+.item-page__breadcrumbs ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.breadcrumbs__list-link {
+.item-page__breadcrumbs ul li a {
     color: var(--second-font-color);
     text-decoration: none;
     font-family: var(--main-font);
@@ -1089,19 +1093,19 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 14px;
 }
 
-.breadcrumbs__list-link:hover {
+.item-page__breadcrumbs ul li a:hover {
     text-decoration: underline;
 }
 
-.breadcrumbs__list-item:last-child .breadcrumbs__list-link {
+.item-page__breadcrumbs ul li:last-child a {
     color: var(--color-breadcrumb);
 }
 
-.breadcrumbs__list-item:first-child:before {
+.item-page__breadcrumbs ul li:first-child:before {
     content: none;
 }
 
-.breadcrumbs__list-item:before {
+.item-page__breadcrumbs ul li:before {
     content: '-';
     padding: 0 4px;
     color: var(--second-font-color)
@@ -3146,7 +3150,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
 }
 
-.catalog-info-block__info h1 {
+main h1 {
     font-family: var(--main-font);
     font-weight: bold;
     color: var(--main-font-color);
@@ -3218,22 +3222,27 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
 }
 
+.single-catalog-product__text-part--green h2,
 .single-catalog-product__text-part--green {
-    color: var(--main-bg-color);
+    color: var(--main-bg-color) !important;
 }
 
+.single-catalog-product__text-part--red h2,
 .single-catalog-product__text-part--red {
     color: #c81f26;
 }
 
+.single-catalog-product__text-part--dark-blue h2,
 .single-catalog-product__text-part--dark-blue {
     color: #113d66;
 }
 
+.single-catalog-product__text-part--blue h2,
 .single-catalog-product__text-part--blue {
     color: #227ec0;
 }
 
+.single-catalog-product__text-part--black h2,
 .single-catalog-product__text-part--black {
     color: #010103;
 }
@@ -3613,7 +3622,7 @@ h1, h2, h3, h4, h5, h6, p {
     background: var(--lines-bg);
 }
 
-.about-blog__container-modify h2 {
+main h2 {
     border-top: 3px solid var(--lines-bg);
     font-family: var(--main-font);
     font-weight: bold;
@@ -4985,6 +4994,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .blog-navigation__category {
     outline: none;
+    text-decoration: none;
     cursor: pointer;
     width: 100%;
     height: 36px;
@@ -5039,6 +5049,10 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 5px 5px 5px 0;
     outline: none;
     cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .blog-navigation__tag--active {
@@ -5360,17 +5374,13 @@ h1, h2, h3, h4, h5, h6, p {
 
 .about-blog__container-modify {
     max-width: 780px;
-    margin: 0 auto;
-}
-
-.about-blog__container-modify {
-    width: 100%;
+    margin: 30px auto;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
-.about-blog__container-modify p,
-.news-single-part__quote p {
+.about-blog__container-modify p {
     font-family: var(--main-font);
     font-weight: normal;
     font-size: 14px;
@@ -5387,17 +5397,12 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 60px 0;
 }
 
-.about-blog__container-modify {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-}
 
 .about-blog__container-modify p {
     margin: 15px 0;
 }
 
-.about-blog__container-modify h2 {
+main.elixir-blog__blog-page h2 {
     width: 100%;
     max-width: 400px;
     margin-top: 60px;
@@ -5418,7 +5423,7 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 2;
 }
 
-.blog-page__about-blog blockquote{
+.blog-page__about-blog blockquote {
     position: relative;
     overflow: hidden;
     background: var(--cultures-bg-color);
@@ -5451,14 +5456,14 @@ h1, h2, h3, h4, h5, h6, p {
     margin-right: 6px;
 }
 
-.news-block__list-item {
-    font-family: var(--main-font);
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 25px;
-    color: var(--second-font-color);
-    text-align: justify;
-}
+/*.news-block__list-item {*/
+/*    font-family: var(--main-font);*/
+/*    font-weight: normal;*/
+/*    font-size: 14px;*/
+/*    line-height: 25px;*/
+/*    color: var(--second-font-color);*/
+/*    text-align: justify;*/
+/*}*/
 
 .blog-page__other-blogs {
     width: 100%;
@@ -5473,7 +5478,7 @@ h1, h2, h3, h4, h5, h6, p {
         justify-content: center;
     }
 
-    .about-blog__container-modify h2 {
+    main.elixir-blog__blog-page h2 {
         max-width: none;
         align-items: flex-start;
     }
@@ -5481,7 +5486,6 @@ h1, h2, h3, h4, h5, h6, p {
     .blog-page__about-blog .container {
         padding: 0;
     }
-
 
 
     .elixir-blog__blog-page .clients-title-banner__title-side {
@@ -5494,19 +5498,22 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
     .about-blog__container-modify p,
-    .about-blog__container-modify h2,
+    main h2,
     .about-blog__container-modify ul,
-    .about-blog__container-modify ol
-    {
+    .about-blog__container-modify ol {
         padding: 0 15px;
         box-sizing: border-box;
     }
 
-    .about-blog__container-modify h2 {
+    main h2 {
         padding: 30px 15px 0;
     }
 
-    .about-blog__container-modify img{
+    main.elixir-clients h2 {
+        padding: 30px 0;
+    }
+
+    .about-blog__container-modify img {
         padding: 0;
         height: 320px;
     }
