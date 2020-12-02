@@ -10,9 +10,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="Clients page">
+    <list default="true" id="71937ed3-5c24-4377-903c-d9fe481031af" name="Default Changelist" comment="item-page.html strong and p, font family tags blog.html">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/html/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blog.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,10 +23,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="Sass File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -42,8 +43,8 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/html" />
-    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/html/catalog/item-page" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -53,6 +54,7 @@
       <recent name="D:\projectsWebStorm\elixir-web\src\html\catalog\item-page" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projectsWebStorm\elixir-web\src\html\catalog\item-page" />
       <recent name="D:\projectsWebStorm\elixir-web\src\html" />
       <recent name="D:\projectsWebStorm\elixir-web\src\scripts" />
       <recent name="D:\projectsWebStorm\elixir-web\src\img" />
@@ -73,7 +75,10 @@
       <workItem from="1606202343832" duration="27774000" />
       <workItem from="1606288756081" duration="29941000" />
       <workItem from="1606374591926" duration="29329000" />
-      <workItem from="1606461090330" duration="5034000" />
+      <workItem from="1606461090330" duration="26362000" />
+      <workItem from="1606720493570" duration="24093000" />
+      <workItem from="1606806930201" duration="27019000" />
+      <workItem from="1606893706041" duration="21726000" />
     </task>
     <task id="LOCAL-00001" summary="dots coordinates">
       <created>1605715794826</created>
@@ -215,7 +220,154 @@
       <option name="project" value="LOCAL" />
       <updated>1606406365510</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="support service page">
+      <created>1606466991236</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1606466991236</updated>
+    </task>
+    <task id="LOCAL-00022" summary="support service script">
+      <created>1606467191217</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1606467191217</updated>
+    </task>
+    <task id="LOCAL-00023" summary="support service page  index.html">
+      <created>1606467248365</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1606467248365</updated>
+    </task>
+    <task id="LOCAL-00024" summary="credit service page">
+      <created>1606472207709</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1606472207709</updated>
+    </task>
+    <task id="LOCAL-00025" summary="agronomy service page">
+      <created>1606473718084</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1606473718084</updated>
+    </task>
+    <task id="LOCAL-00026" summary="agronomy service page index.html">
+      <created>1606473763459</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1606473763459</updated>
+    </task>
+    <task id="LOCAL-00027" summary="certificates page">
+      <created>1606487631478</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1606487631478</updated>
+    </task>
+    <task id="LOCAL-00028" summary="certificates page index.html">
+      <created>1606487757087</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1606487757087</updated>
+    </task>
+    <task id="LOCAL-00029" summary="delivery page">
+      <created>1606489221722</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1606489221722</updated>
+    </task>
+    <task id="LOCAL-00030" summary="thanks page">
+      <created>1606491223450</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1606491223450</updated>
+    </task>
+    <task id="LOCAL-00031" summary="thanks page index.html">
+      <created>1606491362937</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1606491362937</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ordering-page">
+      <created>1606729710079</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1606729710079</updated>
+    </task>
+    <task id="LOCAL-00033" summary="blog page, ordering and blog index.html">
+      <created>1606743403458</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1606743403458</updated>
+    </task>
+    <task id="LOCAL-00034" summary="single blog page, index.html">
+      <created>1606750016129</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1606750016129</updated>
+    </task>
+    <task id="LOCAL-00035" summary="container fix blog single page">
+      <created>1606750199349</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1606750199349</updated>
+    </task>
+    <task id="LOCAL-00036" summary="styles">
+      <created>1606750381440</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1606750381440</updated>
+    </task>
+    <task id="LOCAL-00037" summary="h1, h2, p">
+      <created>1606816125438</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1606816125438</updated>
+    </task>
+    <task id="LOCAL-00038" summary="img">
+      <created>1606817089658</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1606817089658</updated>
+    </task>
+    <task id="LOCAL-00039" summary="no divs">
+      <created>1606819407853</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1606819407853</updated>
+    </task>
+    <task id="LOCAL-00040" summary="h2, h1">
+      <created>1606827331743</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1606827331743</updated>
+    </task>
+    <task id="LOCAL-00041" summary="item-page.html strong and p, font family tags blog.html">
+      <created>1606837647470</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1606837647470</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,25 +386,32 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="dots coordinates" />
-    <MESSAGE value="script for dots and some parts added" />
-    <MESSAGE value="fix cultures" />
-    <MESSAGE value="footer" />
-    <MESSAGE value="product page" />
-    <MESSAGE value="added product page to index.html" />
-    <MESSAGE value=" header mob" />
-    <MESSAGE value="header sticky" />
-    <MESSAGE value="header burger menu" />
-    <MESSAGE value="optimization test" />
-    <MESSAGE value="styles" />
-    <MESSAGE value="lazyload" />
-    <MESSAGE value="body fix" />
-    <MESSAGE value="recommendation fix" />
     <MESSAGE value="about page" />
     <MESSAGE value="catalog page, header sticky scroll down" />
     <MESSAGE value="font, img" />
     <MESSAGE value="Clients page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clients page" />
+    <MESSAGE value="support service page" />
+    <MESSAGE value="support service script" />
+    <MESSAGE value="support service page  index.html" />
+    <MESSAGE value="credit service page" />
+    <MESSAGE value="agronomy service page" />
+    <MESSAGE value="agronomy service page index.html" />
+    <MESSAGE value="certificates page" />
+    <MESSAGE value="certificates page index.html" />
+    <MESSAGE value="delivery page" />
+    <MESSAGE value="thanks page" />
+    <MESSAGE value="thanks page index.html" />
+    <MESSAGE value="ordering-page" />
+    <MESSAGE value="blog page, ordering and blog index.html" />
+    <MESSAGE value="single blog page, index.html" />
+    <MESSAGE value="container fix blog single page" />
+    <MESSAGE value="styles" />
+    <MESSAGE value="h1, h2, p" />
+    <MESSAGE value="img" />
+    <MESSAGE value="no divs" />
+    <MESSAGE value="h2, h1" />
+    <MESSAGE value="item-page.html strong and p, font family tags blog.html" />
+    <option name="LAST_COMMIT_MESSAGE" value="item-page.html strong and p, font family tags blog.html" />
   </component>
   <component name="WindowStateProjectService">
     <state x="751" y="409" key="#Chrome_Settings" timestamp="1605686692337">
@@ -267,10 +426,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="572" y="215" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605710803328" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606406373973">
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606838431031">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606406373973" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1606838431031" />
     <state x="777" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606115682179">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

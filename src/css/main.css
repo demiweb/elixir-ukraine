@@ -5244,7 +5244,7 @@ main h2 {
     justify-content: center;
 }
 
-.elixir-pagination-block__list {
+.elixir-pagination-block__container ul {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -5254,15 +5254,16 @@ main h2 {
     padding: 0;
 }
 
-.elixir-pagination-block__number--previous {
+.elixir-pagination-block__container ul li:first-child {
     margin-right: 12px;
 }
 
-.elixir-pagination-block__number--next {
+
+.elixir-pagination-block__container ul li:last-child {
     margin-left: 12px;
 }
 
-.elixir-pagination-block__number {
+.elixir-pagination-block__container ul li > *:not(img) {
     font-family: var(--main-font);
     font-weight: normal;
     color: var(--second-font-color);
@@ -5278,17 +5279,16 @@ main h2 {
     text-decoration: underline;
 }
 
-.elixir-pagination-block__number--current {
+.elixir-pagination-block__container ul li span {
     font-weight: bold;
-    color: vaR(--main-bg-color);
+    color: var(--main-bg-color);
 }
 
-.elixir-pagination-block__number--current:hover,
-.elixir-pagination-block__number--dots:hover {
+.elixir-pagination-block__container ul li span:hover {
     text-decoration: none;
 }
 
-.elixir-pagination-block__number--previous img {
+.elixir-pagination-block__container ul li:first-child img {
     transform-origin: 50% 50%;
     transform: rotate(180deg);
 }
@@ -5559,3 +5559,419 @@ main.elixir-blog__blog-page h2 {
     }
 }
 
+/* page contacts */
+.elixir-contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.elixir-contacts .elixir-clients__clients-title-banner {
+    border-bottom: 1px solid var(--lines-manure-bg);
+}
+
+.elixir-contacts__elixir-contacts-block {
+    border-bottom: 1px solid var(--lines-manure-bg);
+    width: 100%;
+}
+
+.elixir-contacts-block__contacts-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 281px;
+    flex-wrap: wrap;
+}
+
+.elixir-contacts-block__single-contact-elixir {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 225px;
+    height: 112px;
+    margin: 0 2%;
+}
+
+.elixir-contacts-block__single-contact-elixir h4 {
+    font-family: var(--main-font);
+    font-size: 16px;
+    line-height: 32px;
+    color: var(--main-font-color);
+    font-weight: bold;
+    border-bottom: 4px solid var(--main-bg-color);
+    width: 100%;
+    padding-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.elixir-contacts-block__single-contact-elixir p {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    font-weight: normal;
+    width: 100%;
+    margin: 20px 0 0;
+    padding-left: 18px;
+}
+
+.elixir-contact-block__single-contact-elixir--phone p::before {
+    content: url("../img/phone-call.svg");
+    margin-left: -18px;
+    margin-right: 6px;
+}
+
+.elixir-contact-block__single-contact-elixir--email p::before {
+    content: url("../img/email-icon.svg");
+    margin-left: -18px;
+    margin-right: 6px;
+}
+
+.elixir-contact-block__single-contact-elixir--location p::before {
+    content: url("../img/location-icon.svg");
+    margin-left: -18px;
+    margin-right: 6px;
+}
+
+.elixir-contact-block__single-contact-elixir--social p {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.elixir-contact-block__single-contact-elixir--social p a {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    text-decoration: none;
+}
+
+.elixir-contact-block__single-contact-elixir--social p a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.elixir-contacts .clients-title-banner__bg-banner {
+    background: url("../img/business-man-working-talking-phone-concept.jpg") no-repeat left -100px;
+    background-size: auto;
+}
+
+.elixir-contacts__elixir-map-location {
+    width: 100%;
+}
+
+.elixir-map-location__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0 40px;
+}
+
+.elixir-contacts .elixir-map-location__container p {
+    font-family: var(--main-font);
+    color: var(--second-font-color);
+    font-size: 14px;
+    line-height: 25px;
+    width: 100%;
+    max-width: 448px;
+    text-align: center;
+}
+
+.elixir-map-location__map-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-height: 781px;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+.elixir-map-location__map-container svg {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    z-index: 5;
+    max-height: 781px;
+}
+
+.region-center {
+    fill: var(--white-bg);
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 22px;
+}
+
+
+svg.bg-circle-rad circle:last-child {
+    transition: r 0.3s;
+}
+
+
+.elixir-map-location__region-center {
+    position: absolute;
+    transform: translate(0, -50%);
+    min-height: 258px;
+    max-height: 450px;
+
+    padding: 35px;
+    box-sizing: border-box;
+    width: 100%;
+
+    max-width: 30%;
+    visibility: visible;
+    display: none;
+    opacity: 1;
+    flex-grow: 1;
+    background: var(--white-bg);
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.17);
+    transition: visibility 0.3s, opacity 0.3s;
+}
+
+@keyframes flowVisible {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.elixir-map-location__region-center--kiev {
+    top: 30%;
+    left: 50%;
+}
+
+.elixir-map-location__region-center--jitomir {
+    top: 25%;
+    left: 38%;
+}
+
+.elixir-map-location__region-center--herson {
+    top: 70%;
+    left: 66%;
+}
+
+.elixir-map-location__region-center--zaporojie {
+    top: 68%;
+    left: 43%;
+}
+
+.elixir-map-location__region-center--poltava {
+    top: 31%;
+    left: 63%;
+}
+
+.elixir-map-location__region-center--lugansk {
+    top: 48%;
+    left: 61%;
+}
+
+.elixir-map-location__region-center--harkov {
+    top: 37%;
+    left: 50%;
+}
+
+.elixir-map-location__region-center--donetsk {
+    top: 56%;
+    left: 54%;
+}
+
+.elixir-map-location__region-center--dnepr {
+    top: 52%;
+    left: 37%;
+}
+
+.elixir-map-location__region-center--summi {
+    top: 20%;
+    left: 35%;
+}
+
+.elixir-map-location__region-center--vinnitsa {
+    top: 46%;
+    left: 38%;
+}
+
+.elixir-map-location__region-center--odessa {
+    top: 67%;
+    left: 47%;
+}
+
+.elixir-map-location__region-center--kropivnitskiy {
+    top: 50%;
+    left: 56%;
+}
+
+.elixir-map-location__region-center--cherkasi {
+    top: 42%;
+    left: 54%;
+}
+
+.elixir-map-location__region-center--lutsk {
+    top: 15%;
+    left: 17%;
+}
+
+.elixir-map-location__region-center--ujgorod {
+    top: 54%;
+    left: 10%;
+}
+
+.elixir-map-location__region-center--ternopol {
+    top: 42%;
+    left: 21%;
+}
+
+.elixir-map-location__region-center--lvov {
+    top: 37%;
+    left: 12%;
+}
+
+.elixir-map-location__region-center--hmelnitskiy {
+    top: 36%;
+    left: 28%;
+}
+
+.elixir-map-location__region-center--ivanof {
+    top: 47%;
+    left: 15%;
+}
+
+.elixir-map-location__region-center--chernovtsi {
+    top: 55%;
+    left: 22%;
+}
+
+.elixir-map-location__region-center--rovno {
+    top: 16%;
+    left: 28%;
+}
+
+.elixir-map-location__region-center--chernigov {
+    top: 13%;
+    left: 57%;
+}
+
+.elixir-map-location__region-center--nikolaev {
+    top: 64%;
+    left: 55%;
+}
+
+.elixir-map-location__region-center--simferopol {
+    top: 80%;
+    left: 36%;
+}
+
+.elixir-map-location__region-center h3 {
+    font-family: var(--main-font);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 46px;
+    color: var(--main-font-color);
+    padding-bottom: 20px;
+}
+
+.elixir-map-location__region-center p {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    font-weight: normal;
+    text-align: left !important;
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.close-hover-block-mob {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: url("../img/iconmonstr-x-mark-1.svg") no-repeat center, rgba(0, 0, 0, 0.2);
+    opacity: 0.4;
+    display: none;
+}
+
+.elixir-map-location__region-center .hover-info-block__number::before {
+    content: url("../img/phone-call.svg");
+    margin-right: 6px;
+}
+
+.elixir-map-location__region-center .hover-info-block__location::before {
+    content: url("../img/location-icon.svg");
+    margin-right: 6px;
+}
+
+.elixir-map-location__region-center .hover-info-block__email::before {
+    content: url("../img/email-icon.svg");
+    margin-right: 6px;
+    padding-top: 6px;
+}
+
+.ukraine-region:hover .elixir-map-location__region-center {
+    display: flex;
+}
+
+
+@media screen and (max-width: 768px) {
+    .elixir-contacts-block__single-contact-elixir h4,
+    .elixir-contacts-block__single-contact-elixir p {
+        text-align: center;
+        padding-left: 0;
+        align-self: center;
+    }
+
+    .close-hover-block-mob {
+        display: block;
+    }
+
+    .elixir-map-location__region-center {
+        left: 50% !important;
+        top: 40% !important;
+        transform: translate(-50%, -50%);
+        width: 80% !important;
+        max-width: none;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .elixir-contacts-block__contacts-container {
+        margin: 20px 0;
+    }
+
+    .elixir-contacts-block__single-contact-elixir {
+        margin: 3%;
+    }
+
+    .elixir-map-location__region-center {
+        left: 0 !important;
+        top: 0 !important;
+        transform: translate(0, 0);
+        width: 100% !important;
+        max-width: none;
+    }
+
+    svg.bg-circle-rad {
+        width: 200px;
+        viewBox: 0 0 160 110;
+    }
+
+    .elixir-contacts h2 {
+        padding: 30px 0 0;
+    }
+
+    .region-center {
+        font-size: 36px;
+    }
+}
