@@ -956,6 +956,9 @@ h1, h2, h3, h4, h5, h6, p {
     outline: none;
 }
 
+.slick-initialized .slick-slide {
+    outline: none !important;
+}
 .categories-block__categories-list {
     display: flex !important;
     list-style: none;
@@ -1809,14 +1812,17 @@ h1, h2, h3, h4, h5, h6, p {
     transition: background-color 0.3s;
 }
 
+
 @media screen  and (max-width: 768px) {
 
     .categories__list-link span {
         margin-left: 0;
+        display: none;
     }
 
     .categories__list-link {
         padding: 10px 0;
+        justify-content: center;
     }
 
     .categories-list__list-item {
@@ -1824,9 +1830,9 @@ h1, h2, h3, h4, h5, h6, p {
         width: 70px;
     }
 
-    .categories__list-link .categories__img-container {
-        display: none;
-    }
+    /*.categories__list-link .categories__img-container {*/
+    /*    display: none;*/
+    /*}*/
 
     .product-info__title-part {
         align-items: center;
