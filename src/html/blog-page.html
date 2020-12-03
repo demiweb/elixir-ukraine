@@ -312,34 +312,48 @@
 
 <script type="text/javascript" src="../scripts/headerScript.js"></script>
 <script>
-    // let bnm = [...document.querySelectorAll('.news-block__img-container')];
-    // let allImagesOnPage = [...document.querySelectorAll('img')];
-    // allImagesOnPage.forEach((im) => {
-    //     im.classList.add('is-loaded-anim');
+    let bnm = [...document.querySelectorAll('.news-block__img-container')];
+    let allImagesOnPage = [...document.querySelectorAll('img')];
+    let allParagraphs = [...document.querySelectorAll('.about-blog__container-modify p')];
+    // allParagraphs.forEach((p) => {
+    //     p.classList.add('is-loaded-anim');
     //     window.addEventListener('scroll', () => {
-    //         let fgn = im.getBoundingClientRect();
-    //         if ( fgn.top < 500) {
-    //             im.style.animation = 'fadeOn 0.6s linear';
-    //             im.style.opacity = '1'
+    //         let fgn = p.getBoundingClientRect();
+    //         if ( fgn.top < 1200) {
+    //             p.style.animation = 'fadeOn 0.6s linear';
+    //             p.style.opacity = '1'
     //
     //         }
     //
     //     })
     // })
-    //
-    // bnm.forEach((bn) => {
-    //     bn.classList.add('is-loaded-anim');
-    //
-    //     window.addEventListener('scroll', () => {
-    //         let fgn = bn.getBoundingClientRect();
-    //         if ( fgn.top < 500) {
-    //            bn.style.animation = 'fadeOn 0.6s linear';
-    //             bn.style.opacity = '1'
-    //
-    //         }
-    //
-    //     })
-    // })
+    allImagesOnPage.forEach((im) => {
+        im.onload.classList.add('is-loaded-anim')
+        im.classList.add('is-loaded-anim');
+        window.addEventListener('scroll', () => {
+            let fgn = im.getBoundingClientRect();
+            if ( fgn.top < 500) {
+                im.style.animation = 'fadeOn 0.6s linear';
+                im.style.opacity = '1'
+
+            }
+
+        })
+    })
+
+    bnm.forEach((bn) => {
+        bn.classList.add('is-loaded-anim');
+
+        window.addEventListener('scroll', () => {
+            let fgn = bn.getBoundingClientRect();
+            if ( fgn.top < 500) {
+               bn.style.animation = 'fadeOn 0.6s linear';
+                bn.style.opacity = '1'
+
+            }
+
+        })
+    })
 </script>
 <script>
     let allTags = [...document.querySelectorAll('.blog-navigation__tag')];

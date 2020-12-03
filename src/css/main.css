@@ -4159,9 +4159,9 @@ main h2 {
     padding: 0 64px;
 }
 
-.about-service__service-target,
-.service-target__title,
-.about-service__list-item {
+
+.service-content__about-service p,
+.service-content__about-service li {
     font-family: var(--main-font);
     font-weight: normal;
     font-size: 14px;
@@ -4169,15 +4169,12 @@ main h2 {
     color: var(--second-font-color);
 }
 
-.about-service__service-target {
+.service-content__about-service p {
     margin-bottom: 25px;
 }
 
-.service-target__title {
-    font-weight: bold;
-}
 
-.about-service__list {
+.service-content__about-service ul {
     margin: 0;
     list-style: none;
     display: flex;
@@ -4185,11 +4182,11 @@ main h2 {
     padding-left: 6px;
 }
 
-.about-service__list-item {
+.service-content__about-service ul li {
     padding-left: 6px;
 }
 
-.about-service__list-item::marker {
+.service-content__about-service ul li::marker {
     content: '-';
     color: var(--second-font-color);
     padding-right: 6px;
@@ -4283,9 +4280,8 @@ main h2 {
         padding: 43px 30px;
     }
 
-    .about-service__service-target,
-    .service-target__title,
-    .about-service__list-item {
+    .service-content__about-service p,
+    .service-content__about-service li {
         font-size: 12px;
         line-height: 22px;
     }
@@ -6071,14 +6067,206 @@ svg.bg-circle-rad circle:last-child {
 }
 
 .elixir-deficiency .clients-title-banner__title-side,
+.elixir-clients .clients-title-banner__title-side,
 .elixir-deficiency .clients-title-banner__bg-banner {
     height: auto;
 }
+
+.elixir-deficiency__deficiency-problems,
+.elixir-deficiency__manure-deficiency,
+.elixir-deficiency__elements-deficiency {
+    width: 100%;
+}
+
+.elixir-deficiency .clients-support-service__container {
+    margin: 30px 0;
+}
+
+.deficiency-problems__container,
+.manure-deficiency__container,
+.elements-deficiency__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 80px 0;
+}
+
+.elixir-deficiency .elixir-main-part__choose-culture {
+    background: url("../img/tomatos-bg.png") no-repeat left bottom;
+    background-color: #eef2f3;
+}
+
+.elixir-deficiency .choose-culture__culture-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.elixir-deficiency__deficiency-problems h2,
+.elixir-deficiency__manure-deficiency h2,
+.elixir-deficiency__elements-deficiency h2,
+.elixir-main-part__choose-culture h2 {
+    text-align: center;
+    max-width: 490px;
+}
+
+.elixir-deficiency__elements-deficiency p {
+    max-width: 490px;
+    font-family: var(--main-font);
+    color: var(--second-font-color);
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+}
+
+.elements-deficiency__all-elements {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.elements-deficiency__single-element {
+    background: var(--white-bg);
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--partners-border);
+    height: 86px;
+    width: calc((100% / 6) - 30px);
+    margin: 13px;
+    min-width: 130px;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.elements-deficiency__single-element:hover {
+    background: var(--main-bg-color);
+    transition: background 0.3s, color 0.3s;
+}
+
+.elements-deficiency__single-element h3,
+.elements-deficiency__single-element p {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+}
+
+.elements-deficiency__single-element h3 {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 44px;
+}
+
+.elements-deficiency__single-element p {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+}
+
+.elements-deficiency__single-element:hover h3,
+.elements-deficiency__single-element:hover p {
+    color: var(--white-bg) !important;
+    transition: background 0.3s, color 0.3s;
+}
+
+
+.manure-deficiency__all-recommended-manures {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.manure-deficiency__single-manure-deficiency {
+    background: var(--cultures-bg-color);
+    min-height: 209px;
+    padding: 27px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+    width: calc(50% - 15px);
+
+    margin: 15px 0;
+
+}
+
+.single-manure-deficiency__text-part {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0 0 0 30px;
+    box-sizing: border-box;
+}
+
+.manure-deficiency__single-manure-deficiency .single-manure-deficiency__text-part h4 {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 25px;
+    color: #a4a4a4;
+}
+
+.manure-deficiency__single-manure-deficiency .single-manure-deficiency__text-part h4 strong {
+    color: var(--main-font-color);
+}
+
+.manure-deficiency__single-manure-deficiency .single-manure-deficiency__text-part p {
+    font-family: var(--main-font);
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    margin: 12px 0;
+}
+
+.manure-deficiency__single-manure-deficiency .product-img-container__bg {
+    background: var(--lines-manure-bg);
+}
+
 
 @media screen and (max-width: 768px) {
     .elixir-deficiency .clients-title-banner__bg-banner {
         background: url("../img/deficiency-bg.jpg") no-repeat center;
         height: 320px;
+    }
+
+    .deficiency-problems__container,
+    .manure-deficiency__container {
+        margin: 30px 0;
+    }
+
+    .manure-deficiency__single-manure-deficiency {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .elements-deficiency__single-element {
+        width: calc((100% / 4) - 30px);
+    }
+
+    .elixir-deficiency .elixir-main-part__choose-culture {
+        background-size: 30%;
+    }
+}
+
+@media screen and (max-width: 531px) {
+    .elements-deficiency__single-element {
+        width: calc(50% - 30px);
+        margin: 8px;
+    }
+
+    .elixir-deficiency .elixir-main-part__choose-culture {
+        background-size: 20%;
     }
 }
 
