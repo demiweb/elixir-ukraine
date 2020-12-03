@@ -375,7 +375,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 /* choose culture */
 .elixir-main-part__choose-culture {
-    min-height: 1368px;
+    min-height: auto;
     width: 100%;
     background: url("../img/organic-white-baby-potatoes.png") no-repeat right top,
     url("../img/tomatos-bg.png") no-repeat left bottom;
@@ -3191,7 +3191,7 @@ main h1 {
     line-height: 48px;
 }
 
-.catalog-info-block__subtitle {
+.catalog-info-block__info p {
     font-family: var(--main-font);
     color: var(--second-font-color);
     font-weight: normal;
@@ -3527,7 +3527,7 @@ main h1 {
         align-items: center;
     }
 
-    .catalog-info-block__subtitle {
+    .catalog-info-block__info p {
         text-align: center;
         width: 100%;
     }
@@ -3596,7 +3596,7 @@ main h1 {
 }
 
 @media screen and (max-width: 531px) {
-    .catalog-info-block__subtitle {
+    .catalog-info-block__info p {
         width: 100%;
     }
 
@@ -3889,6 +3889,10 @@ main h2 {
 .clients-title-banner__title-side {
     width: 50%;
     height: 400px;
+}
+
+.clients-title-banner__title-side {
+    height: auto;
 }
 
 .clients-title-banner__bg-banner {
@@ -4242,11 +4246,11 @@ main h2 {
         margin-top: 10px;
     }
 
-    .title-side__container .catalog-info-block__info .catalog-info-block__title {
+    .title-side__container .catalog-info-block__info h2 {
         font-size: 38px;
     }
 
-    .title-side__container .catalog-info-block__info .catalog-info-block__subtitle {
+    .catalog-info-block__info p {
         text-align: start;
     }
 
@@ -4321,13 +4325,6 @@ main h2 {
 
 }
 
-.about-credit__container,
-.about-delivery__container,
-.about-agronomy__container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}
 
 
 .clients-title-banner--right .clients-title-banner__bg-banner {
@@ -4368,7 +4365,7 @@ main h2 {
     margin: 0 0 15px;
 }
 
-.clients-title-banner--right .title-side__container .catalog-info-block__subtitle {
+.clients-title-banner--right .title-side__container p {
     width: 100%;
     margin: 0 0 15px;
 }
@@ -4377,9 +4374,9 @@ main h2 {
     width: 307px;
 }
 
-.about-credit__text,
-.about-delivery__text,
-.about-agronomy__text {
+.clients-credit-service__container p,
+.clients-delivery-service__container p,
+.client-agronomy-service__container p {
     font-family: var(--main-font);
     font-weight: normal;
     font-size: 14px;
@@ -4410,54 +4407,32 @@ main h2 {
     object-fit: contain;
 }
 
-.clients-credit-service__credit-principles,
-.clients-delivery-service__delivery-principles,
-.clients-agronomy-service__agronomy-principles {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--main-font);
-    font-weight: normal;
-    color: var(--main-font-color);
-}
 
-.credit-principles__title,
-.delivery-principles__title,
-.agronomy-principles__title {
+.clients-credit-service__container h3 strong,
+.clients-delivery-service__container h3 strong,
+.client-agronomy-service__container h3 strong{
     font-weight: bold;
     font-size: 21px;
     line-height: 25px;
+    color: var(--main-font-color);
+    font-family: var(--main-font);
 }
 
-.credit-principles__principles-list,
-.delivery-principles__principles-list,
-.credit-principles__principles-item,
-.delivery-principles__principles-item,
-.agronomy-principles__principles-list,
-.agronomy-principles__principles-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.credit-principles__principles-item,
-.delivery-principles__principles-item,
-.agronomy-principles__principles-item {
+.clients-credit-service__container h3,
+.clients-delivery-service__container h3,
+.client-agronomy-service__container h3 {
     margin: 15px 0;
 }
 
-.principles-item__title,
-.principles-item__text {
+.clients-credit-service__container h4,
+.clients-delivery-service__container h4,
+.client-agronomy-service__container h4{
+    margin: 15px 0 6px;
     font-family: var(--main-font);
-    font-weight: normal;
-    color: var(--second-font-color);
-    font-size: 14px;
-    line-height: 25px;
-}
-
-.principles-item__title {
     font-weight: bold;
-}
+    color: var(--second-font-color);
 
+}
 @media screen and (max-width: 768px) {
     .elixir-clients--agronomy .about-credit__img-container img,
     .elixir-clients--delivery .about-delivery__img-container img {
@@ -4517,11 +4492,6 @@ main h2 {
         margin: 0;
     }
 
-    .clients-credit-service__credit-principles,
-    .clients-delivery-service__credit-principles,
-    .clients-agronomy-service__agronomy-principles {
-        margin: 30px 0;
-    }
 }
 
 /* elixir certificates page */
@@ -6095,6 +6065,7 @@ svg.bg-circle-rad circle:last-child {
 .elixir-deficiency .elixir-main-part__choose-culture {
     background: url("../img/tomatos-bg.png") no-repeat left bottom;
     background-color: #eef2f3;
+    min-height: auto;
 }
 
 .elixir-deficiency .choose-culture__culture-container {
@@ -6268,5 +6239,37 @@ svg.bg-circle-rad circle:last-child {
     .elixir-deficiency .elixir-main-part__choose-culture {
         background-size: 20%;
     }
+}
+
+/* nutrition page */
+
+.elixir-nutrition {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.elixir-nutrition .buy-buttons__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+}
+
+.elixir-nutrition .clients-title-banner__bg-banner {
+    background: url("../img/heap-grains-maiz-background-pile.jpg") no-repeat center;
+    background-size: cover;
+}
+
+
+.elixir-nutrition .elixir-main-part__choose-culture {
+    min-height: auto;
+}
+.elixir-nutrition .choose-culture__culture-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
