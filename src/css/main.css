@@ -1982,6 +1982,12 @@ h1, h2, h3, h4, h5, h6, p {
 
 }
 
+@media screen and (max-width: 375px) {
+    .recommended-products__recommended-products-list {
+        justify-content: center;
+    }
+}
+
 /* about page */
 
 .elixir-about-page {

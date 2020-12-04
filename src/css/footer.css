@@ -23,6 +23,16 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+}
+
+.footer-container__elixir-logo-date a {
+    max-width: 166px;
+}
+
+.footer-container__elixir-logo-date a img {
+    width: 100%;
+    object-fit: contain;
 }
 
 .elixir-logo-date__date-ukraine {
@@ -60,34 +70,28 @@
 
 }
 
-.single-links-block__title {
+.elixir-footer h3 {
     font-family: var(--main-font);
     font-weight: bold;
     font-size: 16px;
     line-height: 25px;
     color: var(--white-bg);
+    padding-bottom: 24px;
+    border-bottom: 3px solid var(--main-bg-color);
+    margin-bottom: 24px;
 }
 
-.single-links-block__underline {
-    display: inline-block;
-    height: 3px;
-    width: 100%;
-    background: #26854d;
-    margin: 24px 0;
-}
-
-
-.single-links-block__list {
+.elixir-footer nav ul  {
     padding: 0;
     margin: 0;
     list-style: none;
 }
 
-.single-links-block__list-item {
+.elixir-footer nav ul li {
     margin-bottom: 14px;
 }
 
-.single-links-block__link {
+.elixir-footer nav ul li a {
     font-family: var(--main-font);
     font-weight: normal;
     font-size: 14px;
@@ -98,7 +102,7 @@
 
 }
 
-.single-links-block__link:hover {
+.elixir-footer nav ul li a:hover {
     text-decoration: underline;
     transition: 0.3s;
 }
@@ -146,8 +150,10 @@
 
     .footer-links-block__copyright-block {
         display: flex;
-        width: 170px;
+        width: 190px;
         margin: 25px 8px;
+        position: relative;
+        flex-direction: column;
     }
 
     .footer-links-block__copyright-block .elixir-logo-date__date-copyright {

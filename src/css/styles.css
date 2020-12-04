@@ -9,7 +9,6 @@ html {
 }
 
 
-
 body {
     margin: 0;
     min-width: 320px;
@@ -87,10 +86,12 @@ img {
 }
 
 body.scroll-hidden {
-    position: fixed;
-    overflow-y: scroll;
+    overflow: hidden;
     width: 100%;
+    padding-right: 17px;
+    box-sizing: border-box;
 }
+
 
 .modal-certificate--active {
     visibility: visible;
@@ -127,5 +128,138 @@ body.scroll-hidden {
 
 .close-modal-button span:last-child {
     transform: rotate(-45deg);
+}
+
+.demiweb {
+    display: flex;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 13px;
+    line-height: 25px;
+    color: var(--white-bg);
+    text-decoration: none;
+    position: absolute;
+    bottom: -80px;
+}
+
+.demiweb img {
+    margin-right: 12px;
+}
+
+.elixir-modal-window {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+}
+
+.elixir-modal-window.opened-modal {
+    display: block;
+    animation: visibleModal 0.4s linear;
+    visibility: visible;
+    opacity: 1;
+}
+
+@keyframes visibleModal {
+    0% {
+        visibility: hidden;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+.elixir-modal-block {
+    width: 570px;
+    height: 519px;
+    background: url("../img/popup-bg.png") no-repeat -1%, url("../img/popup-bg.png") no-repeat 101%, var(--white-bg);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-modal-block {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url("../img/cancel.svg") no-repeat center;
+    background-size: contain;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    top: 17px;
+    right: 34px;
+
+
+}
+
+.elixir-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+
+}
+
+.elixir-modal-content h2 {
+    font-family: var(--main-font);
+    color: var(--main-font-color);
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.elixir-modal-content p {
+    font-family: var(--main-font);
+    color: var(--second-font-color);
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.elixir-modal-content form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.elixir-modal-content form input {
+    width: 90%;
+}
+
+.elixir-modal-content form a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .demiweb {
+        display: none;
+    }
+
+    .demiweb-mob {
+        display: flex;
+        position: static;
+        margin-top: 20px;
+    }
 }
 

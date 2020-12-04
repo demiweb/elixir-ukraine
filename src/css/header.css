@@ -532,4 +532,8 @@
     nav.header-navigation__list-container {
         width: 75%;
     }
+
+    .elixir-logo-contacts__main-page--mob {
+        max-width: 130px;
+    }
 }
