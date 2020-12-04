@@ -4134,6 +4134,7 @@ main h2 {
     height: 100%;
     min-height: 750px;
     transition: max-height 0.3s, height 0.3s, min-height 0.3s;
+    max-height: none;
 }
 
 .single-support-service__service-content {
@@ -6689,6 +6690,48 @@ svg.bg-circle-rad circle:last-child {
     .elements-deficiency__container {
         margin: 40px 0;
     }
+
+    .growth-stages__list .slick-track {
+        align-items: flex-end;
+    }
+
+    .growth-stages__item {
+        width: calc(100% / 8);
+        flex-direction: column-reverse;
+        align-items: center;
+        cursor: pointer;
+        outline: none;
+        height: auto !important;
+    }
+
+    .growth-stages__container {
+        background: url('../img/20483.png') no-repeat center 214px;
+    }
+
+    .growth-stages__item:nth-child(2n) {
+        /*height: 360px !important;*/
+        height: auto !important;
+    }
+
+    .growth-stages__item div {
+        display: none;
+    }
+
+    .growth-stages__item p {
+        height: 84px;
+        margin-top: 40px;
+    }
+
+
+    .growth-stages__item.growth-stages__item--active p {
+        color: var(--main-bg-color);
+        text-decoration: underline;
+    }
+
+    .nutrition-control-arrow {
+        bottom: 108px;
+    }
+
 }
 
 @media screen and (max-width: 531px) {
@@ -6704,6 +6747,17 @@ svg.bg-circle-rad circle:last-child {
 
     .recommended-products-list__recommended-product-single {
         width: 80%;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .manure-deficiency__single-manure-deficiency {
+        flex-direction: column;
+    }
+
+    .manure-deficiency__single-manure-deficiency .single-manure-deficiency__text-part {
+        margin-left: 0;
+        margin-top: 15px;
     }
 }
 

@@ -1,11 +1,16 @@
 let allSort = [...document.querySelectorAll('.single-sort__sort-type')];
 let allListSort = [...document.querySelectorAll('.sorting-catalog__single-sort li')];
-allSort.forEach((el) => {
+allSort.forEach((el, i) => {
     el.addEventListener('click', () => {
-        allSort.forEach((b) => {
-            b.classList.remove('sort-open')
+
+        allSort.forEach((b, k) => {
+            if ( i !== k) {
+                b.classList.remove('sort-open');
+            } else {
+                b.classList.toggle('sort-open')
+            }
         })
-        el.classList.toggle('sort-open')
+
     })
 })
 
