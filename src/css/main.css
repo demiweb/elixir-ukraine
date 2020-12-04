@@ -304,7 +304,8 @@ h1, h2, h3, h4, h5, h6, p {
     transition: 0.4s;
     display: flex;
     align-items: flex-end;
-
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .single-manure__text-block {
@@ -722,7 +723,8 @@ h1, h2, h3, h4, h5, h6, p {
     .interactive-manure__circle-container {
 
         overflow: hidden;
-        height: 600px !important;
+        height: 550px !important;
+        min-height: 550px;
     }
 
     .interactive-manure__interactive-circle {
@@ -843,6 +845,8 @@ h1, h2, h3, h4, h5, h6, p {
         position: relative;
     }
 
+
+
     .quality-control__quality-text-part:after {
         content: url("../img/left-quote.png");
         position: absolute;
@@ -856,6 +860,9 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 531px) {
+    .quality-control__quality-text-part h2 {
+        width: 70%;
+    }
     .culture-container__culture-type {
         justify-content: space-between !important;
     }
@@ -918,6 +925,18 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 425px) {
+    .interactive-manure__circle-container {
+        min-height: 450px;
+        height: 450px !important;
+    }
+
+    .single-manure-type {
+        transform-origin: 0 0;
+        transform: scale(1.6);
+        margin-left: -165px;
+        margin-top: -100px;
+    }
+
     .interactive-manure__interactive-circle {
         transform: scale(0.55, 0.55) translate(100%, 90%) !important;
     }
@@ -1490,6 +1509,7 @@ h1, h2, h3, h4, h5, h6, p {
     line-height: 46px;
     margin: 80px 0 20px;
     border: none;
+    text-align: center;
 }
 
 .nav-content-product__container {
@@ -3613,7 +3633,9 @@ main h1 {
 }
 
 @media screen and (max-width: 768px) {
-
+    main h1 {
+        font-size: 36px;
+    }
     .elixir-catalog__catalog-info-block {
         padding-bottom: 0;
     }
@@ -5618,15 +5640,19 @@ main.elixir-blog__blog-page h2 {
     }
 
     .about-blog__container-modify p,
-    main h2,
+    .about-blog__container-modify h2,
     .about-blog__container-modify ul,
     .about-blog__container-modify ol {
-        padding: 0 15px;
+        padding: 0 15px !important;
         box-sizing: border-box;
     }
 
     main h2 {
-        padding: 30px 15px 0;
+        padding: 30px 0 0;
+    }
+
+    .about-blog__container-modify h2 {
+        padding: 30px 15px 0 !important;
     }
 
     main.elixir-clients h2 {

@@ -140,10 +140,17 @@ body.scroll-hidden {
     text-decoration: none;
     position: absolute;
     bottom: -80px;
+    height: 42px;
+    width: 180px !important;
+    max-width: none !important;
 }
 
 .demiweb img {
     margin-right: 12px;
+    height: 42px;
+    width: 42px;
+    max-width: 42px;
+    object-fit: contain;
 }
 
 .elixir-modal-window {

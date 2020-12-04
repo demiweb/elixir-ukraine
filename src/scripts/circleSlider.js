@@ -121,7 +121,7 @@ for (let i = 0; i < amountDots; i++) {
             txt.style.left = '-10px';
             txt.style.opacity = '0';
         });
-        let activeTxtBlck = [...document.querySelectorAll(`div[data-pos='180']`)][0];
+        let activeTxtBlck = [...document.querySelectorAll(`a[data-pos='180']`)][0];
         activeTxtBlck.style.opacity = '1';
         activeTxtBlck.nextElementSibling.style.opacity = '1';
         activeTxtBlck.nextElementSibling.style.left = '30px';
@@ -218,7 +218,7 @@ dotAnim.forEach((dot, i) => {
             txt.style.left = '-10px';
             txt.style.opacity = '0';
         });
-        let activeTxtBlck = [...document.querySelectorAll(`div[data-pos='${dotDeg}']`)][0];
+        let activeTxtBlck = [...document.querySelectorAll(`a[data-pos='${dotDeg}']`)][0];
         activeTxtBlck.style.opacity = '1';
         let moveTo = turnDeg;
         // console.log(moveTo + 'MOVE-TO');
@@ -276,7 +276,7 @@ function changeAngles(d) {
     // console.log([...document.querySelectorAll(`.single-manure__active-${forFnc}`)]);
     let activeBlc = [...document.querySelectorAll(`.single-manure__active-${forFnc}`)][0];
     activeBlc.classList.add('single-manure__activet');
-    let blckFather = [...document.querySelectorAll(`div[data-pos='${forFnc}']`)][0];
+    let blckFather = [...document.querySelectorAll(`a[data-pos='${forFnc}']`)][0];
     turnBlock(clickAngle);
     // check why dont work with it
     changeSiblings(blckFather);
