@@ -10,5 +10,13 @@
   "license": "ISC",
   "dependencies": {
     "lozad": "^1.16.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-combine-mq": "^0.4.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-imagemin": "^7.1.0"
   }
 }
