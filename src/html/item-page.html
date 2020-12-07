@@ -26,7 +26,8 @@
                                                                                      alt="Youtube icon"></a>
                 </nav>
 
-                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                <button class="elixir-logo-contacts__download-catalog" onclick="openModal(this)"
+                        id="download-catalog-btn">Скачать каталог <img
                         class="lazyload" data-src="../img/download-icon.png" alt=""></button>
                 <div class="elixir-logo-contacts__contact-us-header">
                     <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
@@ -62,7 +63,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Premium</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -72,7 +74,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Supreme</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -82,7 +85,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Micro Gran</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -92,7 +96,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Super Garden</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -102,8 +107,10 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
-                            </ul></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#" title="Питание культур">питание культур</a></li>
                         <li><a href="#" title="Для клиентов">для клиентов</a></li>
                         <li><a href="#" title="Блог">блог</a></li>
@@ -127,6 +134,41 @@
                         <div class="search-cart-block__search-container">
                             <div class="search-container__search-icon-block">
                             </div>
+                            <input type="text" placeholder="Поиск">
+                            <ul>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                                <li><img src="../img/manure-1.png" alt="">
+                                    <a href="#">NutriVeg NPK 10:10:20</a>
+                                    <p>1300 грн</p>
+                                </li>
+                            </ul>
                         </div>
                         <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
                                                                                          data-src="../img/shopping-cart.svg"
@@ -147,6 +189,16 @@
         </div>
     </section>
 </header>
+<!--<div class="elixir-modal-window search-block">-->
+<!--    <div class="elixir-modal-block" onclick="event.stopPropagation()">-->
+<!--        <button class="close-modal-block" type="button" ></button>-->
+<!--        <div class="elixir-modal-content">-->
+<!--            <input type="text">-->
+
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
 <main class="elixir-item-page">
     <section class="elixir-item-page__item-page-container">
         <div class="container">
@@ -214,7 +266,8 @@
                 </nav>
                 <nav class="item-page__breadcrumbs">
                     <ul class="breadcrumbs">
-                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="home.html">Главная</a>
+                        <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link"
+                                                              href="home.html">Главная</a>
                         </li>
                         <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="../#">Каталог</a>
                         </li>
@@ -255,8 +308,12 @@
                             </div>
                         </div>
                         <div class="product-all-info__buy-buttons">
-                            <button class="buy-buttons__button" onclick="openModal()" type="button">Добавить в корзину</button>
-                            <button class="buy-buttons__button" onclick="openModal()" type="button">Заказать в 1 клик</button>
+                            <button class="buy-buttons__button cart-add-btn" onclick="openModal(this)" type="button">Добавить в
+                                корзину
+                            </button>
+                            <button class="buy-buttons__button" id="order-one-click" onclick="openModal(this)"
+                                    type="button">Заказать в 1 клик
+                            </button>
                         </div>
 
                         <div class="product-all-info__product-description">
@@ -638,14 +695,14 @@
                 <nav class="footer-links-block__single-links-block">
                     <h3>Полезное</h3>
                     <ul>
-                        <li><a  href="#">О
+                        <li><a href="#">О
                             компании</a></li>
                         <li><a href="#">Каталог</a></li>
-                        <li><a  href="#">Питание
+                        <li><a href="#">Питание
                             культур</a></li>
-                        <li><a  href="#">Для
+                        <li><a href="#">Для
                             клиентов</a></li>
-                        <li><a  href="#">Блог</a>
+                        <li><a href="#">Блог</a>
                         </li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
@@ -653,36 +710,37 @@
                 <nav class="footer-links-block__single-links-block">
                     <h3>Продукция</h3>
                     <ul>
-                        <li><a  href="#">Elixir
+                        <li><a href="#">Elixir
                             Basic</a></li>
-                        <li><a  href="#">Elixir
+                        <li><a href="#">Elixir
                             Premium</a></li>
-                        <li><a  href="#">Elixir
+                        <li><a href="#">Elixir
                             Micro Gran</a></li>
-                        <li><a  href="#">Elixir
+                        <li><a href="#">Elixir
                             Supreme</a></li>
-                        <li><a  href="#">Elixir
+                        <li><a href="#">Elixir
                             Supreme</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-links-block__single-links-block">
                     <h3>Для клиентов</h3>
                     <ul>
-                        <li><a  href="#">Сервисы
+                        <li><a href="#">Сервисы
                             поддержки</a></li>
-                        <li><a  href="#">Кредитование
+                        <li><a href="#">Кредитование
                             для клиентов</a></li>
-                        <li><a  href="#">Агрономическая
+                        <li><a href="#">Агрономическая
                             поддержка</a></li>
-                        <li><a  href="#">Сертификаты</a>
+                        <li><a href="#">Сертификаты</a>
                         </li>
-                        <li><a  href="#">Оплата и
+                        <li><a href="#">Оплата и
                             доставка</a></li>
                     </ul>
                 </nav>
                 <div class="footer-links-block__copyright-block">
                     <span class="elixir-logo-date__date-copyright">2020 © Elixir Ukraine</span>
-                    <a href="https://demiweb.pro" class="demiweb demiweb-mob"><img src="../img/demiweb-logo.png" alt="">Разработка сайта</a>
+                    <a href="https://demiweb.pro" class="demiweb demiweb-mob"><img src="../img/demiweb-logo.png" alt="">Разработка
+                        сайта</a>
 
                 </div>
 
@@ -692,19 +750,68 @@
 </footer>
 
 <div class="elixir-modal-window">
-        <div class="elixir-modal-block" onclick="event.stopPropagation()">
-            <button class="close-modal-block" type="button" onclick="closeModalWindow()"></button>
-            <div class="elixir-modal-content">
-                    <h2>Заказать звонок</h2>
-                <p>Оставьте ваши контактные данные ниже и наш менеджер свяжется с вами в ближайшее время</p>
-                <form>
-                    <input class="personal-info-form__input-info" type="text" placeholder="Имя">
-                    <input class="personal-info-form__input-info" type="number" placeholder="+38 (_ _ _) _ _ _-_ _-_ _">
-                    <a class="buy-buttons__button" href="#">Оформить заказ</a>
-                </form>
+    <div class="elixir-modal-block" onclick="event.stopPropagation()">
+        <button class="close-modal-block" type="button"></button>
+        <div class="elixir-modal-content">
+            <h2>Заказать звонок</h2>
+            <p>Оставьте ваши контактные данные ниже и наш менеджер свяжется с вами в ближайшее время</p>
+            <form>
+                <input class="personal-info-form__input-info" type="text" placeholder="Имя">
+                <input class="personal-info-form__input-info" type="number" placeholder="+38 (_ _ _) _ _ _-_ _-_ _">
+                <a class="buy-buttons__button" href="#">Оформить заказ</a>
+            </form>
 
-            </div>
         </div>
+    </div>
+</div>
+<div class="elixir-modal-window added-cart">
+    <div class="elixir-modal-block" onclick="event.stopPropagation()">
+        <button class="close-modal-block" type="button"></button>
+        <div class="elixir-modal-content">
+
+            <h2>Заказ добавлен в корзину</h2>
+            <p>Вы можете перейти в корзину и оформить ваш заказ или продолжить ваши покупки</p>
+            <form>
+                <a class="buy-buttons__button" href="#">Перейти в корзину</a>
+                <a class="buy-buttons__button" href="#">Продолжить покупки</a>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="elixir-modal-window modal-one-click">
+    <div class="elixir-modal-block" onclick="event.stopPropagation()">
+        <button class="close-modal-block" type="button"></button>
+        <div class="elixir-modal-content">
+            <h2>Заказать в 1 клик</h2>
+            <p>Оставьте ваши контактные данные ниже и наш менеджер свяжется с вами в ближайшее время</p>
+            <form>
+                <input class="personal-info-form__input-info" type="text" placeholder="Имя">
+                <input class="personal-info-form__input-info" type="number" placeholder="+38 (_ _ _) _ _ _-_ _-_ _">
+                <a class="buy-buttons__button" href="#">Заказать в 1 клик</a>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="elixir-modal-window modal-catalog">
+    <div class="elixir-modal-block" onclick="event.stopPropagation()">
+        <button class="close-modal-block" type="button"></button>
+        <div class="elixir-modal-content">
+            <img class="lazyload" data-src="../img/pdf.png" alt="Pdf icon">
+            <p>Получите наш полный каталог продукции в формате PDF на почту</p>
+            <form>
+                <input class="personal-info-form__input-info" type="text" placeholder="Имя">
+                <input class="personal-info-form__input-info" type="email" placeholder="E-main">
+                <input class="personal-info-form__input-info" type="number" placeholder="+38 (_ _ _) _ _ _-_ _-_ _">
+                <a class="buy-buttons__button" href="#">Получить каталог</a>
+            </form>
+
+        </div>
+    </div>
 </div>
 <script src="../scripts/headerScript.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -712,7 +819,11 @@
 <script type="text/javascript" src="../scripts/slick.min.js"></script>
 <script type="text/javascript" src="../scripts/categoriesSlide.js"></script>
 <script type="text/javascript" src="../scripts/productNavTabs.js"></script>
-<script type="text/javascript" src="../scripts/modalWindowScript.js"></script>
+<script type="text/javascript" src="../scripts/helloConsole.js"></script>
+
+<script>
+
+</script>
 
 </body>
 </html>

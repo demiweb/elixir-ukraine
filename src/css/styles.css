@@ -206,10 +206,8 @@ body.scroll-hidden {
     border: none;
     outline: none;
     cursor: pointer;
-    top: 17px;
-    right: 34px;
-
-
+    top: 13px;
+    right: 23px;
 }
 
 .elixir-modal-content {
@@ -250,12 +248,26 @@ body.scroll-hidden {
     width: 90%;
 }
 
+.elixir-modal-content form {
+    margin: 20px 0;
+}
+
 .elixir-modal-content form a {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    margin: 20px 0;
+}
+
+.modal-catalog .elixir-modal-block {
+    background:url("../img/bg-catalog-modal.png") no-repeat -50px -50px, var(--white-bg) ;
+
+}
+
+.modal-catalog .elixir-modal-block img {
+    width: 58px;
+    height: 74px;
+    margin: 34px 0;
 }
 
 @media screen and (max-width: 768px) {
@@ -267,6 +279,14 @@ body.scroll-hidden {
         display: flex;
         position: static;
         margin-top: 20px;
+    }
+
+    .elixir-modal-block {
+        width: 100%;
+    }
+
+    body.scroll-hidden {
+        padding-right: 0;
     }
 }
 
