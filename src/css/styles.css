@@ -259,6 +259,19 @@ body.scroll-hidden {
     text-decoration: none;
 }
 
+.elixir-modal-window.added-cart h2 {
+    position: relative;
+
+}
+
+.elixir-modal-window.added-cart h2::after {
+    content: url("../img/check.png");
+    position: absolute;
+    left: 50%;
+    top: -20px;
+    transform: translate(-50%, -50%);
+}
+
 .modal-catalog .elixir-modal-block {
     background:url("../img/bg-catalog-modal.png") no-repeat -50px -50px, var(--white-bg) ;
 
