@@ -26,7 +26,6 @@
     height: 76px;
     display: flex;
     align-items: center;
-
 }
 
 .elixir-header__header-bottom-side {
@@ -48,7 +47,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .elixir-logo-contacts__main-page {
@@ -67,7 +65,6 @@
     line-height: 21px;
     letter-spacing: 0.02em;
     margin-left: 70px;
-
 }
 
 .elixir-logo-contacts__socials {
@@ -187,7 +184,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    /*background: var(--white-bg);*/
     z-index: 2;
     top: 60px;
     left: 0;
@@ -229,7 +225,6 @@
     top: 50%;
     transform: translate(0, -50%);
     transition: transform 0.3s;
-
 }
 
 .header-bottom-side__header-navigation nav > ul > li > ul > li:hover::after {
@@ -265,7 +260,6 @@
     transition: color 0.3s;
     width: 100%;
     padding: 0 21px;
-
 }
 
 .header-bottom-side__header-navigation nav > ul > li > ul > li > ul {
@@ -411,7 +405,6 @@
     .assist-quote__quote {
         overflow: hidden;
     }
-
 }
 
 @media screen and  (max-width: 922px) {
@@ -434,14 +427,12 @@
         left: -50%;
         top: 58px;
         background: var(--main-bg-color);
-        /*height: 65%;*/
         transition: left 0.3s, visibility 0.3s, opacity 0.3s;
         visibility: hidden;
         flex-direction: column;
         z-index: 5;
         opacity: 0;
     }
-
 
     .header-bottom-side__header-navigation > nav > ul {
         flex-direction: column;
@@ -459,9 +450,7 @@
     .header-bottom-side__header-navigation nav > ul > li > ul > li,
     .header-bottom-side__header-navigation nav > ul > li > ul > li > ul > li {
         margin: 0;
-
     }
-
 
     nav.header-navigation__list-container--active {
         left: -15px;
@@ -488,7 +477,6 @@
         justify-content: space-between;
         margin: 0 15px 15px 0;
     }
-
 
     .header-navigation__language-cart-container {
         justify-content: flex-end;
@@ -539,8 +527,6 @@
 
     .header-bottom-side__header-navigation nav > ul > li > a {
         justify-content: center;
-
-
     }
 
     .header-bottom-side__header-navigation nav > ul > li {
@@ -552,7 +538,6 @@
         flex-direction: column;
         height: auto;
         max-height: 40px;
-
     }
 
     .header-bottom-side__header-navigation nav > ul > li > ul > li > a {
@@ -574,18 +559,14 @@
     }
 
     .header-bottom-side__header-navigation nav > ul > li > ul {
-
         max-height: 350px;
-        /*overflow: hidden;*/
         overflow-y: scroll;
-
     }
 
     .header-bottom-side__header-navigation nav > ul > li > ul > li > ul {
         top: 0;
         width: 100%;
         left: 0;
-
         position: unset;
         display: none;
     }
@@ -616,6 +597,5 @@
     .search-cart-block__search-container .entered-text + ul {
         width: 285px;
         right: -100%;
-
     }
 }
