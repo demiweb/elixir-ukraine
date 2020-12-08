@@ -98,8 +98,10 @@ function addConsultEvent() {
         helpConsultBtn.addEventListener('click', () => {
             modalConsult.classList.add('opened-modal');
             document.body.classList.add('scroll-hidden');
+
         })
     }
+    modalConsult.addEventListener('click', closeModalWindow);
 }
 
 function addOveCLickEvent() {
@@ -152,6 +154,9 @@ searchField2.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
         console.log(searchField2.value)
         searchField2.classList.add('entered-text');
+    } else if(e.keyCode === 27) {
+        searchField2.classList.remove('entered-text');
+        searchField2.value = '';
     }
 })
 

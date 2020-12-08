@@ -846,7 +846,6 @@ h1, h2, h3, h4, h5, h6, p {
     }
 
 
-
     .quality-control__quality-text-part:after {
         content: url("../img/left-quote.png");
         position: absolute;
@@ -863,6 +862,7 @@ h1, h2, h3, h4, h5, h6, p {
     .quality-control__quality-text-part h2 {
         width: 70%;
     }
+
     .culture-container__culture-type {
         justify-content: space-between !important;
     }
@@ -3636,6 +3636,7 @@ main h1 {
     main h1 {
         font-size: 36px;
     }
+
     .elixir-catalog__catalog-info-block {
         padding-bottom: 0;
     }
@@ -4954,6 +4955,39 @@ main h2 {
     align-items: center;
 }
 
+.personal-info-form__container.delivery-type .personal-info-form__form-container .sorting-catalog__single-sort {
+    width: 100%;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container .sorting-catalog__single-sort .single-sort__sort-type {
+    border: 2px solid vaR(--lines-bg);
+    height: 44px;
+    border-radius: 22px;
+    padding: 0 12px;
+    width: calc(50% - 5px);
+    position: relative;
+    box-sizing: border-box;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container .sorting-catalog__single-sort .single-sort__sort-type::after {
+    left: 97%;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container .sorting-catalog__single-sort .single-sort__sort-type.sort-open + ul {
+    width: calc(50% - 5px);
+}
+
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container input + label + .sorting-catalog__single-sort .single-sort__sort-type {
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.personal-info-form__container.delivery-type .personal-info-form__form-container input:checked + label + .sorting-catalog__single-sort .single-sort__sort-type {
+    pointer-events: all;
+    opacity: 1;
+}
+
 .personal-info-form__container.delivery-type .personal-info-form__form-container label::before,
 .personal-info-form__container.payment-type .personal-info-form__form-container label::before {
     content: url("../img/circle.svg");
@@ -5071,6 +5105,14 @@ main h2 {
 
     .ordering-form__ordering-details-block .about-order__right-part {
         font-size: 12px;
+    }
+
+    .personal-info-form__container.delivery-type .personal-info-form__form-container .sorting-catalog__single-sort .single-sort__sort-type {
+        width: 100%;
+    }
+
+    .personal-info-form__container.delivery-type .personal-info-form__form-container .sorting-catalog__single-sort .single-sort__sort-type.sort-open + ul {
+        width: 100%;
     }
 }
 
