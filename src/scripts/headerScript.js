@@ -40,9 +40,7 @@ let helpConsultBtn = [...document.querySelectorAll('.elixir-catalog__need-help-b
 function openModal(e) {
     if (e.classList.contains('cart-add-btn')) {
         modalCart[0].classList.add('opened-modal')
-    }
-
-    else if (e.id === 'download-catalog-btn') {
+    } else if (e.id === 'download-catalog-btn' || e.id === 'download-catalog-btn-2') {
         modalCatalog.classList.add('opened-modal');
 
     } else if (e.id === 'order-one-click') {
@@ -73,6 +71,7 @@ function addSearchModalEvent() {
 
     }
 }
+
 function addCartModalEvent() {
     if (modalCart[0] === undefined) {
 
@@ -92,14 +91,29 @@ function addModalWindowEvent() {
 }
 
 function addConsultEvent() {
-    if (helpConsultBtn === undefined) {
+    if (helpConsultBtn) {
+        if (document.getElementById('help-consult')) {
+            console.log('hello')
+            document.getElementById('help-consult').addEventListener('click', () => {
+                modalConsult.classList.add('opened-modal');
+                document.body.classList.add('scroll-hidden');
 
-    } else {
+            })
+        }
         helpConsultBtn.addEventListener('click', () => {
             modalConsult.classList.add('opened-modal');
             document.body.classList.add('scroll-hidden');
 
         })
+    } else {
+        if (document.getElementById('help-consult')) {
+            console.log('hello')
+            document.getElementById('help-consult').addEventListener('click', () => {
+                modalConsult.classList.add('opened-modal');
+                document.body.classList.add('scroll-hidden');
+
+            })
+        }
     }
     modalConsult.addEventListener('click', closeModalWindow);
 }
@@ -154,7 +168,7 @@ searchField2.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
         console.log(searchField2.value)
         searchField2.classList.add('entered-text');
-    } else if(e.keyCode === 27) {
+    } else if (e.keyCode === 27) {
         searchField2.classList.remove('entered-text');
         searchField2.value = '';
     }

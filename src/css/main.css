@@ -451,7 +451,9 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     align-items: flex-end;
 }
-
+.elixir-main-part__choose-culture h2 {
+    text-align: left !important;
+}
 
 .name-block__top-line {
     display: inline-block;
@@ -3226,6 +3228,7 @@ h1, h2, h3, h4, h5, h6, p {
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 768px) {

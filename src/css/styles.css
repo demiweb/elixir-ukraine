@@ -426,3 +426,7 @@ body.scroll-hidden {
     }
 }
 
+.current-menu-item {
+    border-bottom: 2px solid var(--white-bg);
+}
+

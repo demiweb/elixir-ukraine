@@ -4,7 +4,7 @@ let partnersBlock = [...document.querySelectorAll('.partners-logos__single-partn
 let allCulture = ['Пшеница', 'Кукуруза', 'Картофель', 'Подсолнечник', 'Сахарная свекла', 'Соя', 'Ячмень', 'Рапс', 'Лук и чеснок', 'Томаты', 'Перец', 'Капуста']
 
 cultures.forEach((culture, i) => {
-    culture.style.background = `url('../img/culture-bg-${i + 1}.png') no-repeat center`;
+    culture.style.background = `url('../img/culture-bg-${i + 1}.jpg') no-repeat center`;
 })
 culturesTitle.forEach((title, i) => {
     title.innerHTML = allCulture[i];
