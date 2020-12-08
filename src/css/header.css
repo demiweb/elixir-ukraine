@@ -403,6 +403,13 @@
     display: none;
 }
 
+@media screen and (max-width: 953px) {
+    .elixir-header__header-top-side {
+        display: none;
+    }
+
+}
+
 @media screen and  (max-width: 768px) {
     .elixir-header {
         width: 100%;
@@ -507,7 +514,7 @@
         display: flex;
     }
 
-    .elixir-header__header-top-side,
+
     nav.header-navigation__language-buttons {
         display: none;
     }
