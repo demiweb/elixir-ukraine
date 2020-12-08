@@ -414,7 +414,7 @@
 
 }
 
-@media screen and  (max-width: 768px) {
+@media screen and  (max-width: 922px) {
     .elixir-header {
         width: 100%;
         top: 0;
@@ -428,12 +428,13 @@
     .header-bottom-side__header-navigation > nav {
         max-width: none;
         display: flex;
-        width: 50%;
+        width: calc(100% + 15px);
+        height: calc(100% - 57px);
         position: fixed;
         left: -50%;
         top: 58px;
         background: var(--main-bg-color);
-        height: 65%;
+        /*height: 65%;*/
         transition: left 0.3s, visibility 0.3s, opacity 0.3s;
         visibility: hidden;
         flex-direction: column;
