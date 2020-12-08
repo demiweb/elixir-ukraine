@@ -173,6 +173,118 @@ body.scroll-hidden {
     opacity: 1;
 }
 
+.elixir-modal-window.search-block {
+    /*filter: blur(20px);*/
+    backdrop-filter: blur(20px);
+}
+
+.elixir-modal-window.search-block .container {
+    position: relative;
+}
+.elixir-modal-window.search-block .elixir-modal-block {
+    background: none;
+    align-items: flex-start;
+    width: 100%;
+    padding-top: 10%;
+    top: auto;
+    left: auto;
+    transform: translate(0, 0);
+    height: auto;
+}
+
+.elixir-modal-window.search-block .elixir-modal-block .close-modal-block {
+    top: 16%;
+    background: none;
+    font-size: 36px;
+    line-height: 46px;
+    color: var(--white-bg);
+    transition: color 0.3s;
+    right: 5px;
+
+}
+
+.elixir-modal-window.search-block .elixir-modal-block .close-modal-block:hover {
+    color: var(--main-bg-color);
+    transition: color 0.3s;
+}
+
+.elixir-modal-window.search-block .elixir-modal-block .elixir-modal-content {
+    width: 90%;
+    position: relative;
+}
+.elixir-modal-window.search-block input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--lines-bg);
+    outline: none;
+    width: 90%;
+    height: 48px;
+    font-family: var(--main-font);
+    font-size: 32px;
+    line-height: 36px;
+    color: var(--white-bg);
+    font-weight: normal;
+}
+
+.elixir-modal-window.search-block input::placeholder {
+    color: var(--white-bg);
+}
+
+.elixir-modal-window.search-block ul {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background: white;
+    position: absolute;
+    top: calc(100% + 50px);
+    border: 1px solid var(--lines-bg);
+    border-bottom: none;
+    right: 0;
+    box-shadow: 0 0 11px 1px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    overflow: hidden;
+    display: none;
+    z-index: 7;
+    width: 100%;
+}
+
+.elixir-modal-window.search-block .entered-text + ul {
+    display: flex;
+    overflow-y: scroll;
+    max-height: 600px;
+}
+
+.elixir-modal-window.search-block .entered-text + ul::-webkit-scrollbar {
+    width: 0;
+}
+
+.elixir-modal-window.search-block ul > li {
+    display: flex;
+    border-bottom: 1px solid var(--lines-bg);
+    width: 100%;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 25px;
+    color: var(--second-font-color);
+    justify-content: space-between;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.elixir-modal-window.search-block ul > li > a {
+    font-weight: bold;
+    color: var(--main-font-color);
+    padding: 15px;
+}
+
+.elixir-modal-window.search-block ul > li > img {
+    width: 100%;
+    max-width: 63px;
+    height: 97px;
+    object-fit: contain;
+}
+
 @keyframes visibleModal {
     0% {
         visibility: hidden;
@@ -300,6 +412,17 @@ body.scroll-hidden {
 
     body.scroll-hidden {
         padding-right: 0;
+    }
+
+    .elixir-modal-window.search-block .entered-text + ul {
+        display: flex;
+        overflow-y: scroll;
+        max-height: 400px;
+    }
+
+    .elixir-modal-window.search-block input {
+        font-size: 26px;
+        line-height: 36px;
     }
 }
 

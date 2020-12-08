@@ -25,8 +25,10 @@ window.addEventListener('scroll', () => {
 });
 
 // modalscript
+let searchField2 = [...document.querySelectorAll('.elixir-modal-window.search-block input')][0];
 
 let modalWindow = [...document.querySelectorAll('.elixir-modal-window')][0];
+let modalSearch = [...document.querySelectorAll('.elixir-modal-window.search-block')][0];
 let allModalWindow = [...document.querySelectorAll('.elixir-modal-window')];
 let closeBtn = [...document.querySelectorAll('.close-modal-block')];
 let modalCatalog = [...document.querySelectorAll('.modal-catalog')][0];
@@ -58,6 +60,16 @@ function addCatalogModalEvent() {
 
     } else {
         modalCatalog.addEventListener('click', closeModalWindow);
+
+    }
+}
+
+function addSearchModalEvent() {
+    if (modalSearch === undefined) {
+
+    } else {
+        searchField2.value = '';
+        modalSearch.addEventListener('click', closeModalWindow);
 
     }
 }
@@ -102,6 +114,7 @@ function addOveCLickEvent() {
 closeBtn.forEach((cb) => {
     cb.addEventListener('click', () => {
         allModalWindow.forEach((amw) => {
+            searchField2.value = '';
             amw.classList.remove('opened-modal');
             document.body.classList.remove('scroll-hidden');
         })
@@ -120,36 +133,33 @@ addConsultEvent();
 addModalWindowEvent();
 addOveCLickEvent();
 addCartModalEvent();
+addSearchModalEvent();
 
 
 // search script
 let searchIcon = [...document.querySelectorAll('.search-container__search-icon-block')][0];
-let searchField = [...document.querySelectorAll('.search-cart-block__search-container input')][0];
 let searchList = [...document.querySelectorAll('.search-cart-block__search-container ul')][0];
 
 searchIcon.addEventListener('click', () => {
         searchIcon.classList.toggle('search-open');
 
-        searchField.classList.remove('entered-text');
+        searchField2.classList.remove('entered-text');
     }
 )
 
 
-searchField.addEventListener('keydown', (e) => {
+searchField2.addEventListener('keydown', (e) => {
     if (e.keyCode === 13) {
-        console.log(searchField.value)
-        searchField.classList.add('entered-text');
+        console.log(searchField2.value)
+        searchField2.classList.add('entered-text');
     }
 })
 
 document.addEventListener('click', (e) => {
-    let searchContainer = [...document.querySelectorAll('.search-cart-block__search-container')][0];
     if (!e.target.closest('.search-cart-block__search-container')) {
-        searchIcon.classList.remove('search-open');
-
-        searchField.classList.remove('entered-text');
+        searchField2.classList.remove('entered-text');
+        searchField2.value = '';
     } else {
 
     }
-
 })

@@ -26,7 +26,8 @@
                                                                                      alt="Youtube icon"></a>
                 </nav>
 
-                <button class="elixir-logo-contacts__download-catalog">Скачать каталог <img
+                <button class="elixir-logo-contacts__download-catalog" onclick="openModal(this)"
+                        id="download-catalog-btn">Скачать каталог <img
                         class="lazyload" data-src="../img/download-icon.png" alt=""></button>
                 <div class="elixir-logo-contacts__contact-us-header">
                     <a class="contact-us-header__phone-number" href="tel:+380674324863">+38 067 432 48 63</a>
@@ -62,7 +63,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Premium</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -72,7 +74,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Supreme</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -82,7 +85,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Micro Gran</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -92,7 +96,8 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">Elixir Super Garden</a>
                                     <ul>
                                         <li><a href="#">Npk 6:12:24</a></li>
@@ -102,8 +107,10 @@
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
                                         <li><a href="#">Npk 6:12:24</a></li>
-                                    </ul></li>
-                            </ul></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
                         <li><a href="#" title="Питание культур">питание культур</a></li>
                         <li><a href="#" title="Для клиентов">для клиентов</a></li>
                         <li><a href="#" title="Блог">блог</a></li>
@@ -125,7 +132,7 @@
                 <div class="header-navigation__language-cart-container">
                     <nav class="header-navigation__search-cart-block">
                         <div class="search-cart-block__search-container">
-                            <div class="search-container__search-icon-block">
+                            <div class="search-container__search-icon-block" onclick="openModal(this)">
                             </div>
                         </div>
                         <a href="#" class="search-cart-block__cart" title="Корзина"><img class="lazyload"
@@ -147,6 +154,50 @@
         </div>
     </section>
 </header>
+<div class="elixir-modal-window search-block">
+    <div class="container">
+        <div class="elixir-modal-block" onclick="event.stopPropagation()">
+            <button class="close-modal-block" type="button" >×</button>
+            <div class="elixir-modal-content">
+                <input type="text" placeholder="Поиск...">
+                <ul>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                    <li><img src="../img/manure-1.png" alt="">
+                        <a href="#">NutriVeg NPK 10:10:20</a>
+                        <p>1300 грн</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <main class="elixir-deficiency">
     <section class="elixir-clients__clients-title-banner">
         <div class="clients-title-banner__title-side">
@@ -154,9 +205,9 @@
                 <div class="title-side__container">
                     <nav class="item-page__breadcrumbs">
                         <ul>
-                            <li><a href="./home.html">Главная</a></li>
-                            <li><a href="./home.html">Питание культур</a></li>
-                            <li><a href="./home.html">Кукуруза</a></li>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Питание культур</a></li>
+                            <li><a href="#">Кукуруза</a></li>
                             <li><a href="#">Дефицит фосфора</a></li>
                         </ul>
                     </nav>
@@ -164,8 +215,8 @@
                         <h1>Дефицит фосфора (Кукуруза)</h1>
                         <p>Если вы хотите повысить качество и урожайность с / х культур, или просто ищете совет по питанию растений,  узнайте как агрономы Elixir Ukraine могут вам помочь</p>
                         <div class="product-all-info__buy-buttons">
-                            <a class="buy-buttons__button" href="./home.html">Консультация менеджера</a>
-                            <a class="buy-buttons__button" href="./home.html">Информация для клиента</a>
+                            <a class="buy-buttons__button" href="#">Консультация менеджера</a>
+                            <a class="buy-buttons__button" href="#">Информация для клиента</a>
                         </div>
                     </div>
                 </div>
