@@ -7,7 +7,6 @@
     transition: top 0.4s;
 }
 
-
 @keyframes slideInFromLeft {
     0% {
         opacity: 0;
@@ -216,7 +215,6 @@
     position: relative;
     transition: background-color 0.3s;
 }
-
 
 .header-bottom-side__header-navigation nav > ul > li > ul > li::after {
     content: url("../img/chevron-right.png");
@@ -495,7 +493,6 @@
     .burger-checkbox-input:checked + .burger-checkbox-label .burger-checkbox-span:first-child {
         transform: rotate(45deg) translateY(15px);
         margin-left: 10px;
-
     }
 
     .burger-checkbox-input:checked + .burger-checkbox-label .burger-checkbox-span:last-child {
