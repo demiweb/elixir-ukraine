@@ -1440,7 +1440,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .granules-details__text p {
-    margin: 15px 0;
+    margin: 15px 0 0;
 }
 
 .granules-details__img-container {
@@ -2069,8 +2069,18 @@ h1, h2, h3, h4, h5, h6, p {
 @media screen and (max-width: 531px) {
 
     .product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single {
-        min-height: 180px;
-        height: 180px;
+        min-height: 140px;
+        height: auto;
+    }
+    .product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single .granules-details__img-container {
+        padding: 2%;
+        box-sizing: border-box;
+        width: 125px;
+        height: 125px;
+        margin: auto;
+    }
+    .product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single .granules-details__img-container::after {
+        content: none;
     }
 
 
