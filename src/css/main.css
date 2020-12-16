@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6, p {
     height: 600px;
     width: 100%;
     position: relative;
-
 }
 
 .video-banner__video-container {
@@ -451,6 +450,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: column;
     align-items: flex-end;
 }
+
 .elixir-main-part__choose-culture h2 {
     text-align: left !important;
 }
@@ -1192,7 +1192,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .product-details__image-container img {
     max-width: 383px;
-    width: 65%;
+    width: 85%;
 }
 
 .product-all-info__produced-by {
@@ -1387,6 +1387,112 @@ h1, h2, h3, h4, h5, h6, p {
     align-items: flex-start;
 }
 
+
+.cultures-info__granules-details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 30px;
+}
+
+.product-nav-content__nav-content-product .cultures-info__granules-details {
+}
+
+.granules-details__single {
+    width: calc(50% - 15px);
+    background: var(--cultures-bg-color);
+    height: 86px;
+    display: flex;
+    box-shadow: inset 0 0 8px 6px rgba(0, 0, 0, 0.04);
+}
+
+.product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single {
+    border: 1px solid var(--partners-border);
+    min-height: 208px;
+    background: var(--white-bg);
+    height: 208px;
+    box-shadow: none;
+
+}
+
+
+.granules-details__single p {
+    display: inline;
+    margin: auto 5px;
+    max-width: 100px;
+    text-align: left;
+}
+
+.product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single p {
+    max-width: none;
+
+}
+
+.product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single .granules-details__img-container {
+    width: 40%;
+}
+
+.granules-details__text {
+    padding: 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.granules-details__text p {
+    margin: 15px 0;
+}
+
+.granules-details__img-container {
+    height: 100%;
+    width: 50%;
+    flex-shrink: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.granules-details__img-container::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-top: 43px solid transparent;
+    border-bottom: 43px solid var(--cultures-bg-color);
+    border-left: 20px solid transparent;
+    border-right: 20px solid var(--cultures-bg-color);
+}
+
+.product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single .granules-details__img-container::after {
+    border-top: 104px solid transparent;
+    border-bottom: 104px solid var(--white-bg);
+    border-left: 40px solid transparent;
+    border-right: 40px solid var(--white-bg);
+}
+
+@media screen and (max-width: 960px) {
+    .cultures-info__granules-details {
+        flex-direction: column;
+        margin: 0 0 10px;
+
+    }
+
+    .granules-details__single {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .granules-details__single p {
+        max-width: none;
+    }
+}
+
+.granules-details__img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .cultures-info__title {
     font-family: var(--main-font);
     font-weight: bold;
@@ -1400,7 +1506,7 @@ h1, h2, h3, h4, h5, h6, p {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 550px;
+    max-width: 600px;
 }
 
 .cultures-info-block__single-culture-info {
@@ -1525,10 +1631,11 @@ h1, h2, h3, h4, h5, h6, p {
 .nav-content-product__recommendation-block {
     width: calc(50% - 15px);
     margin: 15px 0;
-    height: 209px;
+    /*height: 209px;*/
     background: #f5f5f5;
     box-sizing: border-box;
     padding: 44px;
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -1839,6 +1946,19 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 @media screen  and (max-width: 768px) {
+    .granules-details__text {
+        padding: 3%;
+    }
+
+    .recommendation-block__title {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .single-culture-info__text {
+        font-size: 10px;
+        line-height: 16px;
+    }
 
     .categories__list-link span {
         margin-left: 0;
@@ -1917,6 +2037,7 @@ h1, h2, h3, h4, h5, h6, p {
 
     .nav-content-product__recommendation-block {
         width: 100%;
+        padding: 20px;
         justify-content: center;
     }
 
@@ -1946,6 +2067,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 @media screen and (max-width: 531px) {
+
+    .product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single {
+        min-height: 180px;
+        height: 180px;
+    }
+
+
     .product-info__product-details {
         flex-direction: column;
         align-items: center;
