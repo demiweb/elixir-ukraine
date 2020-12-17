@@ -2073,11 +2073,12 @@ h1, h2, h3, h4, h5, h6, p {
         height: auto;
     }
     .product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single .granules-details__img-container {
-        padding: 2%;
+        /*padding: 2%;*/
         box-sizing: border-box;
         width: 125px;
         height: 125px;
-        margin: auto;
+        margin: auto 2%;
+        border-radius: 50%;
     }
     .product-nav-content__nav-content-product .cultures-info__granules-details .granules-details__single .granules-details__img-container::after {
         content: none;
